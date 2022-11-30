@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Dranik</title>
+<link href="./css/main.css" rel="stylesheet"></head>
+
+<body class="body">
+    <header class="section">
+    <div class="container">
+        Шапка
+    </div>
+</header>
+    <main class="main">
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    <div class="columns__col columns__col--6">
+                        <h1>Dranik</h1>
+                        <div class="editor">
+                            <h1>
+                                Dranik
+                            </h1>
+                            <p>
+                                Стартовый шаблон для разработки
+                            </p>
+                        </div>
+                    </div>
+                    <div class="columns__col columns__col--6">
+                        <svg>
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-camera"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="section">
+    <div class="container">
+        Подвал
+    </div>
+</footer>
+    <!-- Это временная секция, здесь ссылки на все страницы. На продакшене ее не будет -->
+<section class="section">
+    <div class="container">
+        <style>
+            .temp {
+                gap: 15px;
+                display: flex;
+            }
+
+            .temp__link {
+                color: inherit;
+                font-size: 16px;
+                text-decoration: underline;
+            }
+
+            .temp__link:hover {
+                text-decoration: none;
+            }
+        </style>
+        <div class="temp">
+            <a href="./index.html" class="temp__link">Главная</a>
+            <a href="./page.html" class="temp__link">Дочерняя страница</a>
+        </div>
+    </div>
+</section>
+<script defer src="js/bundle.js"></script></body>
+
+</html>
