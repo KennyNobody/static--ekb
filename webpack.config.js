@@ -17,13 +17,13 @@ module.exports = {
     mode: "development",
     entry: path.resolve(__dirname, "./src/js/index.js"),
     output: {
-        path: path.resolve(__dirname, "./dist"),
+        path: path.resolve(__dirname, "./docs"),
         filename: "js/bundle.js",
     },
     devtool: false,
     devServer: {
         static: {
-            directory: path.join(__dirname, 'dist'),
+            directory: path.join(__dirname, 'docs'),
         },
         client: {
             overlay: true,
