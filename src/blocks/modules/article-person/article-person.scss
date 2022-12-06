@@ -1,0 +1,35 @@
+.article-person {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    border-radius: rem(5);
+
+    &__picture {
+        width: 100%;
+        display: block;
+        height: rem(310);
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    &__tag {
+        top: rem(20);
+        left: rem(20);
+        color: $orange;
+        font-weight: 500;
+        font-size: rem(12);
+        position: absolute;
+        display: inline-block;
+        border-radius: rem(50);
+        padding: rem(8) rem(12);
+        font-family: $font-title;
+        background-color: $light;
+        text-transform: uppercase;
+    }
+}

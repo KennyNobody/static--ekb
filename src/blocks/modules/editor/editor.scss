@@ -1,17 +1,33 @@
 .editor {
+    //width: 100%;
     display: block;
-    width: 100%;
 
     & > :last-child {
         margin-bottom: 0;
     }
 
-    &--16 {
-        font-size: rem(16);
+    //&--16 {
+    //    font-size: rem(16);
+    //}
+    &--footer {
+        color: #B6B6B6;
+        font-family: $font-title;
+    }
+
+    &--14 {
+        font-size: rem(14);
     }
 
     &--18 {
         font-size: rem(18);
+    }
+
+    &--20 {
+        font-size: rem(20);
+    }
+
+    &--24 {
+        font-size: rem(24);
     }
 
     &--center {
@@ -77,9 +93,13 @@
     }
 
     p {
-        margin-bottom: 2rem;
-        @include r(1200) {
-            margin-bottom: rem(30);
+        font-weight: 300;
+
+        &:not(:last-of-type) {
+            margin-bottom: 2rem;
+            @include r(1200) {
+                margin-bottom: rem(30);
+            }
         }
     }
 
@@ -173,5 +193,25 @@
 
     i {
         font-style: italic;
+    }
+
+    a {
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .logo-footer {
+        display: inline-block;
+
+        img {
+            top: 0.2rem;
+            width: auto;
+            height: rem(17);
+            margin-bottom: 0;
+            position: relative;
+        }
     }
 }

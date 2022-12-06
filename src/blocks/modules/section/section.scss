@@ -1,3 +1,45 @@
 .section {
-    
+    overflow: hidden;
+
+    &--header {
+        top: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        background-color: $light;
+        border-bottom: 1px solid #EDEDED;
+        transition: 0.3s background-color, 0.3s border-bottom;
+        &.invert {
+            background-color: rgba(237, 237, 237, 0);
+            border-bottom: 1px solid rgba(255,255,255,0);
+        }
+    }
+
+    &--bg {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &__overlay {
+        top: 100%;
+        position: absolute;
+    }
+
+    &__content {
+        &--overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        &--full-650 {
+            height: 100vh;
+            min-height: rem(650);
+
+        }
+
+        &--full-950 {
+            height: 100vh;
+            min-height: rem(950);
+        }
+    }
 }

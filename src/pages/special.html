@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body">
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<main class="main">
+    <section class="section bg-white pt-100 pb-100">
+        <div class="container">
+            <div class="columns mb-50">
+                <div class="columns__col columns__col--9">
+                    <h2 class="title">
+                        Спецпроекты
+                    </h2>
+                </div>
+            </div>
+            <div class="articles" >
+                <div class="articles__header">
+
+                </div>
+                <div class="articles__content">
+
+                </div>
+                <div class="articles__toolbar">
+                    <button class="button button--orange button--fit-m">
+                        <span class="button__text">
+                            Показать еще
+                        </span>
+                        <svg class="button__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-drop-orange"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<%= htmlWebpackPlugin.options.sectionFooter %>
+<%= htmlWebpackPlugin.options.hidden %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+
+</html>

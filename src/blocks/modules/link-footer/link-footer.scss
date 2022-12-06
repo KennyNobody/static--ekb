@@ -1,0 +1,19 @@
+.link-footer {
+    display: block;
+    color: #B6B6B6;
+    text-decoration: none;
+    margin-bottom: rem(8);
+    font-family: $font-title;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    &--head {
+        color: $light;
+        font-weight: 500;
+        font-size: rem(16);
+        margin-bottom: rem(15);
+        text-transform: uppercase;
+    }
+}

@@ -4,6 +4,10 @@
     grid-auto-flow: dense;
     grid-template-rows: minmax(0, 1fr);
     grid-template-columns:  minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    &--align {
+        align-items: center;
+    }
+
     @include r(1200) {
         //gap: 0;
     }

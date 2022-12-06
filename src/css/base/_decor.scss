@@ -1,0 +1,35 @@
+.decor-1 {
+    position: relative;
+    &:after {
+        top: -43%;
+        right: -17%;
+        content: "";
+        display: block;
+        width: rem(416);
+        height: rem(460);
+        position: absolute;
+        pointer-events: none;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("../assets/images/decor-1.svg");
+    }
+}
+
+.decor-2 {
+    position: relative;
+    &:after {
+        right: 65%;
+        content: "";
+        bottom: -15%;
+        display: block;
+        width: rem(491);
+        height: rem(190);
+        position: absolute;
+        pointer-events: none;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("../assets/images/decor-2.svg");
+    }
+}

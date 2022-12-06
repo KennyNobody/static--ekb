@@ -8,11 +8,6 @@ const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-// Insludes
-const head = fs.readFileSync(__dirname + '/src/includes/head.html');
-const sectionHeader = fs.readFileSync(__dirname + '/src/includes/section-header.html');
-const sectionFooter = fs.readFileSync(__dirname + '/src/includes/section-footer.html');
-
 module.exports = {
     mode: "development",
     entry: path.resolve(__dirname, "./src/js/index.js"),
@@ -33,7 +28,7 @@ module.exports = {
         watchFiles: ["src/*.html", "src/pages/*.html", "src/css/*.css"],
         hot: true,
         compress: false,
-        port: 9000,
+        port: 9007,
     },
     plugins: [
         ...pages,

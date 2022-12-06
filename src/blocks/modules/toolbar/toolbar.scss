@@ -1,0 +1,19 @@
+.toolbar {
+    gap: rem(70);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &--start {
+        gap: rem(30);
+        justify-content: flex-start;
+    }
+
+    &--end {
+        align-items: flex-end;
+    }
+
+    &--end {
+        align-items: flex-end;
+    }
+}

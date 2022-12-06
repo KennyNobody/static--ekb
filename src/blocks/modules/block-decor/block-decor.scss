@@ -1,0 +1,14 @@
+.block-decor {
+    top: 0;
+    width: 100vw;
+    display: block;
+    height: rem(1056);
+    position: absolute;
+    border-radius: rem(10);
+    right: calc(50% + 315px);
+    background-color: $purple;
+    background-repeat: no-repeat;
+    background-size: rem(590) rem(456);
+    background-position: top rem(305) right rem(42);
+    background-image: url("../assets/images/decor.svg");
+}

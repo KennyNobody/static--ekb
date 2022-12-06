@@ -1,0 +1,53 @@
+.logo {
+    gap: rem(30);
+    display: flex;
+    font-size: rem(20);
+    align-items: center;
+    transition: 0.3s opacity;
+    font-family: $font-title;
+
+    @at-root {
+        a#{&} {
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+
+    &--sm {
+        svg {
+            width: rem(46);
+            height: rem(60);
+        }
+    }
+
+    &--lg {
+        svg {
+            width: rem(96);
+            height: rem(125);
+        }
+    }
+
+    &--footer {
+        img {
+            display: block;
+        }
+    }
+
+    svg {
+        display: block;
+    }
+
+    &__layer {
+        fill: #262626;
+        transition: 0.3s fill;
+    }
+}
+
+.invert {
+    .logo {
+        &__layer {
+            fill: $light;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.link-aside {
+    top: 50%;
+    right: 0;
+    color: $light;
+    display: block;
+    width: rem(195);
+    position: absolute;
+    padding: rem(35) rem(38);
+    font-family: $font-title;
+    transition: 0.3s opacity;
+    background-color: $orange;
+    transform: translateY(-50%);
+    border-radius: rem(50) 0 0 rem(50);
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &:active {
+        opacity: 0.9;
+    }
+
+    &__caption {
+        font-weight: 400;
+        font-size: rem(16);
+        position: relative;
+        margin-bottom: rem(45);
+        padding-bottom: rem(10);
+        text-transform: uppercase;
+
+        &:after {
+            top: 100%;
+            left: 0;
+            height: 2px;
+            content: "";
+            width: rem(18);
+            display: block;
+            position: absolute;
+            background-color: $light;
+        }
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: rem(24);
+        margin-bottom: rem(15);
+        text-transform: uppercase;
+    }
+
+    &__icon {
+        fill: $light;
+        display: block;
+        width: rem(20);
+        height: rem(20);
+    }
+}

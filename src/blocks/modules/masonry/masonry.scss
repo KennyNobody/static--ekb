@@ -1,0 +1,18 @@
+.masonry {
+    margin-left: rem(-15);
+    margin-right: rem(-15);
+    &__item {
+        margin: 0 rem(15) rem(30) rem(15);
+        display: block;
+        //margin-bottom: 30px;
+        width: calc(25% - 30px);
+
+        &:nth-child(2) {
+            margin-top: rem(50);
+        }
+
+        &:nth-child(4) {
+            margin-top: rem(50);
+        }
+    }
+}

@@ -1,3 +1,9 @@
+@import "modules/article-drop/article-drop";
+@import "modules/article-event/article-event";
+@import "modules/article-excursion/article-excursion";
+@import "modules/article-person/article-person";
+@import "modules/articles/articles";
+@import "modules/block-decor/block-decor";
 @import "modules/body/body";
 @import "modules/breadcrumbs/breadcrumbs";
 @import "modules/button/button";
@@ -5,10 +11,20 @@
 @import "modules/container/container";
 @import "modules/editor/editor";
 @import "modules/form/form";
+@import "modules/header/header";
+@import "modules/hr/hr";
 @import "modules/input/input";
+@import "modules/link-aside/link-aside";
+@import "modules/link-footer/link-footer";
+@import "modules/logo/logo";
 @import "modules/main/main";
+@import "modules/masonry/masonry";
+@import "modules/nav/nav";
 @import "modules/section/section";
+@import "modules/slider/slider";
+@import "modules/tag/tag";
 @import "modules/title/title";
+@import "modules/toolbar/toolbar";
 
 @include r(1200) {
     

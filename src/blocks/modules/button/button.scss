@@ -1,11 +1,77 @@
 .button {
+    gap: rem(10);
+    display: flex;
     cursor: pointer;
+    //font-weight: 700;
+    font-size: rem(16);
+    width: fit-content;
+    min-height: rem(50);
+    align-items: center;
+    transition: 0.3s all;
+    border-radius: rem(50);
+    justify-content: center;
+    font-family: $font-title;
+    text-transform: uppercase;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &:active {
+        opacity: 0.9;
+    }
+
     @include r(1200) {
-       
+
     }
+
+    &--fit-l {
+        padding: rem(10) rem(52);
+    }
+
+    &--fit-m {
+        padding: rem(10) rem(30);
+    }
+
+    &--230 {
+        padding: rem(10) rem(15);
+        min-width: rem(230);
+    }
+
+    &--orange {
+        fill: $light;
+        color: $light;
+        background-color: $orange;
+    }
+
+    &--green {
+        fill: $green;
+        color: $green;
+        background-color: $green-light;
+    }
+
+    &--purple {
+        color: $purple;
+        background-color: #EAE1F5;
+        fill: $purple;
+    }
+
     &--disabled {
-        
+
     }
+
+
     &__text {
+    }
+
+    &__icon {
+        display: block;
+        width: rem(15);
+        height: rem(15);
+
+        &--l {
+            width: rem(24);
+            height: rem(24);
+        }
     }
 }
