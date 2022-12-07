@@ -44,8 +44,8 @@ module.exports = {
         new CopyPlugin({
             patterns: [
                 {
-                    from: "src/assets/images",
-                    to: "./assets/images/",
+                    from: "src/assets/",
+                    to: "./assets/",
                     noErrorOnMissing: true
                 },
                 {
