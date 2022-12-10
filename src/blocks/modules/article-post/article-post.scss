@@ -8,6 +8,10 @@
         opacity: 0.7;
     }
 
+    &--slide {
+        height: rem(610);
+    }
+
     &--regular {
         display: block;
         min-height: rem(608);

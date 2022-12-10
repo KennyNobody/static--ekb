@@ -12,7 +12,7 @@
 <link href="./css/main.css" rel="stylesheet"></head>
 
 <body class="body">
-    <header class="section section--header pt-10 pb-10 z-index-3">
+<header class="section section--header pt-10 pb-10 z-index-3">
     <div class="container">
         <div class="header">
             <a href="" class="logo logo--sm">
@@ -129,31 +129,78 @@
         </div>
     </div>
 </header>
-    <main class="main">
-        <section class="section bg-white pt-100 pb-100">
-            <div class="container">
-                <div class="columns">
-                    <div class="columns__col columns__col--6">
-                        <h1>Dranik</h1>
-                        <div class="editor">
-                            <h1>
-                                Dranik
-                            </h1>
-                            <p>
-                                Стартовый шаблон для разработки
-                            </p>
-                        </div>
-                    </div>
-                    <div class="columns__col columns__col--6">
-                        <svg>
-                            <use xlink:href="./assets/sprite/sprite.svg#icon-camera"></use>
-                        </svg>
-                    </div>
+<main class="main">
+    <section class="section bg-white pt-100 pb-100">
+        <div class="container">
+            <nav class="breadcrumbs mb-40">
+                <a class="breadcrumbs__link" href="./">
+                    Главная
+                </a>
+                <a class="breadcrumbs__link" href="./residents.html">
+                    Жителям
+                </a>
+                <span class="breadcrumbs__link">
+                        Городское благоустройство
+                    </span>
+            </nav>
+            <a class="link-back mb-80" href="./residents.html">
+                <svg class="link-back__icon">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-back"></use>
+                </svg>
+                <span class="link-back__text">
+                        Городское благоустройство
+                    </span>
+            </a>
+            <time class="date mb-20">
+                21.11.2022
+            </time>
+            <h1 class="title mb-25">
+                Стела «Город трудовой доблести»
+            </h1>
+            <div class="place mb-60">
+                <svg class="place__icon">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-marker"></use>
+                </svg>
+                <div class="place__content">
+                    <p>
+                        Екатеринбург, ул. Горького, 23
+                    </p>
                 </div>
             </div>
-        </section>
-    </main>
-    <section class="section invert bg-dark pt-60 pb-35">
+            <div class="editor mb-80">
+                <p>
+                    Указом Президента Российской Федерации от 2 июля 2020 года № 444 «О присвоении почетного звания
+                    Российской Федерации «Город трудовой доблести» городу Екатеринбургу присвоено почётное звание
+                    Российской Федерации «Город трудовой доблести».
+                    Проведен опрос среди жителей и профессионального сообщества о выборе места размещения стелы, которым
+                    стало пересечение ул. Царской и ул. Николая Никонова.
+                </p>
+                <picture>
+                    <img alt="Заголовок поста" src="./assets/content/post-full.jpg">
+                </picture>
+                <p>
+                    По инициативе Общероссийской общественно-государственной организации «Российское военно-историческое
+                    общество» и Администрации города Екатеринбурга разработан дизайн-проект стелы «Город трудовой
+                    доблести». Высота стелы составит 42 метра. Во внутреннем пространстве планируется создать
+                    экспозицию, посвященную памяти тружеников тыла.
+                </p>
+                <p>
+                    Кроме того, пространство вокруг стелы будут окаймлять подпорные стенки и озелененные откосы. Боковые
+                    грани стелы и подпорные стенки облицованы панелями из кортеновской стали. Панели формируют ломаную
+                    треугольную структуру, отражающую напряженную тектонику поверхностей. На панелях подпорных стенок
+                    будет выполнена перфорация с изображениями стилизованной военной техники. Со стороны улицы Николая
+                    Никонова располагается амфитеатр для проведения торжественных мероприятий, а также на территории
+                    предусмотрено создание зон отдыха. В вечернее время предусмотрена подсветка стелы и прилегающей
+                    территории.
+                </p>
+            </div>
+            <script src="https://yastatic.net/share2/share.js"></script>
+            <div class="ya-share2 " data-curtain data-services="vkontakte,odnoklassniki,telegram,viber,whatsapp"
+                 data-shape="round"></div>
+        </div>
+    </section>
+</main>
+<section class="section invert bg-dark pt-60 pb-35">
     <div class="container">
         <div class="columns mb-35">
             <div class="columns__col columns__col--2">
@@ -261,16 +308,17 @@
         </div>
     </div>
 </section>
-    <div hidden>
+<div hidden>
     Скрытая разметка
 </div>
-    <!-- Это временная секция, здесь ссылки на все страницы. На продакшене ее не будет -->
+<!-- Это временная секция, здесь ссылки на все страницы. На продакшене ее не будет -->
 <section class="section">
     <div class="container">
         <style>
             .temp {
                 gap: 15px;
                 display: flex;
+                flex-wrap: wrap;
             }
 
             .temp__link {
@@ -292,6 +340,7 @@
             <a href="./improvement.html" class="temp__link">Благоустройство</a>
             <a href="./single-improvement.html" class="temp__link">Одиночная благоустройство</a>
             <a href="./single-special.html" class="temp__link">Одиночный спецпроект</a>
+            <a href="./single-bill.html" class="temp__link">Одиночный афиша</a>
             <a href="./special.html" class="temp__link">Спецпроект</a>
         </div>
     </div>

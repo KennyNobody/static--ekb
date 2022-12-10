@@ -1,5 +1,5 @@
 .title {
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.2;
     font-size: rem(64);
     font-family: $font-title;
@@ -11,5 +11,9 @@
         font-size: rem(32);
         margin-bottom: rem(5);
         text-transform: lowercase;
+    }
+
+    &--small {
+        font-size: rem(36);
     }
 }

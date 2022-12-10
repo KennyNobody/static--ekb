@@ -27,8 +27,16 @@
     }
 
     &__content {
-        &--overlay {
-            background-color: rgba(0, 0, 0, 0.6);
+        &--overlay-20 {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        &--overlay-30 {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        &--overlay-40 {
+            background-color: rgba(0, 0, 0, 0.4);
         }
 
         &--full-650 {

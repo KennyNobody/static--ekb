@@ -1,0 +1,38 @@
+.link-back {
+    display: flex;
+    align-items: center;
+    transition: 0.3s opacity;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &:active {
+        opacity: 0.9;
+    }
+
+    &__icon {
+        fill: $dark;
+        display: block;
+        width: rem(72);
+        height: rem(52);
+        margin-right: rem(19);
+    }
+
+    &__text {
+        color: $dark;
+        font-size: rem(20);
+    }
+}
+
+.invert {
+    .link-back {
+        &__icon {
+            fill: $light;
+        }
+
+        &__text {
+            color: $light;
+        }
+    }
+}

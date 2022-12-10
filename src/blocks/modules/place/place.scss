@@ -1,0 +1,40 @@
+.place {
+    gap: rem(12);
+    display: flex;
+    color: $orange;
+    font-family: $font-title;
+
+    &--small {
+        gap: rem(10);
+        .place {
+            &__icon {
+                top: 0.2em;
+                width: rem(14);
+                height: rem(16);
+            }
+
+            &__content {
+                font-size: rem(14);
+            }
+        }
+    }
+
+    &__icon {
+        top: 0.1em;
+        fill: $orange;
+        flex-shrink: 0;
+        width: rem(18);
+        height: rem(22);
+        position: relative;
+    }
+
+    &__content {
+        & > :last-child {
+            margin-bottom: 0;
+        }
+
+        p {
+            margin-bottom: 1em;
+        }
+    }
+}

@@ -9,8 +9,9 @@
 <body class="body">
 <%= htmlWebpackPlugin.options.sectionHeaderActive %>
 <main class="main">
-    <section class="section section--bg invert relative" style="background-image: url('./assets/images/bg-index.jpg')">
-        <div class="section__content section__content--overlay section__content--full-950 pt-80 pb-150">
+    <section class="section section--bg invert relative" style="background-image: url('./assets/content/bg-index.jpg')">
+        <div class="section__content--overlay--20"></div>
+        <div class="section__content section__content--full-950 pt-80 pb-150">
             <div class="container container--flex-between">
                 <div></div>
                 <div class="columns">
@@ -42,17 +43,31 @@
     </section>
     <section class="section bg-gradient-light pt-100 pb-170 bg-1">
         <div class="container">
+            <!--            <button class="button-scroll button-scroll&#45;&#45;green" disabled>-->
+            <!--                <svg class="button-scroll__icon">-->
+            <!--                    <use xlink:href="./assets/sprite/sprite.svg#icon-slider-prev"></use>-->
+            <!--                </svg>-->
+            <!--            </button>-->
+            <!--            <button class="button-scroll button-scroll&#45;&#45;green">-->
+            <!--                <svg class="button-scroll__icon">-->
+            <!--                    <use xlink:href="./assets/sprite/sprite.svg#icon-slider-next"></use>-->
+            <!--                </svg>-->
+            <!--            </button>-->
+            <!--            <button class="button-scroll button-scroll&#45;&#45;large button-scroll&#45;&#45;light">-->
+            <!--                <svg class="button-scroll__icon">-->
+            <!--                    <use xlink:href="./assets/sprite/sprite.svg#icon-slider-next"></use>-->
+            <!--                </svg>-->
+            <!--            </button>-->
             <div class="columns columns--align">
                 <div class="columns__col columns__col--5">
                     <span class="tag mb-20">Участвуй</span>
                     <h2 class="title mb-20">
-                        Ближайшие события
+                        Программа юбилея
                     </h2>
-                    <div class="editor mb-25">
+                    <div class="editor mb-40">
                         <p>
-                            Для современного мира выбранный нами инновационный путь создаёт необходимость включения в
-                            производственный план Для современного мира выбранный нами инновационный путь создаёт
-                            необходимость включения в производственный план
+                            В год 300-летия Екатеринбург с особым размахом проведёт полюбившиеся многим и известные на
+                            весь мир флагманские мероприятия города, а также новые уникальные события.
                         </p>
                     </div>
                     <a class="button button--green button--fit-m" href="">
@@ -65,79 +80,97 @@
                     </a>
                 </div>
                 <div class="columns__col columns__col--7">
-                    <div style="width: 100vw; display: flex; gap: 30px;">
-                        <a class="article-event" href="">
-                            <picture class="article-event__picture">
-                                <img alt="" src="./assets/content/faces.jpg">
-                            </picture>
-                            <div class="article-event__content">
-                                <time class="article-event__date">
-                                    12.02.22
-                                </time>
-                                <div class="article-event__main">
-                                    <h3 class="article-event__title">
-                                        Лица улиц
-                                    </h3>
+                    <div class="slider" data-slider>
+                        <div class="swiper-container slider__container slider__container--overflow slider__container--all">
+                            <button class="button-scroll button-scroll--centered-right button-scroll--large button-scroll--light"
+                                    data-slider-next>
+                                <svg class="button-scroll__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-slider-next"></use>
+                                </svg>
+                            </button>
+                            <div class="swiper-wrapper slider__wrapper">
+                                <div class="swiper-slide slider__slide slider__slide--370">
+                                    <a class="article-event" href="./single-bill.html">
+                                        <picture class="article-event__picture">
+                                            <img alt="" src="./assets/content/event-1.jpg">
+                                        </picture>
+                                        <div class="article-event__content">
+                                            <time class="article-event__date">
+                                                12-13.08.23
+                                            </time>
+                                            <div class="article-event__main">
+                                                <h3 class="article-event__title">
+                                                    Фестиваль уличных театров «Лица улиц»
+                                                </h3>
+                                            </div>
+                                            <span class="article-event__tag">
+                                                Фестиваль
+                                            </span>
+                                        </div>
+                                    </a>
                                 </div>
-                                <span class="article-event__tag">
-                                    Выставка
-                                </span>
-                            </div>
-                        </a>
-                        <a class="article-event" href="">
-                            <picture class="article-event__picture">
-                                <img alt="" src="./assets/content/time.jpg">
-                            </picture>
-                            <div class="article-event__content">
-                                <time class="article-event__date">
-                                    12.02.22
-                                </time>
-                                <div class="article-event__main">
-                                    <h3 class="article-event__title">
-                                        Послание екатеринбуржцам: закладка новой капсулы времени
-                                    </h3>
+                                <div class="swiper-slide slider__slide slider__slide--370">
+                                    <a class="article-event" href="./single-bill.html">
+                                        <picture class="article-event__picture">
+                                            <img alt="" src="./assets/content/event-2.jpg">
+                                        </picture>
+                                        <div class="article-event__content">
+                                            <time class="article-event__date">
+                                                12-20.08.23
+                                            </time>
+                                            <div class="article-event__main">
+                                                <h3 class="article-event__title">
+                                                    Фестиваль ландшафтного дизайна «АТМОФЕСТ»
+                                                </h3>
+                                            </div>
+                                            <span class="article-event__tag">
+                                                Фестиваль
+                                            </span>
+                                        </div>
+                                    </a>
                                 </div>
-                                <span class="article-event__tag">
-                                    Выставка
-                                </span>
-                            </div>
-                        </a>
-                        <a class="article-event" href="">
-                            <picture class="article-event__picture">
-                                <img alt="" src="./assets/content/atmo.jpg">
-                            </picture>
-                            <div class="article-event__content">
-                                <time class="article-event__date">
-                                    12.02.22
-                                </time>
-                                <div class="article-event__main">
-                                    <h3 class="article-event__title">
-                                        Атмофест
-                                    </h3>
+                                <div class="swiper-slide slider__slide slider__slide--370">
+                                    <a class="article-event" href="./single-bill.html">
+                                        <picture class="article-event__picture">
+                                            <img alt="" src="./assets/content/event-3.jpg">
+                                        </picture>
+                                        <div class="article-event__content">
+                                            <time class="article-event__date">
+                                                19.08.23
+                                            </time>
+                                            <div class="article-event__main">
+                                                <h3 class="article-event__title">
+                                                    Трибьют-концерт Свердловского рок-клуба
+                                                </h3>
+                                            </div>
+                                            <span class="article-event__tag">
+                                                Концерт
+                                            </span>
+                                        </div>
+                                    </a>
                                 </div>
-                                <span class="article-event__tag">
-                                    Выставка
-                                </span>
-                            </div>
-                        </a>
-                        <a class="article-event" href="">
-                            <picture class="article-event__picture">
-                                <img alt="" src="./assets/content/history.jpg">
-                            </picture>
-                            <div class="article-event__content">
-                                <time class="article-event__date">
-                                    12.02.22
-                                </time>
-                                <div class="article-event__main">
-                                    <h3 class="article-event__title">
-                                        Историческая реконструкция Екатеринбурга XIX века
-                                    </h3>
+                                <div class="swiper-slide slider__slide slider__slide--370">
+                                    <a class="article-event" href="./single-bill.html">
+                                        <picture class="article-event__picture">
+                                            <img alt="" src="./assets/content/event-1.jpg">
+                                        </picture>
+                                        <div class="article-event__content">
+                                            <time class="article-event__date">
+                                                12.02.22
+                                            </time>
+                                            <div class="article-event__main">
+                                                <h3 class="article-event__title">
+                                                    Историческая реконструкция Екатеринбурга XIX века
+                                                </h3>
+                                            </div>
+                                            <span class="article-event__tag">
+                                                Выставка
+                                            </span>
+                                        </div>
+                                    </a>
                                 </div>
-                                <span class="article-event__tag">
-                                    Выставка
-                                </span>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -153,40 +186,22 @@
                     </h2>
                 </div>
             </div>
+            <div class="editor editor--24 mb-70">
+                <p>
+                    Истории открытий и изобретений, людей и институций, рожденных в Екатеринбурге за 300 лет его истории
+                    и повлиявших на развитие не только региона и страны, но и мира. Летопись города в 300 историях.
+                </p>
+            </div>
             <div class="articles">
                 <div class="articles__content articles__content--column-20">
                     <article class="article-drop" data-article-drop>
                         <h3 class="article-drop__title">
-                            Выставка “Подвиг народного единства” в башне
+                            Биатлон
                         </h3>
-                        <div class="article-drop__main editor">
+                        <div class="article-drop__main editor" data-article-drop-content>
                             <p>
-                                Орнаментальный сказ, если уловить хореический ритм или аллитерацию на "р", традиционен.
-                                Ударение фонетически выбирает поэтический верлибр. Верлибр неизменяем. Матрица, за счет
-                                использования параллелизмов и повторов на разных языковых уровнях, прекрасно отталкивает
-                                парафраз.
-                            </p>
-                            <p>
-                                Пастиш жизненно вызывает мелодический хорей. Ритмическая организованность таких стихов
-                                не всегда очевидна при чтении "про себя", но эпическая медлительность начинает
-                                конструктивный мифопоэтический хронотоп, именно об этом говорил Б.В.Томашевский в своей
-                                работе 1925 года. Орнаментальный сказ, в первом приближении, изменяем. Первое полустишие
-                                недоступно аллитерирует урбанистический метаязык, поэтому никого не удивляет, что в
-                                финале порок наказан. Метр, если уловить хореический ритм или аллитерацию на "р",
-                                отталкивает речевой акт. Субъективное восприятие, по определению неумеренно начинает
-                                поэтический коммунальный модернизм.
-                            </p>
-                            <p>
-                                Диалектический характер неумеренно диссонирует хорей, также необходимо сказать о
-                                сочетании метода апроприации художественных стилей прошлого с авангардистскими
-                                стратегиями. Чтение - процесс активный, напряженный, однако модальность высказывания
-                                прекрасно приводит деструктивный жанр. Здесь автор сталкивает два таких достаточно
-                                далёких друг от друга явления как голос персонажа отталкивает эпизодический
-                                брахикаталектический стих, при этом нельзя говорить, что это явления собственно фоники,
-                                звукописи. Диалектический характер точно вызывает деструктивный холодный цинизм,
-                                несмотря на отсутствие единого пунктуационного алгоритма. Коммунальный модернизм, за
-                                счет использования параллелизмов и повторов на разных языковых уровнях, аллитерирует
-                                ямб.
+                                На Уктусских горах в 1957 году прошел первый в Советском союзе чемпионат по биатлону.
+                                Так началась российская страница истории одного из самых любимых видов спорта в стране.
                             </p>
                         </div>
                         <div class="article-drop__toolbar">
@@ -197,36 +212,15 @@
                     </article>
                     <article class="article-drop" data-article-drop>
                         <h3 class="article-drop__title">
-                            Выставка “Подвиг народного единства” в башне
+                            Велосипед
                         </h3>
-                        <div class="article-drop__main editor">
+                        <div class="article-drop__main editor" data-article-drop-content>
                             <p>
-                                Орнаментальный сказ, если уловить хореический ритм или аллитерацию на "р", традиционен.
-                                Ударение фонетически выбирает поэтический верлибр. Верлибр неизменяем. Матрица, за счет
-                                использования параллелизмов и повторов на разных языковых уровнях, прекрасно отталкивает
-                                парафраз.
-                            </p>
-                            <p>
-                                Пастиш жизненно вызывает мелодический хорей. Ритмическая организованность таких стихов
-                                не всегда очевидна при чтении "про себя", но эпическая медлительность начинает
-                                конструктивный мифопоэтический хронотоп, именно об этом говорил Б.В.Томашевский в своей
-                                работе 1925 года. Орнаментальный сказ, в первом приближении, изменяем. Первое полустишие
-                                недоступно аллитерирует урбанистический метаязык, поэтому никого не удивляет, что в
-                                финале порок наказан. Метр, если уловить хореический ритм или аллитерацию на "р",
-                                отталкивает речевой акт. Субъективное восприятие, по определению неумеренно начинает
-                                поэтический коммунальный модернизм.
-                            </p>
-                            <p>
-                                Диалектический характер неумеренно диссонирует хорей, также необходимо сказать о
-                                сочетании метода апроприации художественных стилей прошлого с авангардистскими
-                                стратегиями. Чтение - процесс активный, напряженный, однако модальность высказывания
-                                прекрасно приводит деструктивный жанр. Здесь автор сталкивает два таких достаточно
-                                далёких друг от друга явления как голос персонажа отталкивает эпизодический
-                                брахикаталектический стих, при этом нельзя говорить, что это явления собственно фоники,
-                                звукописи. Диалектический характер точно вызывает деструктивный холодный цинизм,
-                                несмотря на отсутствие единого пунктуационного алгоритма. Коммунальный модернизм, за
-                                счет использования параллелизмов и повторов на разных языковых уровнях, аллитерирует
-                                ямб.
+                                Именно уралец Ефим Артамонов в 1801 году изобрел первый в мире велосипед, за 38 лет до
+                                изобретения его аналога в Европе. Известно, что «холоп Ефимка сын Артамонов розгами бит
+                                за то, что в день Ильи пророка года 1800 ездил на диковинном самокате» по улицам
+                                Екатеринбурга и пугал встречных лошадей, которые на дыбы становились, на заборы кидались
+                                и «увечья пешеходам чинили немалые».
                             </p>
                         </div>
                         <div class="article-drop__toolbar">
@@ -237,36 +231,17 @@
                     </article>
                     <article class="article-drop" data-article-drop>
                         <h3 class="article-drop__title">
-                            Выставка “Подвиг народного единства” в башне
+                            Горы и пригорки
                         </h3>
-                        <div class="article-drop__main editor">
+                        <div class="article-drop__main editor" data-article-drop-content>
                             <p>
-                                Орнаментальный сказ, если уловить хореический ритм или аллитерацию на "р", традиционен.
-                                Ударение фонетически выбирает поэтический верлибр. Верлибр неизменяем. Матрица, за счет
-                                использования параллелизмов и повторов на разных языковых уровнях, прекрасно отталкивает
-                                парафраз.
-                            </p>
-                            <p>
-                                Пастиш жизненно вызывает мелодический хорей. Ритмическая организованность таких стихов
-                                не всегда очевидна при чтении "про себя", но эпическая медлительность начинает
-                                конструктивный мифопоэтический хронотоп, именно об этом говорил Б.В.Томашевский в своей
-                                работе 1925 года. Орнаментальный сказ, в первом приближении, изменяем. Первое полустишие
-                                недоступно аллитерирует урбанистический метаязык, поэтому никого не удивляет, что в
-                                финале порок наказан. Метр, если уловить хореический ритм или аллитерацию на "р",
-                                отталкивает речевой акт. Субъективное восприятие, по определению неумеренно начинает
-                                поэтический коммунальный модернизм.
-                            </p>
-                            <p>
-                                Диалектический характер неумеренно диссонирует хорей, также необходимо сказать о
-                                сочетании метода апроприации художественных стилей прошлого с авангардистскими
-                                стратегиями. Чтение - процесс активный, напряженный, однако модальность высказывания
-                                прекрасно приводит деструктивный жанр. Здесь автор сталкивает два таких достаточно
-                                далёких друг от друга явления как голос персонажа отталкивает эпизодический
-                                брахикаталектический стих, при этом нельзя говорить, что это явления собственно фоники,
-                                звукописи. Диалектический характер точно вызывает деструктивный холодный цинизм,
-                                несмотря на отсутствие единого пунктуационного алгоритма. Коммунальный модернизм, за
-                                счет использования параллелизмов и повторов на разных языковых уровнях, аллитерирует
-                                ямб.
+                                Хотя Екатеринбург находится на Урале, собственно гор здесь нет. Есть пригорки, холмы,
+                                возвышенности. Местами можно встретить скальные выступы, например, Каменные палатки в
+                                районе ЖБИ. Дело в том, что Уральский хребет очень старый, а значит, он разрушается уже
+                                много сотен лет. По-настоящему высокие вершины со снежными шапками есть на севере
+                                Свердловской области, хотя и жители Екатеринбурга гордятся репутацией суровых горцев.
+                                Кстати, учёные утверждают, что старые Уральские горы всё-таки могут удивить внезапными
+                                попытками подрасти. Поэтому регион считается зоной с возможной сейсмической активностью
                             </p>
                         </div>
                         <div class="article-drop__toolbar">
@@ -277,36 +252,48 @@
                     </article>
                     <article class="article-drop" data-article-drop>
                         <h3 class="article-drop__title">
-                            Выставка “Подвиг народного единства” в башне
+                            Дед мороз
                         </h3>
-                        <div class="article-drop__main editor">
+                        <div class="article-drop__main editor" data-article-drop-content>
                             <p>
-                                Орнаментальный сказ, если уловить хореический ритм или аллитерацию на "р", традиционен.
-                                Ударение фонетически выбирает поэтический верлибр. Верлибр неизменяем. Матрица, за счет
-                                использования параллелизмов и повторов на разных языковых уровнях, прекрасно отталкивает
-                                парафраз.
+                                Удивительным совпадением является то, что Екатеринбург и Дед Мороз отмечают свой день
+                                рождения в один день – 18 ноября. 18 ноября – исторический день основания города.
                             </p>
+                        </div>
+                        <div class="article-drop__toolbar">
+                            <button class="article-drop__link">
+                                Показать полностью
+                            </button>
+                        </div>
+                    </article>
+                    <article class="article-drop" data-article-drop>
+                        <h3 class="article-drop__title">
+                            Клавиатура
+                        </h3>
+                        <div class="article-drop__main editor" data-article-drop-content>
                             <p>
-                                Пастиш жизненно вызывает мелодический хорей. Ритмическая организованность таких стихов
-                                не всегда очевидна при чтении "про себя", но эпическая медлительность начинает
-                                конструктивный мифопоэтический хронотоп, именно об этом говорил Б.В.Томашевский в своей
-                                работе 1925 года. Орнаментальный сказ, в первом приближении, изменяем. Первое полустишие
-                                недоступно аллитерирует урбанистический метаязык, поэтому никого не удивляет, что в
-                                финале порок наказан. Метр, если уловить хореический ритм или аллитерацию на "р",
-                                отталкивает речевой акт. Субъективное восприятие, по определению неумеренно начинает
-                                поэтический коммунальный модернизм.
+                                Самая необычная из всех локаций – единственный на планете памятник клавиатуре, которая
+                                является также самой большой из всех существующих. Масштаб каждой клавиши – 1:30, а вес
+                                одной только кнопки «пробел» – 500 кг!
                             </p>
+                        </div>
+                        <div class="article-drop__toolbar">
+                            <button class="article-drop__link">
+                                Показать полностью
+                            </button>
+                        </div>
+                    </article>
+                    <article class="article-drop" data-article-drop>
+                        <h3 class="article-drop__title">
+                            Свердловская киностудия
+                        </h3>
+                        <div class="article-drop__main editor" data-article-drop-content>
                             <p>
-                                Диалектический характер неумеренно диссонирует хорей, также необходимо сказать о
-                                сочетании метода апроприации художественных стилей прошлого с авангардистскими
-                                стратегиями. Чтение - процесс активный, напряженный, однако модальность высказывания
-                                прекрасно приводит деструктивный жанр. Здесь автор сталкивает два таких достаточно
-                                далёких друг от друга явления как голос персонажа отталкивает эпизодический
-                                брахикаталектический стих, при этом нельзя говорить, что это явления собственно фоники,
-                                звукописи. Диалектический характер точно вызывает деструктивный холодный цинизм,
-                                несмотря на отсутствие единого пунктуационного алгоритма. Коммунальный модернизм, за
-                                счет использования параллелизмов и повторов на разных языковых уровнях, аллитерирует
-                                ямб.
+                                В 1943 году начала свою работу Свердловская киностудия. Всего на киностудии снято более
+                                200 художественных и 500 документальных картин, сотни научно-популярных фильмов и около
+                                100 мультипликационных работ. Многие из них вошли в «золотую коллекцию» российского
+                                кино: «Приваловские миллионы», «Зеркало для героя», «Безымянная звезда», «Продлись,
+                                продлись очарованье», «Сильные духом» и другие.
                             </p>
                         </div>
                         <div class="article-drop__toolbar">
@@ -345,11 +332,10 @@
                             Стань <strong class="purple">гостем</strong> <br>юбилея
                         </h2>
                     </div>
-                    <div class="editor editor--24 mb-75">
+                    <div class="editor editor--24 mb-45">
                         <p>
-                            Для современного мира выбранный нами инновационный путь создаёт необходимость включения в
-                            производственный план целого ряда внеочередных мероприятий с учётом комплекса системы
-                            обучения кадров, соответствующей насущным
+                            Поможем спланировать путешествие в Екатеринбург — город на пересечении двух частей света,
+                            соединивший в себе Европу и Азию.
                         </p>
                     </div>
                     <a class="button button--purple button--fit-m" href="">
@@ -366,20 +352,20 @@
                 <div class="columns__col columns__col--4">
                     <a class="article-excursion" href="">
                         <picture class="article-excursion__pucture">
-                            <img alt="Экстрим приключения на квадрогигантах по" src="./assets/images/excursion-1.jpg">
+                            <img alt="Экстрим приключения на квадрогигантах по" src="./assets/content/excursion-1.jpg">
                         </picture>
                         <div class="article-excursion__content">
                             <div class="article-excursion__header">
                                 <span class="article-excursion__price">
-                                    900 ₽
+                                    от 1 750 ₽
                                 </span>
                                 <span class="article-excursion__date">
-                                    15:00
+                                    22.07.23 | 3 дня
                                 </span>
                             </div>
                             <div class="article-excursion__main">
                                 <h3 class="article-excursion__title">
-                                    Ваше идеальное знакомство с Екатеринбургом!
+                                    Где разместиться: от недорогих хостелов до роскошных пятизвёздочных отелей в самом центре города
                                 </h3>
                             </div>
                             <div class="article-excursion__footer">
@@ -393,20 +379,20 @@
                 <div class="columns__col columns__col--4">
                     <a class="article-excursion" href="">
                         <picture class="article-excursion__pucture">
-                            <img alt="Экстрим приключения на квадрогигантах по" src="./assets/images/excursion-2.jpg">
+                            <img alt="Экстрим приключения на квадрогигантах по" src="./assets/content/excursion-2.jpg">
                         </picture>
                         <div class="article-excursion__content">
                             <div class="article-excursion__header">
                                 <span class="article-excursion__price">
-                                     50-150
+                                    от 1 750 ₽
                                 </span>
                                 <span class="article-excursion__date">
-                                    17:00
+                                    22.07.23 | 3 дня
                                 </span>
                             </div>
                             <div class="article-excursion__main">
                                 <h3 class="article-excursion__title">
-                                    Кураторская экскурсия по водонапорной башне.
+                                    Лучшие рестораны города
                                 </h3>
                             </div>
                             <div class="article-excursion__footer">
@@ -420,20 +406,20 @@
                 <div class="columns__col columns__col--4">
                     <a class="article-excursion" href="">
                         <picture class="article-excursion__pucture">
-                            <img alt="Экскурсия на Свердловскую киностудию" src="./assets/content/cinema.jpg">
+                            <img alt="Экскурсия на Свердловскую киностудию" src="./assets/content/excursion-3.jpg">
                         </picture>
                         <div class="article-excursion__content">
                             <div class="article-excursion__header">
                                 <span class="article-excursion__price">
-                                    300 ₽
+                                    от 1 750 ₽
                                 </span>
                                 <span class="article-excursion__date">
-                                    13:00
+                                    22.07.23 | 3 дня
                                 </span>
                             </div>
                             <div class="article-excursion__main">
                                 <h3 class="article-excursion__title">
-                                    Экскурсия на Свердловскую киностудию
+                                    ТОП экскурсий по Екатеринбургу
                                 </h3>
                             </div>
                             <div class="article-excursion__footer">
@@ -467,7 +453,7 @@
                 <div class="columns__col columns__col--12">
                     <a class="article-post article-post--invert article-post--large" href="">
                         <picture class="article-post__picture">
-                            <img alt="" src="./assets/images/post-1.jpg">
+                            <img alt="" src="./assets/content/post-1.jpg">
                         </picture>
                         <div class="article-post__content">
                             <div class="article-post__header">
@@ -480,13 +466,12 @@
                             </div>
                             <div class="article-post__main">
                                 <h3 class="article-post__title">
-                                    Выставка “Подвиг народного единства” в башне
+                                    300-летие Екатеринбурга станет темой ледового городка
                                 </h3>
                                 <div class="article-post__description">
                                     <p>
-                                        Для современного мира выбранный нами инновационный путь создаёт необходимость
-                                        включения в производственный план целого ряда внеочередных мероприятий с учётом
-                                        комплекса системы обучения кадров, соответствующей насущным
+                                        Начальник Управления культуры Администрации города Екатеринбурга Илья Марков в
+                                        ходе онлайн-брифинга рассказал, как уральская столица готовится к Новому году.
                                     </p>
                                 </div>
                             </div>
@@ -514,13 +499,14 @@
                             </div>
                             <div class="article-post__main">
                                 <h3 class="article-post__title">
-                                    Выставка “Подвиг народного единства” в башне
+                                    На Макаровском мосту успешно прошел первый этап пусконаладочных работ новой системы
+                                    иллюминации
                                 </h3>
                                 <div class="article-post__description">
                                     <p>
-                                        Для современного мира выбранный нами инновационный путь создаёт необходимость
-                                        включения в производственный план целого ряда внеочередных мероприятий с учётом
-                                        комплекса системы обучения кадров, соответствующей насущным
+                                        На опорах уличного освещения установлены 30 световых конструкций.Новая
+                                        иллюминация, расположенная на опорах освещения Макаровского моста, была запущена
+                                        накануне в тестовом режиме.
                                     </p>
                                 </div>
                             </div>
@@ -538,7 +524,7 @@
                 <div class="columns__col columns__col--4">
                     <a class="article-post article-post--regular" href="">
                         <picture class="article-post__picture">
-                            <img alt="" src="./assets/images/post-2.jpg">
+                            <img alt="" src="./assets/content/post-2.jpg">
                         </picture>
                         <div class="article-post__content">
                             <div class="article-post__header">
@@ -551,7 +537,7 @@
                             </div>
                             <div class="article-post__main">
                                 <h3 class="article-post__title">
-                                    Выставка “Подвиг народного единства” в башне
+                                    Проекты Дня города будут не только развлекать, но и просвещать
                                 </h3>
                             </div>
                             <div class="article-post__footer">
@@ -568,7 +554,7 @@
                 <div class="columns__col columns__col--4">
                     <a class="article-post article-post--regular" href="">
                         <picture class="article-post__picture">
-                            <img alt="" src="./assets/images/post-3.jpg">
+                            <img alt="" src="./assets/content/post-3.jpg">
                         </picture>
                         <div class="article-post__content">
                             <div class="article-post__header">
@@ -581,7 +567,7 @@
                             </div>
                             <div class="article-post__main">
                                 <h3 class="article-post__title">
-                                    Выставка “Подвиг народного единства” в башне
+                                    Запуск ретропоезда «Уральский экспресс»
                                 </h3>
                             </div>
                             <div class="article-post__footer">
@@ -615,7 +601,42 @@
             </div>
             <div class="articles" data-articles>
                 <div class="articles__header">
-
+                    <form action="" class="form">
+                        <fieldset class="fieldset">
+                            <label class="radio radio--purple">
+                                <input checked class="radio__field" name="gallery" type="radio">
+                                <span class="radio__wrapper">
+                                    <span class="radio__title">
+                                        Екатеринбург 60-х
+                                    </span>
+                                </span>
+                            </label>
+                            <label class="radio radio--purple">
+                                <input class="radio__field" name="gallery" type="radio">
+                                <span class="radio__wrapper">
+                                    <span class="radio__title">
+                                        Екатеринбург в 90-е
+                                    </span>
+                                </span>
+                            </label>
+                            <label class="radio radio--purple">
+                                <input class="radio__field" name="gallery" type="radio">
+                                <span class="radio__wrapper">
+                                    <span class="radio__title">
+                                        Я в Историческом сквере
+                                    </span>
+                                </span>
+                            </label>
+                            <label class="radio radio--purple">
+                                <input class="radio__field" name="gallery" type="radio">
+                                <span class="radio__wrapper">
+                                    <span class="radio__title">
+                                        Я с любимой достопримечательностью города
+                                    </span>
+                                </span>
+                            </label>
+                        </fieldset>
+                    </form>
                 </div>
                 <div class="articles__content">
                     <div class="masonry" data-masonry>

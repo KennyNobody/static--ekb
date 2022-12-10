@@ -34,9 +34,41 @@
     }
 }
 
+.decor-3 {
+    position: relative;
+    &:after {
+        top: -60%;
+        right: -38%;
+        content: "";
+        display: block;
+        width: rem(418);
+        height: rem(468);
+        position: absolute;
+        pointer-events: none;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("../assets/images/decor-3.svg");
+    }
+}
+
 .bg-1 {
-    background-position: center;
     background-repeat: no-repeat;
-    background-size: rem(3120) rem(845);
-    background-image: url("../assets/images/bg-1.svg");
+    background-position: top calc(50% - 50px) right calc(50% + 550px), center;
+    background-size: rem(580) rem(580), rem(1660) rem(510);
+    background-image: url("../assets/images/decor-ring.svg"), url("../assets/images/decor-ornament-2.svg");
+}
+
+.bg-2 {
+    background-repeat: no-repeat;
+    background-position: top 550px right calc(50% + 700px), top 130px right calc(50% - 1010px), center;
+    background-size: rem(765) rem(765), rem(850) rem(600), rem(1660) rem(510);
+    background-image: url("../assets/images/decor-part-circle.svg"), url("../assets/images/decor-part-ornament.svg"), url("../assets/images/decor-ornament.svg");
+}
+
+.bg-3 {
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    background-image: url("../assets/images/decor-tree-left.png"), url("../assets/images/decor-tree-right.png");
+
 }

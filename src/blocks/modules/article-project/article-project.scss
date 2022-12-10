@@ -1,0 +1,115 @@
+.article-project {
+    height: 100%;
+    display: flex;
+    position: relative;
+    background: $light;
+    transition: 0.3s all;
+    border-radius: rem(5);
+    flex-direction: column;
+    padding: rem(40) rem(30);
+    justify-content: space-between;
+    box-shadow: rem(-10) rem(20) rem(50) rgba(143, 154, 181, 0.2);
+
+    &:hover {
+        color: $light;
+
+        .article-project {
+            &__link {
+                color: $light;
+            }
+
+            &__icon {
+                fill: $light;
+            }
+        }
+    }
+
+    &:active {
+        opacity: 0.9;
+    }
+
+    &--green {
+        &:hover {
+            background-color: $green;
+        }
+
+        &:before {
+            background-color: $green;
+        }
+    }
+
+    &--orange {
+        &:hover {
+            background-color: $orange;
+        }
+
+        &:before {
+            background-color: $orange;
+        }
+    }
+
+    &--purple {
+        &:hover {
+            background-color: $purple;
+        }
+
+        &:before {
+            background-color: $purple;
+        }
+    }
+
+    &:before {
+        left: 0;
+        opacity: 1;
+        content: "";
+        top: rem(49);
+        width: rem(3);
+        display: block;
+        height: rem(20);
+        position: absolute;
+        transition: 0.3s opacity;
+    }
+
+    &__title {
+        font-size: rem(24);
+        margin-bottom: rem(20);
+        font-family: $font-title;
+    }
+
+    &__main {
+        flex-grow: 1;
+        font-weight: 300;
+        font-size: rem(16);
+        margin-bottom: rem(30);
+
+        & > :last-child {
+            margin-bottom: 0;
+        }
+
+        p {
+            margin-bottom: 1em;
+        }
+    }
+
+    &__footer {
+        gap: rem(8);
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        color: $orange;
+        font-weight: 400;
+        font-size: rem(16);
+        transition: 0.3s all;
+    }
+
+    &__icon {
+        fill: $orange;
+        width: rem(7);
+        flex-shrink: 0;
+        display: block;
+        height: rem(12);
+        transition: 0.3s all;
+    }
+}

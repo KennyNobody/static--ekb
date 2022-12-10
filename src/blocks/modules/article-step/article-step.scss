@@ -1,0 +1,32 @@
+.article-step {
+    &__number {
+        left: 0;
+        top: 50%;
+        width: rem(50);
+        height: rem(50);
+        position: absolute;
+        transform: translateX(-60%) translateY(-50%);
+    }
+    &__main {
+        z-index: 1;
+        gap: rem(25);
+        display: flex;
+        position: relative;
+        align-items: center;
+        min-height: rem(103);
+        border-radius: rem(10);
+        padding: rem(20) rem(30);
+        background-color: $light;
+    }
+
+    &__icon {
+        width: rem(40);
+        display: block;
+        height: rem(40);
+    }
+
+    &__text {
+        font-size: rem(20);
+        font-family: $font-title;
+    }
+}

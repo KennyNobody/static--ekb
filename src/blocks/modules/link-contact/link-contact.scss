@@ -1,0 +1,25 @@
+.link-contact {
+    gap: rem(20);
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &:active {
+        opacity: 0.9;
+    }
+
+    &__icon {
+        display: block;
+        flex-shrink: 0;
+        width: rem(40);
+        height: rem(40);
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: rem(20);
+    }
+}

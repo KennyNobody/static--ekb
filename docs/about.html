@@ -131,9 +131,16 @@
 </header>
 <main class="main">
     <section class="section section--bg relative invert" style="background-image: url('./assets/images/bg-about.jpg')">
-        <div class="section__content section__content--overlay section__content--full-650 pt-100 pb-150">
+        <div class="section__content section__content--overlay-30 section__content--full-650 pt-100 pb-150">
             <div class="container container--flex-between">
-                <div class="breadcrumbs">Хлебные крошки</div>
+                <nav class="breadcrumbs mb-50">
+                    <a class="breadcrumbs__link" href="./">
+                        Главная
+                    </a>
+                    <span class="breadcrumbs__link">
+                        О событии
+                    </span>
+                </nav>
                 <div class="columns">
                     <div class="columns__col columns__col--7">
                         <h1 class="title title--main mb-30">
@@ -141,8 +148,9 @@
                         </h1>
                         <div class="editor editor--20">
                             <p>
-                                Для современного мира начало повседневной работы по формированию позиции влечет за собой
-                                процесс внедрения и модернизации распределения внутренних резервов и ресурсов.
+                                В 2023 году Екатеринбург отмечает 300-летие со дня основания. Программа юбилея — это
+                                мероприятия и специальные проекты, которые будут проходить на протяжении всего года и
+                                станут отправной точкой для новых позитивных изменений
                             </p>
                         </div>
                     </div>
@@ -151,12 +159,24 @@
             </div>
         </div>
     </section>
-    <section class="section pt-160 pb-100 bg-white">
+    <section class="section pt-160 pb-100 bg-white bg-2">
         <div class="container">
-            <div class="columns columns--align">
-                <div class="columns__col columns__col--6"></div>
+            <div class="columns">
+                <div class="columns__col columns__col--6">
+                    <figure class="figure max-310">
+                        <picture class="figure__picture">
+                            <img alt="Декоративная картинка" src="./assets/images/logo-decor.png">
+                        </picture>
+                        <figcaption class="figure__figcaption">
+
+                        </figcaption>
+                    </figure>
+                </div>
                 <div class="columns__col columns__col--6">
                     <div class="editor">
+                        <h2>
+                            Это замечательное событие в нашем городе!
+                        </h2>
                         <p>
                             Приятно, граждане, наблюдать, как диаграммы связей лишь добавляют фракционных разногласий и
                             объявлены нарушающими общечеловеческие нормы этики и морали.
@@ -177,27 +197,143 @@
                         </p>
                     </div>
                 </div>
+                <div class="columns__col columns__col--12">
+                    <div class="caption">
+                        <p>
+                            300 лет <br>
+                            екатеринбургу
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <section class="section pt-100 pb-100 bg-white">
         <div class="container">
             <span class="tag mb-20">Участвуй</span>
-            <div class="toolbar">
+            <div class="toolbar mb-60">
                 <h2 class="title">
                     Екатеринбург 300
                 </h2>
+            </div>
+            <div class="columns">
+                <div class="columns__col columns__col--4">
+                    <a class="article-project article-project--green" href="./bill.html">
+                        <h3 class="article-project__title">
+                            Афиша
+                        </h3>
+                        <div class="article-project__main">
+                            <p>
+                                Юбилейный год будет наполнен событиями. Все мероприятия 300-летия любимого города— в
+                                нашей Афише.
+                            </p>
+                        </div>
+                        <div class="article-project__footer">
+                            <span class="article-project__link">
+                                Подробнее
+                            </span>
+                            <svg class="article-project__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-next"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="columns__col columns__col--8">
+                    <a class="article-project article-project--purple" href="">
+                        <h3 class="article-project__title">
+                            Городские проекты
+                        </h3>
+                        <div class="article-project__main">
+                            <p>
+                                Проекты городского благоустройства, преображения общественных пространств, строительство
+                                новых объектов и реставрация ОКН — всё то, что делает наш город ещё краше и повышает
+                                качество жизни!
+                            </p>
+                        </div>
+                        <div class="article-project__footer">
+                            <span class="article-project__link">
+                                Подробнее
+                            </span>
+                            <svg class="article-project__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-next"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <a class="article-project article-project--purple" href="">
+                        <h3 class="article-project__title">
+                            Туристам
+                        </h3>
+                        <div class="article-project__main">
+                            <p>
+                                Лучшие сценария путешествия в Екатеринбург. Подборки городских достопримечательностей,
+                                экскурсий, лучшие рестораны и видовые точки.
+                            </p>
+                        </div>
+                        <div class="article-project__footer">
+                            <span class="article-project__link">
+                                Подробнее
+                            </span>
+                            <svg class="article-project__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-next"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <a class="article-project article-project--orange" href="">
+                        <h3 class="article-project__title">
+                            Символика 300-летия для бизнеса
+                        </h3>
+                        <div class="article-project__main">
+                            <p>
+                                Бери и используй! В юбилейный год официальная символика юбилея украсит городские
+                                пространства, товары и сувенирную продукцию.
+                            </p>
+                        </div>
+                        <div class="article-project__footer">
+                            <span class="article-project__link">
+                                Подробнее
+                            </span>
+                            <svg class="article-project__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-next"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="columns__col columns__col--4">
+                    <a class="article-project article-project--green" href="">
+                        <h3 class="article-project__title">
+                            Стать волонтером юбилея
+                        </h3>
+                        <div class="article-project__main">
+                            <p>
+                                Стань частью события — вступи в команду волонтёров Екатеринбург 300.
+                            </p>
+                        </div>
+                        <div class="article-project__footer">
+                            <span class="article-project__link">
+                                Подробнее
+                            </span>
+                            <svg class="article-project__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-next"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
     <section class="section pt-100 pb-100 bg-grey">
         <div class="container">
-            <span class="tag mb-20">Смотри</span>
-            <h2 class="title mb-90">
-                видеоотчет <br>
-                с того самого дня
-            </h2>
-            .video
+            <span class="tag mb-60">Смотри</span>
+            <div class="video">
+                <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen frameborder="0"
+                        src="https://www.youtube.com/embed/jfKfPfyJRdk"
+                        title="YouTube video player"></iframe>
+            </div>
         </div>
     </section>
 </main>
@@ -319,6 +455,7 @@
             .temp {
                 gap: 15px;
                 display: flex;
+                flex-wrap: wrap;
             }
 
             .temp__link {
@@ -340,6 +477,7 @@
             <a href="./improvement.html" class="temp__link">Благоустройство</a>
             <a href="./single-improvement.html" class="temp__link">Одиночная благоустройство</a>
             <a href="./single-special.html" class="temp__link">Одиночный спецпроект</a>
+            <a href="./single-bill.html" class="temp__link">Одиночный афиша</a>
             <a href="./special.html" class="temp__link">Спецпроект</a>
         </div>
     </div>

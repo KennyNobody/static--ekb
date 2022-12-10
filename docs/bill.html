@@ -131,9 +131,16 @@
 </header>
 <main class="main">
     <section class="section section--bg relative invert" style="background-image: url('./assets/images/bg-bill.jpg')">
-        <div class="section__content section__content--overlay section__content--full-650 pt-100 pb-150">
+        <div class="section__content section__content--overlay-30 section__content--full-650 pt-100 pb-150">
             <div class="container container--flex-between">
-                <div class="breadcrumbs">Хлебные крошки</div>
+                <nav class="breadcrumbs mb-50">
+                    <a class="breadcrumbs__link" href="./">
+                        Главная
+                    </a>
+                    <span class="breadcrumbs__link">
+                        Афиша
+                    </span>
+                </nav>
                 <div class="columns">
                     <div class="columns__col columns__col--8">
                         <h1 class="title mb-30">
@@ -142,11 +149,11 @@
                         </h1>
                         <div class="editor editor--20 mb-30">
                             <p>
-                                Для современного мира начало повседневной работы по формированию позиции влечет за собой
-                                процесс внедрения и модернизации распределения внутренних резервов и ресурсов.
+                                Юбилейный год будет наполнен событиями. Все мероприятия 300-летия любимого города— в
+                                нашей Афише.
                             </p>
                         </div>
-                        <a href="" class="button button--orange button--fit-m">
+                        <a class="button button--orange button--fit-m" href="">
                             <span class="button__text">
                                 предложить событие
                             </span>
@@ -160,23 +167,242 @@
     </section>
     <section class="section pt-100 pb-100">
         <div class="container">
-            <div class="columns columns--align mb-50">
-                <div class="columns__col columns__col--5">
-                    <span class="tag mb-20">Участвуй</span>
-                    <h2 class="title">
-                        Ближайшие<br>события
-                    </h2>
-                </div>
-                <div class="columns__col columns__col--7">
-
-                </div>
-            </div>
+            <span class="tag mb-20">Участвуй</span>
             <div class="articles" data-articles>
-                <div class="articles__header">
-
+                <div class="articles__header mb-60">
+                    <div class="toolbar mb-50">
+                        <h2 class="title">
+                            Ближайшие<br>события
+                        </h2>
+                        <a class="button button--green button--fit-m" href="">
+                            <span class="button__text">
+                                Выбрать месяц
+                            </span>
+                            <svg class="button__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-calendar"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <form action="" class="form">
+                        <fieldset class="fieldset">
+                            <label class="radio radio--green">
+                                <input checked class="radio__field" name="gallery" type="radio">
+                                <span class="radio__wrapper">
+                                    <span class="radio__title">
+                                        выставки
+                                    </span>
+                                </span>
+                            </label>
+                            <label class="radio radio--green">
+                                <input class="radio__field" name="gallery" type="radio">
+                                <span class="radio__wrapper">
+                                    <span class="radio__title">
+                                        концерты
+                                    </span>
+                                </span>
+                            </label>
+                            <label class="radio radio--green">
+                                <input class="radio__field" name="gallery" type="radio">
+                                <span class="radio__wrapper">
+                                    <span class="radio__title">
+                                        экскурсии
+                                    </span>
+                                </span>
+                            </label>
+                            <label class="radio radio--green">
+                                <input class="radio__field" name="gallery" type="radio">
+                                <span class="radio__wrapper">
+                                    <span class="radio__title">
+                                        туры
+                                    </span>
+                                </span>
+                            </label>
+                            <label class="radio radio--green">
+                                <input class="radio__field" name="gallery" type="radio">
+                                <span class="radio__wrapper">
+                                    <span class="radio__title">
+                                        лекции
+                                    </span>
+                                </span>
+                            </label>
+                            <label class="radio radio--green">
+                                <input class="radio__field" name="gallery" type="radio">
+                                <span class="radio__wrapper">
+                                    <span class="radio__title">
+                                        активный отдых
+                                    </span>
+                                </span>
+                            </label>
+                            <label class="radio radio--green">
+                                <input class="radio__field" name="gallery" type="radio">
+                                <span class="radio__wrapper">
+                                    <span class="radio__title">
+                                        спорт
+                                    </span>
+                                </span>
+                            </label>
+                            <label class="radio radio--green">
+                                <input class="radio__field" name="gallery" type="radio">
+                                <span class="radio__wrapper">
+                                    <span class="radio__title">
+                                        акции
+                                    </span>
+                                </span>
+                            </label>
+                            <label class="radio radio--green">
+                                <input class="radio__field" name="gallery" type="radio">
+                                <span class="radio__wrapper">
+                                    <span class="radio__title">
+                                        фестивали
+                                    </span>
+                                </span>
+                            </label>
+                            <label class="radio radio--green">
+                                <input class="radio__field" name="gallery" type="radio">
+                                <span class="radio__wrapper">
+                                    <span class="radio__title">
+                                        общественные инициативы
+                                    </span>
+                                </span>
+                            </label>
+                            <label class="radio radio--green">
+                                <input class="radio__field" name="gallery" type="radio">
+                                <span class="radio__wrapper">
+                                    <span class="radio__title">
+                                        добрые дела
+                                    </span>
+                                </span>
+                            </label>
+                            <label class="radio radio--green">
+                                <input class="radio__field" name="gallery" type="radio">
+                                <span class="radio__wrapper">
+                                    <span class="radio__title">
+                                        Бесплатно
+                                    </span>
+                                </span>
+                            </label>
+                            <label class="radio radio--green">
+                                <input class="radio__field" name="gallery" type="radio">
+                                <span class="radio__wrapper">
+                                    <span class="radio__title">
+                                        Для детей
+                                    </span>
+                                </span>
+                            </label>
+                        </fieldset>
+                    </form>
                 </div>
                 <div class="articles__content">
-
+                    <div class="columns">
+                        <div class="columns__col columns__col--4">
+                            <a class="article-card" href="./single-bill.html">
+                                <picture class="article-card__picture">
+                                    <img alt="" src="./assets/content/event-preview-1.jpg">
+                                </picture>
+                                <div class="article-card__content">
+                                    <time class="article-card__time">
+                                        12-13.08.23
+                                    </time>
+                                    <h3 class="article-card__title">
+                                        Фестиваль уличных театров «Лица улиц»
+                                    </h3>
+                                    <span class="article-card__tag">
+                                        фестиваль
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="columns__col columns__col--4">
+                            <a class="article-card" href="./single-bill.html">
+                                <picture class="article-card__picture">
+                                    <img alt="" src="./assets/content/event-preview-2.jpg">
+                                </picture>
+                                <div class="article-card__content">
+                                    <time class="article-card__time">
+                                        12-20.08.23
+                                    </time>
+                                    <h3 class="article-card__title">
+                                        Фестиваль ландшафтного дизайна «АТМОФЕСТ»
+                                    </h3>
+                                    <span class="article-card__tag">
+                                        фестиваль
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="columns__col columns__col--4">
+                            <a class="article-card" href="./single-bill.html">
+                                <picture class="article-card__picture">
+                                    <img alt="" src="./assets/content/event-preview-3.jpg">
+                                </picture>
+                                <div class="article-card__content">
+                                    <time class="article-card__time">
+                                        12-20.08.23
+                                    </time>
+                                    <h3 class="article-card__title">
+                                        Фестиваль ландшафтного дизайна «АТМОФЕСТ»
+                                    </h3>
+                                    <span class="article-card__tag">
+                                        фестиваль
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="columns__col columns__col--4">
+                            <a class="article-card" href="./single-bill.html">
+                                <picture class="article-card__picture">
+                                    <img alt="" src="./assets/content/event-preview-4.jpg">
+                                </picture>
+                                <div class="article-card__content">
+                                    <time class="article-card__time">
+                                        12-19.08.23
+                                    </time>
+                                    <h3 class="article-card__title">
+                                        Екатеринбург Гастрономический
+                                    </h3>
+                                    <span class="article-card__tag">
+                                        фестиваль
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="columns__col columns__col--4">
+                            <a class="article-card" href="./single-bill.html">
+                                <picture class="article-card__picture">
+                                    <img alt="" src="./assets/content/event-preview-5.jpg">
+                                </picture>
+                                <div class="article-card__content">
+                                    <time class="article-card__time">
+                                        19.8.23
+                                    </time>
+                                    <h3 class="article-card__title">
+                                        Историческая реконструкция в Литературном квартале
+                                    </h3>
+                                    <span class="article-card__tag">
+                                        Выставка
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="columns__col columns__col--4">
+                            <a class="article-card" href="./single-bill.html">
+                                <picture class="article-card__picture">
+                                    <img alt="" src="./assets/content/event-preview-6.jpg">
+                                </picture>
+                                <div class="article-card__content">
+                                    <time class="article-card__time">
+                                        19.08.23
+                                    </time>
+                                    <h3 class="article-card__title">
+                                        Торжественная закладка Капсулы Времени
+                                    </h3>
+                                    <span class="article-card__tag">
+                                        Выставка
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="articles__toolbar">
                     <button class="button button--orange button--fit-m">
@@ -310,6 +536,7 @@
             .temp {
                 gap: 15px;
                 display: flex;
+                flex-wrap: wrap;
             }
 
             .temp__link {
@@ -331,6 +558,7 @@
             <a href="./improvement.html" class="temp__link">Благоустройство</a>
             <a href="./single-improvement.html" class="temp__link">Одиночная благоустройство</a>
             <a href="./single-special.html" class="temp__link">Одиночный спецпроект</a>
+            <a href="./single-bill.html" class="temp__link">Одиночный афиша</a>
             <a href="./special.html" class="temp__link">Спецпроект</a>
         </div>
     </div>

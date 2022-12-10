@@ -1,0 +1,12 @@
+.head {
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-repeat: repeat-x;
+    background-image: url("../assets/images/bg-head.svg");
+
+    &__content {
+        padding: 0 rem(18);
+        background-color: $light;
+    }
+}

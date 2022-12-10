@@ -11,11 +11,16 @@
 <main class="main">
     <section class="section section--bg relative invert"
              style="background-image: url('./assets/images/bg-history.jpg')">
-        <div class="section__content section__content--overlay section__content--full-950 pt-100 pb-150">
+        <div class="section__content section__content--overlay-40 section__content--full-950 pt-100 pb-150">
             <div class="container container--flex-between">
-                <div class="breadcrumbs">
-                    Хлебные крошки
-                </div>
+                <nav class="breadcrumbs mb-50">
+                    <a class="breadcrumbs__link" href="./">
+                        Главная
+                    </a>
+                    <span class="breadcrumbs__link">
+                        История
+                    </span>
+                </nav>
                 <div class="columns">
                     <div class="columns__col columns__col--8">
                         <h1 class="title mb-30">
@@ -24,27 +29,230 @@
                         </h1>
                         <div class="editor editor--24">
                             <p>
-                                Для современного мира начало повседневной работы по формированию позиции влечет за собой
-                                процесс внедрения и модернизации распределения внутренних резервов и ресурсов.
+                                Как Екатеринбург стал промышленным, научным, культурным центром России
                             </p>
                         </div>
                     </div>
                 </div>
-                <div>
-                    Таймлайн
+                <div class="timeline" data-timeline>
+                    <div class="swiper-container timeline__container">
+                        <button class="timeline__button timeline__button--prev">
+                            <svg class="timeline__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-timeline-prev"></use>
+                            </svg>
+                        </button>
+                        <button class="timeline__button timeline__button--next">
+                            <svg class="timeline__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-timeline-next"></use>
+                            </svg>
+                        </button>
+                        <div class="swiper-wrapper timeline__wrapper">
+                            <div class="swiper-slide timeline__slide">
+                                <a class="timeline__link" href="#section-1738">
+                                    1660
+                                </a>
+                            </div>
+                            <div class="swiper-slide timeline__slide">
+                                <a class="timeline__link" href="#section-1723">
+                                    1662
+                                </a>
+                            </div>
+                            <div class="swiper-slide timeline__slide">
+                                <a class="timeline__link" href="#section-1781">
+                                    1676
+                                </a>
+                            </div>
+                            <div class="swiper-slide timeline__slide">
+                                <a class="timeline__link" href="#section-1723">
+                                    1685
+                                </a>
+                            </div>
+                            <div class="swiper-slide timeline__slide">
+                                <a class="timeline__link" href="#section-1723">
+                                    1702
+                                </a>
+                            </div>
+                            <div class="swiper-slide timeline__slide">
+                                <a class="timeline__link" href="#section-1738">
+                                    1720
+                                </a>
+                            </div>
+                            <div class="swiper-slide timeline__slide">
+                                <a class="timeline__link" href="#section-1723">
+                                    1721
+                                </a>
+                            </div>
+                            <div class="swiper-slide timeline__slide">
+                                <a class="timeline__link" href="#section-1723">
+                                    1723
+                                </a>
+                            </div>
+                            <div class="swiper-slide timeline__slide">
+                                <a class="timeline__link" href="#section-1781">
+                                    1763
+                                </a>
+                            </div>
+                            <div class="swiper-slide timeline__slide">
+                                <a class="timeline__link" href="#section-1723">
+                                    1781
+                                </a>
+                            </div>
+                            <div class="swiper-slide timeline__slide">
+                                <a class="timeline__link" href="#section-1723">
+                                    1806
+                                </a>
+                            </div>
+                            <div class="swiper-slide timeline__slide">
+                                <a class="timeline__link" href="#section-1738">
+                                    1918
+                                </a>
+                            </div>
+                            <div class="swiper-slide timeline__slide">
+                                <a class="timeline__link" href="#section-1723">
+                                    1918
+                                </a>
+                            </div>
+                            <div class="swiper-slide timeline__slide">
+                                <a class="timeline__link" href="#section-1723">
+                                    1918
+                                </a>
+                            </div>
+                            <div class="swiper-slide timeline__slide">
+                                <a class="timeline__link" href="#section-1781">
+                                    1918
+                                </a>
+                            </div>
+                            <div class="swiper-slide timeline__slide">
+                                <a class="timeline__link" href="#section-1723">
+                                    1918
+                                </a>
+                            </div>
+                            <div class="swiper-slide timeline__slide">
+                                <a class="timeline__link" href="#section-1723">
+                                    1918
+                                </a>
+                            </div>
+                            <div class="swiper-slide timeline__slide">
+                                <a class="timeline__link" href="#section-1738">
+                                    1918
+                                </a>
+                            </div>
+                            <div class="swiper-slide timeline__slide">
+                                <a class="timeline__link" href="#section-1723">
+                                    1918
+                                </a>
+                            </div>
+                            <div class="swiper-slide timeline__slide">
+                                <a class="timeline__link" href="#section-1723">
+                                    1918
+                                </a>
+                            </div>
+                            <div class="swiper-slide timeline__slide">
+                                <a class="timeline__link" href="#section-1781">
+                                    1918
+                                </a>
+                            </div>
+                            <div class="swiper-slide timeline__slide">
+                                <a class="timeline__link" href="#section-1723">
+                                    1918
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section bg-white pt-100 pb-180">
+    <section class="section bg-white pt-100 pb-100">
         <div class="container">
-            <span class="tag tag--large mb-20">1723</span>
-            <div class="columns columns--align">
-                <div class="columns__col columns__col--5">
-
+            <div class="head mb-20">
+                <div class="head__content" id="section-1723">
+                    <span class="tag tag--large">1723</span>
                 </div>
-                <div class="columns__col columns__col--7">
+            </div>
 
+            <div class="columns mb-80">
+                <div class="columns__col columns__col--6 pr-70">
+                    <div class="editor">
+                        <p>
+                            Екатеринбург основан как завод-крепость на реке Исети в 1723 году. Место для завода выбрал
+                            В. Татищев. Построен завод под руководством В. де Геннина. Город назван в честь императрицы
+                            Екатерины I. Производственные мощности Екатеринбургского завода включали в себя: 2 домны, 14
+                            кричных молотов, медеплавильную фабрику, стальную и якорную фабрики, машины для сверления
+                            пушек и другое. Основная продукция – железо, чугун и медь. В полном объеме мощности завода
+                            никогда не использовались. В 1737 году остановлены доменные печи. С конца 1750-х годов
+                            постепенно уменьшался выпуск продукции на молотовых, стальной и проволочной фабриках, а в
+                            1769 году прекращено медеплавильное производство. В 1808 году Екатеринбургский завод закрыт.
+                        </p>
+                        <p>
+                            В XVIII веке Екатеринбург развивается как административный центр горнозаводской
+                            промышленности Урала и Сибири. Система отраслевого управления горными заводами Урала,
+                            Забайкалья и Алтая была независима от местных губернских властей. Ее центральный орган
+                            располагался в Екатеринбурге. После 1781 года управление горной частью было децентрализовано
+                            и подчинено казенным палатам губернских правлений.
+                        </p>
+                    </div>
+                </div>
+                <div class="columns__col columns__col--6">
+                    <figure class="figure figure--radius">
+                        <picture class="figure__picture">
+                            <img alt="" src="./assets/content/history-1.jpg">
+                        </picture>
+                        <figcaption class="figure__figcaption">
+                            подпись под фото
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="head mb-20" id="section-1738">
+                <div class="head__content">
+                    <span class="tag tag--large">1738</span>
+                </div>
+            </div>
+            <div class="columns mb-80">
+                <div class="columns__col columns__col--6">
+                    <figure class="figure figure--radius">
+                        <picture class="figure__picture">
+                            <img alt="" src="./assets/content/history-2.jpg">
+                        </picture>
+                        <figcaption class="figure__figcaption">
+                            подпись под фото
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="columns__col columns__col--6 pl-70">
+                    <div class="editor">
+                        <p>
+                            В 1738 году в городе основана камнерезная мастерская, ставшая в 1765 году Екатеринбургской
+                            гранильной фабрикой. В 1761 году через Екатеринбург прошел Сибирский почтовый тракт.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="head mb-20" id="section-1781">
+                <div class="head__content">
+                    <span class="tag tag--large">1781</span>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="columns__col columns__col--6 pr-70">
+                    <div class="editor">
+                        <p>
+                            В 1781 году Екатеринбург получил статус уездного города в Пермской губернии. В 1783 году ему
+                            был присвоен герб, а в 1787 году состоялись первые выборы в городскую (шестигласную) думу. В
+                            городском самоуправлении в XVIII – первой половине XIX века доминировали купцы-старообрядцы.
+                        </p>
+                    </div>
+                </div>
+                <div class="columns__col columns__col--6">
+                    <figure class="figure figure--radius">
+                        <picture class="figure__picture">
+                            <img alt="" src="./assets/content/history-3.jpg">
+                        </picture>
+                        <figcaption class="figure__figcaption">
+                            подпись под фото
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
         </div>

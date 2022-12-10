@@ -1,0 +1,21 @@
+.block-accent {
+    position: relative;
+
+    &:before {
+        top: 0;
+        bottom: 0;
+        content: "";
+        width: 100vw;
+        display: block;
+        left: rem(-130);
+        position: absolute;
+        border-radius: rem(5);
+        background-color: $purple;
+    }
+
+    &__content {
+        z-index: 1;
+        padding: rem(65) 0;
+        position: relative;
+    }
+}

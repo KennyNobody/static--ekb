@@ -12,7 +12,7 @@
 <link href="./css/main.css" rel="stylesheet"></head>
 
 <body class="body">
-    <header class="section section--header pt-10 pb-10 z-index-3">
+<header class="section section--header pt-10 pb-10 z-index-3">
     <div class="container">
         <div class="header">
             <a href="" class="logo logo--sm">
@@ -129,31 +129,90 @@
         </div>
     </div>
 </header>
-    <main class="main">
-        <section class="section bg-light pt-100 pb-100">
-            <div class="container">
-                <div class="columns">
-                    <div class="columns__col columns__col--6">
-                        <h1>Dranik</h1>
-                        <div class="editor">
-                            <h1>
-                                Dranik
-                            </h1>
-                            <p>
-                                Стартовый шаблон для разработки
-                            </p>
-                        </div>
-                    </div>
-                    <div class="columns__col columns__col--6">
-                        <svg>
-                            <use xlink:href="./assets/sprite/sprite.svg#icon-camera"></use>
-                        </svg>
+<main class="main">
+    <section class="section bg-light pt-100 pb-100">
+        <div class="container">
+            <nav class="breadcrumbs mb-40">
+                <a class="breadcrumbs__link" href="./">
+                    Главная
+                </a>
+                <a class="breadcrumbs__link" href="./bill.html">
+                    Афиша
+                </a>
+                <span class="breadcrumbs__link">
+                        Событие города
+                    </span>
+            </nav>
+            <a class="link-back mb-35" href="">
+                <svg class="link-back__icon">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-back"></use>
+                </svg>
+                <span class="link-back__text">
+                        Афиша
+                    </span>
+            </a>
+            <div class="editor mb-20 upper">
+                <h5>
+                    Фестиваль
+                </h5>
+            </div>
+            <h1 class="title mb-20">
+                Меланхолия. Пушкин в русской музыке
+            </h1>
+            <div class="toolbar toolbar--start mb-35">
+                <time class="date">
+                    12-13 августа 2023 г.
+                </time>
+                <div class="place">
+                    <svg class="place__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-marker"></use>
+                    </svg>
+                    <div class="place__content">
+                        <p>
+                            Екатеринбург, улица Карла Либкнехта, 26
+                        </p>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-    <section class="section invert bg-dark pt-60 pb-35">
+            <div class="editor mb-20">
+                <picture>
+                    <img alt="Название поста" src="./assets/content/fest.jpg">
+                </picture>
+            </div>
+            <div class="tabs mb-40">
+                <span class="tabs__link tabs__link active">
+                    О событии
+                </span>
+            </div>
+            <div class="editor mb-50">
+                <p>
+                    Любимый городом фестиваль уличных театрализованных представлений “Лица улиц” - это несколько
+                    сценических площадок, десятки театров и арт-групп с уникальными уличными представлениями, и
+                    абсолютное отсутствие границ между реальным миром и игровым театральным пространством. Фестиваль,
+                    который создается вместе с жителями и для жителей!
+                </p>
+                <p>
+                    <small><b>Режим работы:</b></small> <br>
+                    Ср. - Чт. с 10:00 до 18:00 <br>
+                    Пт. с 10:00 до 17:00 <br>
+                    Сб - Вс: с 11:00-17:00 <br>
+                    Пн, Вт -выходной
+                </p>
+            </div>
+            <div class="toolbar toolbar--start">
+                <a href="" class="button button--orange button--230">
+                    <span class="button__text">
+                        Купить билет
+                    </span>
+                </a>
+                <div class="logo logo--ex-sm">
+                    <img src="./assets/images/logo-kassir.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<section class="section invert bg-dark pt-60 pb-35">
     <div class="container">
         <div class="columns mb-35">
             <div class="columns__col columns__col--2">
@@ -261,16 +320,17 @@
         </div>
     </div>
 </section>
-    <div hidden>
+<div hidden>
     Скрытая разметка
 </div>
-    <!-- Это временная секция, здесь ссылки на все страницы. На продакшене ее не будет -->
+<!-- Это временная секция, здесь ссылки на все страницы. На продакшене ее не будет -->
 <section class="section">
     <div class="container">
         <style>
             .temp {
                 gap: 15px;
                 display: flex;
+                flex-wrap: wrap;
             }
 
             .temp__link {
@@ -292,6 +352,7 @@
             <a href="./improvement.html" class="temp__link">Благоустройство</a>
             <a href="./single-improvement.html" class="temp__link">Одиночная благоустройство</a>
             <a href="./single-special.html" class="temp__link">Одиночный спецпроект</a>
+            <a href="./single-bill.html" class="temp__link">Одиночный афиша</a>
             <a href="./special.html" class="temp__link">Спецпроект</a>
         </div>
     </div>

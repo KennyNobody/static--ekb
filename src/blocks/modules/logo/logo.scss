@@ -14,27 +14,34 @@
         }
     }
 
+    &--ex-sm {
+        svg, img {
+            width: auto;
+            height: rem(42);
+        }
+    }
+
     &--sm {
-        svg {
-            width: rem(46);
+        svg, img {
+            width: auto;
             height: rem(60);
         }
     }
 
     &--lg {
-        svg {
-            width: rem(96);
+        svg, img {
+            width: auto;
             height: rem(125);
         }
     }
 
     &--footer {
-        img {
+        svg, img {
             display: block;
         }
     }
 
-    svg {
+    svg, img {
         display: block;
     }
 

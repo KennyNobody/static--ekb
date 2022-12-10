@@ -110,3 +110,13 @@ button {
     flex-grow: 1;
     display: block;
 }
+
+.max {
+    &--310 {
+        max-width: rem(310);
+    }
+}
+
+.upper {
+    text-transform: uppercase;
+}

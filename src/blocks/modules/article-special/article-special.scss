@@ -1,0 +1,35 @@
+.article-special {
+    height: 100%;
+    display: block;
+    color: inherit;
+    padding-bottom: rem(20);
+    transition: 0.3s opacity;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &:active {
+        opacity: 0.9;
+    }
+
+    &__picture {
+        display: block;
+        overflow: hidden;
+        height: rem(235);
+        margin-bottom: rem(15);
+        border-radius: rem(15);
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    &__title {
+        font-size: rem(24);
+        font-family: $font-title;
+    }
+}

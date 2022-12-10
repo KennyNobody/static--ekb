@@ -1,0 +1,30 @@
+.figure {
+    width: 100%;
+    display: block;
+
+    &--radius {
+        .figure {
+            &__picture {
+                overflow: hidden;
+                border-radius: rem(15);
+            }
+        }
+    }
+
+    &__picture {
+        width: 100%;
+        display: block;
+
+        img {
+            display: block;
+        }
+    }
+
+    &__figcaption {
+        width: 100%;
+        display: block;
+        font-weight: 300;
+        font-style: italic;
+        margin-top: rem(15);
+    }
+}

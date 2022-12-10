@@ -1,0 +1,66 @@
+.radio {
+    display: block;
+    cursor: pointer;
+    transition: 0.3s all;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &--green {
+        color: $green;
+
+        .radio {
+            &__field {
+                &:checked {
+                    & + .radio__wrapper {
+                        color: $light;
+                        background-color: $green;
+                    }
+                }
+            }
+            &__wrapper {
+                border-color: $green;
+            }
+        }
+    }
+
+    &--purple {
+        color: $purple;
+
+        .radio {
+            &__field {
+                &:checked {
+                    & + .radio__wrapper {
+                        color: $light;
+                        background-color: $purple;
+                    }
+                }
+            }
+            &__wrapper {
+                border-color: $purple;
+            }
+        }
+    }
+
+    &__field {
+        display: none;
+        visibility: hidden;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        min-height: rem(50);
+        transition: 0.3s all;
+        border-radius: rem(30);
+        justify-content: center;
+        padding: rem(10) rem(35);
+        border: 1px solid transparent;
+    }
+
+    &__title {
+        font-family: $font-title;
+        text-transform: uppercase;
+    }
+}
