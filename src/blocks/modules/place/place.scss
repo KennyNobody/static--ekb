@@ -4,6 +4,10 @@
     color: $orange;
     font-family: $font-title;
 
+    @include r(1200) {
+        gap: rem(10);
+    }
+
     &--small {
         gap: rem(10);
         .place {
@@ -26,6 +30,12 @@
         width: rem(18);
         height: rem(22);
         position: relative;
+
+        @include r(1200) {
+            top: 0.2em;
+            width: rem(20);
+            height: rem(20);
+        }
     }
 
     &__content {

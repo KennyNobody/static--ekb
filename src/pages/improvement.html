@@ -11,29 +11,34 @@
 <main class="main">
     <section class="section section--bg relative invert"
              style="background-image: url('./assets/images/bg-improvement.jpg')">
-        <div class="section__content section__content--overlay-40 section__content--full-650 pt-100 pb-150">
+        <div class="section__content section__content--overlay-40 section__content--full-650 pt-100 pb-150 ptm-80 pbm-40">
             <div class="container container--flex-between">
-                <nav class="breadcrumbs mb-50">
-                    <a class="breadcrumbs__link" href="./">
-                        Главная
-                    </a>
-                    <a class="breadcrumbs__link" href="./residents.html">
-                        Жителям
-                    </a>
-                    <span class="breadcrumbs__link">
-                        Городское блгоустройство
-                    </span>
-                </nav>
-                <div class="columns">
-                    <div class="columns__col columns__col--8">
-                        <a class="link-back mb-45" href="">
-                            <svg class="link-back__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-back"></use>
-                            </svg>
-                            <span class="link-back__text">
+                <div class="mb-45">
+                    <div class="mb-50 mbm-30">
+                        <nav class="breadcrumbs">
+                            <a class="breadcrumbs__link" href="./">
+                                Главная
+                            </a>
+                            <a class="breadcrumbs__link" href="./residents.html">
+                                Жителям
+                            </a>
+                            <span class="breadcrumbs__link">
+                                Городское блгоустройство
+                            </span>
+                        </nav>
+                    </div>
+                    <a class="link-back" href="">
+                        <svg class="link-back__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-back"></use>
+                        </svg>
+                        <span class="link-back__text">
                                 Жителям
                             </span>
-                        </a>
+                    </a>
+                </div>
+
+                <div class="columns">
+                    <div class="columns__col columns__col--8">
                         <h1 class="title mb-50">
                             городское
                             благоустройство
@@ -46,11 +51,11 @@
                         </div>
                     </div>
                 </div>
-                <div></div>
+                <div class="mob-hidden"></div>
             </div>
         </div>
     </section>
-    <section class="section bg-white pt-100 pb-100">
+    <section class="section bg-white pt-100 pb-100 ptm-40 pbm-40">
         <div class="container">
             <div class="editor mb-100">
                 <p>
@@ -60,13 +65,19 @@
                 </p>
             </div>
             <span class="tag mb-20">Смотри</span>
-            <div class="toolbar mb-60">
-                <h2 class="title">
+            <div class="toolbar toolbar--mob-block mb-60 mbm-25">
+                <h2 class="title mbm-20">
                     проекты
                 </h2>
+                <select class="select select--green-light select--icon-drop-green max--220">
+                    <option value="" selected>Районы города</option>
+                    <option value="1">Кировский</option>
+                    <option value="2">Ворошиловский</option>
+                    <option value="3">Петровский</option>
+                </select>
             </div>
             <div class="columns">
-                <div class="columns__col columns__col--4">
+                <div class="columns__col columns__col--4 mbm-20">
                     <a class="article-draft" href="">
                         <picture class="article-draft__picture">
                             <img alt="" src="./assets/content/draft-1.jpg">
@@ -98,7 +109,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="columns__col columns__col--4">
+                <div class="columns__col columns__col--4 mbm-20">
                     <a class="article-draft" href="">
                         <picture class="article-draft__picture">
                             <img alt="" src="./assets/content/draft-2.jpg">

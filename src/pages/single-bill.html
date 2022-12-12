@@ -9,28 +9,30 @@
 <body class="body">
 <%= htmlWebpackPlugin.options.sectionHeader %>
 <main class="main">
-    <section class="section bg-light pt-100 pb-100">
+    <section class="section bg-light pt-100 pb-100 ptm-80 pbm-40">
         <div class="container">
-            <nav class="breadcrumbs mb-40">
-                <a class="breadcrumbs__link" href="./">
-                    Главная
-                </a>
-                <a class="breadcrumbs__link" href="./bill.html">
-                    Афиша
-                </a>
-                <span class="breadcrumbs__link">
+            <div class="mb-30 mbm-15">
+                <nav class="breadcrumbs">
+                    <a class="breadcrumbs__link" href="./">
+                        Главная
+                    </a>
+                    <a class="breadcrumbs__link" href="./bill.html">
+                        Афиша
+                    </a>
+                    <span class="breadcrumbs__link">
                         Событие города
                     </span>
-            </nav>
+                </nav>
+            </div>
             <a class="link-back mb-35" href="">
                 <svg class="link-back__icon">
                     <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-back"></use>
                 </svg>
                 <span class="link-back__text">
-                        Афиша
-                    </span>
+                    Афиша
+                </span>
             </a>
-            <div class="editor mb-20 upper">
+            <div class="editor mb-20 mbm-15 upper">
                 <h5>
                     Фестиваль
                 </h5>
@@ -38,8 +40,8 @@
             <h1 class="title mb-20">
                 Меланхолия. Пушкин в русской музыке
             </h1>
-            <div class="toolbar toolbar--start mb-35">
-                <time class="date">
+            <div class="toolbar toolbar--start mb-35 mbm-20 toolbar--mob-block">
+                <time class="date mbm-15">
                     12-13 августа 2023 г.
                 </time>
                 <div class="place">
@@ -53,17 +55,17 @@
                     </div>
                 </div>
             </div>
-            <div class="editor mb-20">
+            <div class="editor mb-20 mbm-10">
                 <picture>
                     <img alt="Название поста" src="./assets/content/fest.jpg">
                 </picture>
             </div>
-            <div class="tabs mb-40">
+            <div class="tabs mb-40 mbm-25">
                 <span class="tabs__link tabs__link active">
                     О событии
                 </span>
             </div>
-            <div class="editor mb-50">
+            <div class="editor mb-50 mbm-30">
                 <p>
                     Любимый городом фестиваль уличных театрализованных представлений “Лица улиц” - это несколько
                     сценических площадок, десятки театров и арт-групп с уникальными уличными представлениями, и
@@ -78,7 +80,7 @@
                     Пн, Вт -выходной
                 </p>
             </div>
-            <div class="toolbar toolbar--start">
+            <div class="toolbar toolbar--start toolbar--mob-center">
                 <a href="" class="button button--orange button--230">
                     <span class="button__text">
                         Купить билет

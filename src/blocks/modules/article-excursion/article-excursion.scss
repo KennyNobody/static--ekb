@@ -18,6 +18,11 @@
         overflow: hidden;
         border-radius: rem(5);
 
+        @include r(1200) {
+            height: rem(230);
+            border-radius: rem(5) rem(5) 0 0;
+        }
+
         img {
             width: 100%;
             height: 100%;
@@ -41,6 +46,14 @@
         width: calc(100% - 50px);
         padding: rem(25) rem(30);
         box-shadow: rem(-10) rem(20) rem(100) rgba(143, 154, 181, 0.25);
+
+        @include r(1200) {
+            width: 100%;
+            height: auto;
+            padding: rem(15);
+            min-height: rem(160);
+            margin-top: rem(-15);
+        }
     }
 
     &__header {
@@ -48,6 +61,10 @@
         display: flex;
         align-items: center;
         margin-bottom: rem(14);
+
+        @include r(1200) {
+            gap: rem(15);
+        }
     }
 
     &__main {
@@ -60,13 +77,17 @@
 
     &__price {
         color: $light;
-        font-weight: 700;
+        font-weight: 500;
         font-size: rem(14);
         display: inline-block;
         border-radius: rem(50);
         padding: rem(3) rem(14);
         text-transform: uppercase;
         background-color: $orange;
+
+        @include r(1200) {
+            padding: rem(1) rem(25);
+        }
     }
 
     &__date {
@@ -88,6 +109,11 @@
         text-overflow: ellipsis;
         -moz-box-orient: vertical;
         -webkit-box-orient: vertical;
+
+        @include r(1200) {
+            color: $dark;
+            font-size: rem(16);
+        }
     }
 
     &__caption {

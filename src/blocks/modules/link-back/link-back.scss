@@ -17,11 +17,21 @@
         width: rem(72);
         height: rem(52);
         margin-right: rem(19);
+
+        @include r(1200) {
+            width: rem(52);
+            height: rem(38);
+            margin-right: rem(15);
+        }
     }
 
     &__text {
         color: $dark;
         font-size: rem(20);
+
+        @include r(1200) {
+            font-size: rem(16);
+        }
     }
 }
 

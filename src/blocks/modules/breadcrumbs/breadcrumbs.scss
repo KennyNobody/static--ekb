@@ -1,5 +1,7 @@
 .breadcrumbs {
     display: flex;
+    gap: rem(10) 0;
+    flex-wrap: wrap;
     padding: rem(10) 0;
 
     &__link {

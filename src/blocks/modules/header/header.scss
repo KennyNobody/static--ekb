@@ -1,5 +1,13 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: $light;
+    //border-bottom: 1px solid #EDEDED;
+    transition: 0.3s background-color, 0.3s border-bottom;
+
+    &.invert {
+        background-color: rgba(237, 237, 237, 0);
+    }
 }

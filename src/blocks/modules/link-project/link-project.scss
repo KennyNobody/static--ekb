@@ -22,6 +22,10 @@
         background-repeat: no-repeat;
         background-position: top right;
         background-image: url("../assets/images/arrow-link.svg");
+
+        @include r(1200) {
+            background: none;
+        }
     }
 
     &__title {
@@ -29,6 +33,12 @@
         padding-right: rem(35);
         margin-bottom: rem(15);
         font-family: $font-title;
+
+        @include r(1200) {
+            padding-right: 0;
+            font-size: rem(24);
+            margin-bottom: rem(10);
+        }
     }
 
     &__text {

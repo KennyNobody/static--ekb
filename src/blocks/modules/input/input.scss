@@ -1,12 +1,40 @@
 .input {
-    &__title {
-    }
+    width: 100%;
+    display: block;
+
     &__field {
+        width: 100%;
+        display: block;
+        height: rem(50);
+        font-weight: 300;
+        padding: 0 rem(18);
+        font-size: rem(14);
+        font-family: inherit;
+        border-radius: rem(5);
+        border: 1px solid #DFE9EF;
+
         &::placeholder {
+            font-family: inherit;
         }
     }
+
+    &__select {
+        width: 100%;
+        display: flex;
+        height: rem(50);
+        cursor: pointer;
+        font-weight: 300;
+        font-size: rem(14);
+        padding: 0 rem(18);
+        align-items: center;
+        font-family: inherit;
+        border-radius: rem(5);
+        border: 1px solid #DFE9EF;
+    }
+
     &--error {
     }
+
     &--valid {
     }
 }

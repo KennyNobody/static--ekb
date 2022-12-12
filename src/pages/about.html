@@ -10,19 +10,21 @@
 <%= htmlWebpackPlugin.options.sectionHeaderActive %>
 <main class="main">
     <section class="section section--bg relative invert" style="background-image: url('./assets/images/bg-about.jpg')">
-        <div class="section__content section__content--overlay-30 section__content--full-650 pt-100 pb-150">
+        <div class="section__content section__content--overlay-30 section__content--full-650 pt-100 pb-150 ptm-80 pbm-40">
             <div class="container container--flex-between">
-                <nav class="breadcrumbs mb-50">
-                    <a class="breadcrumbs__link" href="./">
-                        Главная
-                    </a>
-                    <span class="breadcrumbs__link">
+                <div class="mb-50">
+                    <nav class="breadcrumbs">
+                        <a class="breadcrumbs__link" href="./">
+                            Главная
+                        </a>
+                        <span class="breadcrumbs__link">
                         О событии
                     </span>
-                </nav>
+                    </nav>
+                </div>
                 <div class="columns">
                     <div class="columns__col columns__col--7">
-                        <h1 class="title title--main mb-30">
+                        <h1 class="title title--main mb-30 mbm-20">
                             О событии
                         </h1>
                         <div class="editor editor--20">
@@ -34,24 +36,21 @@
                         </div>
                     </div>
                 </div>
-                <div></div>
+                <div class="mob-hidden"></div>
             </div>
         </div>
     </section>
-    <section class="section pt-160 pb-100 bg-white bg-2">
+    <section class="section pt-160 pb-100 bg-white bg-2 ptm-40 pbm-160">
         <div class="container">
             <div class="columns">
-                <div class="columns__col columns__col--6">
+                <div class="columns__col columns__col--6 mbm-30">
                     <figure class="figure max-310">
                         <picture class="figure__picture">
                             <img alt="Декоративная картинка" src="./assets/images/logo-decor.png">
                         </picture>
-                        <figcaption class="figure__figcaption">
-
-                        </figcaption>
                     </figure>
                 </div>
-                <div class="columns__col columns__col--6">
+                <div class="columns__col columns__col--6 mbm-65">
                     <div class="editor">
                         <h2>
                             Это замечательное событие в нашем городе!
@@ -87,16 +86,17 @@
             </div>
         </div>
     </section>
-    <section class="section pt-100 pb-100 bg-white">
+    <section class="section pt-100 pb-100 bg-white ptm-40 pbm-40">
         <div class="container">
             <span class="tag mb-20">Участвуй</span>
-            <div class="toolbar mb-60">
-                <h2 class="title">
+            <div class="toolbar toolbar--mob-block mb-60 mbm-30">
+                <h2 class="title mbm-15">
                     Екатеринбург 300
                 </h2>
+                <span class="description">проекты</span>
             </div>
             <div class="columns">
-                <div class="columns__col columns__col--4">
+                <div class="columns__col columns__col--4 mbm-20">
                     <a class="article-project article-project--green" href="./bill.html">
                         <h3 class="article-project__title">
                             Афиша
@@ -117,7 +117,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="columns__col columns__col--8">
+                <div class="columns__col columns__col--8 mbm-20">
                     <a class="article-project article-project--purple" href="">
                         <h3 class="article-project__title">
                             Городские проекты
@@ -139,7 +139,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="columns__col columns__col--4">
+                <div class="columns__col columns__col--4 mbm-20">
                     <a class="article-project article-project--purple" href="">
                         <h3 class="article-project__title">
                             Туристам
@@ -160,7 +160,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="columns__col columns__col--4">
+                <div class="columns__col columns__col--4 mbm-20">
                     <a class="article-project article-project--orange" href="">
                         <h3 class="article-project__title">
                             Символика 300-летия для бизнеса
@@ -204,9 +204,9 @@
             </div>
         </div>
     </section>
-    <section class="section pt-100 pb-100 bg-grey">
+    <section class="section pt-100 pb-100 ptm-30 pbm-40 bg-grey">
         <div class="container">
-            <span class="tag mb-60">Смотри</span>
+            <span class="tag mb-60 mbm-30">Смотри</span>
             <div class="video">
                 <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen frameborder="0"

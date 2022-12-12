@@ -5,8 +5,17 @@
     background-repeat: repeat-x;
     background-image: url("../assets/images/bg-head.svg");
 
+    @include r(1200) {
+        justify-content: flex-start;
+        background-image: url("../assets/images/bg-head-mob.svg");
+    }
+
     &__content {
         padding: 0 rem(18);
         background-color: $light;
+
+        @include r(1200) {
+            padding: 0;
+        }
     }
 }

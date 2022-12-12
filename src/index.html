@@ -16,7 +16,7 @@
                 <div></div>
                 <div class="columns">
                     <div class="columns__col columns__col--6">
-                        <h1 class="title mb-40">
+                        <h1 class="title mb-40 mbm-50">
                             <small>Городу</small> Екатеринбургу<br> 300 лет
                         </h1>
                         <a class="button button--orange button--fit-l" href="">
@@ -26,7 +26,7 @@
                         </a>
                     </div>
                 </div>
-                <a class="link-aside z-index-2" href="">
+                <a class="link-aside z-index-2 mob-hidden" href="">
                     <p class="link-aside__caption">
                         Жителям
                     </p>
@@ -41,36 +41,21 @@
             </div>
         </div>
     </section>
-    <section class="section bg-gradient-light pt-100 pb-170 bg-1">
+    <section class="section bg-gradient-light pt-100 pb-170 ptm-40 pbm-40 bg-1">
         <div class="container">
-            <!--            <button class="button-scroll button-scroll&#45;&#45;green" disabled>-->
-            <!--                <svg class="button-scroll__icon">-->
-            <!--                    <use xlink:href="./assets/sprite/sprite.svg#icon-slider-prev"></use>-->
-            <!--                </svg>-->
-            <!--            </button>-->
-            <!--            <button class="button-scroll button-scroll&#45;&#45;green">-->
-            <!--                <svg class="button-scroll__icon">-->
-            <!--                    <use xlink:href="./assets/sprite/sprite.svg#icon-slider-next"></use>-->
-            <!--                </svg>-->
-            <!--            </button>-->
-            <!--            <button class="button-scroll button-scroll&#45;&#45;large button-scroll&#45;&#45;light">-->
-            <!--                <svg class="button-scroll__icon">-->
-            <!--                    <use xlink:href="./assets/sprite/sprite.svg#icon-slider-next"></use>-->
-            <!--                </svg>-->
-            <!--            </button>-->
             <div class="columns columns--align">
                 <div class="columns__col columns__col--5">
                     <span class="tag mb-20">Участвуй</span>
-                    <h2 class="title mb-20">
+                    <h2 class="title mb-20 mbm-30">
                         Программа юбилея
                     </h2>
-                    <div class="editor mb-40">
+                    <div class="editor mb-40 mbm-30">
                         <p>
                             В год 300-летия Екатеринбург с особым размахом проведёт полюбившиеся многим и известные на
                             весь мир флагманские мероприятия города, а также новые уникальные события.
                         </p>
                     </div>
-                    <a class="button button--green button--fit-m" href="">
+                    <a class="button button--green button--fit-m mob-hidden" href="">
                         <span class="button__text">
                             Все события
                         </span>
@@ -80,16 +65,16 @@
                     </a>
                 </div>
                 <div class="columns__col columns__col--7">
-                    <div class="slider" data-slider>
+                    <div class="slider mbm-35" data-slider>
                         <div class="swiper-container slider__container slider__container--overflow slider__container--all">
-                            <button class="button-scroll button-scroll--centered-right button-scroll--large button-scroll--light"
+                            <button class="button-scroll button-scroll--centered-right button-scroll--large button-scroll--light mob-hidden"
                                     data-slider-next>
                                 <svg class="button-scroll__icon">
                                     <use xlink:href="./assets/sprite/sprite.svg#icon-slider-next"></use>
                                 </svg>
                             </button>
                             <div class="swiper-wrapper slider__wrapper">
-                                <div class="swiper-slide slider__slide slider__slide--370">
+                                <div class="swiper-slide slider__slide slider__slide--370 slider__slide--mob-240">
                                     <a class="article-event" href="./single-bill.html">
                                         <picture class="article-event__picture">
                                             <img alt="" src="./assets/content/event-1.jpg">
@@ -172,21 +157,32 @@
                             </div>
                         </div>
                     </div>
+                    <div class="desktop-hidden">
+                        <a class="button button--green button--fit-m" href="">
+                            <span class="button__text">
+                                Все события
+                            </span>
+                            <svg class="button__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-next-green"></use>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section bg-white pt-100 pb-100">
+    <section class="section bg-white pt-100 pb-100 ptm-30 pbm-30">
         <div class="container">
-            <div class="columns mb-60">
-                <div class="columns__col columns__col--6">
-                    <span class="tag mb-20">Узнавай</span>
-                    <h2 class="title">
-                        300 историй <br> <strong class="purple">Екатеринбурга</strong>
-                    </h2>
-                </div>
+            <span class="tag mb-20">Узнавай</span>
+            <div class="toolbar toolbar--end toolbar--mob-block mb-60 mbm-20">
+                <h2 class="title mbm-20">
+                    300 историй <br> <strong class="purple">Екатеринбурга</strong>
+                </h2>
+                <span class="description">
+                    только факты
+                </span>
             </div>
-            <div class="editor editor--24 mb-70">
+            <div class="editor editor--24 mb-70 mbm-30">
                 <p>
                     Истории открытий и изобретений, людей и институций, рожденных в Екатеринбурге за 300 лет его истории
                     и повлиявших на развитие не только региона и страны, но и мира. Летопись города в 300 историях.
@@ -316,14 +312,14 @@
             </div>
         </div>
     </section>
-    <section class="section pt-100 pb-100 relative">
+    <section class="section pt-100 pb-100 relative ptm-30 pbm-0">
         <div class="block-decor"></div>
         <div class="container relative z-index-1">
             <div class="columns mb-150">
-                <div class="columns__col columns__col--4">
+                <div class="columns__col columns__col--4 mob-hidden">
                     <span class="tag mb-20 invert">Действуй</span>
                 </div>
-                <div class="columns__col columns__col--8 pt-200">
+                <div class="columns__col columns__col--8 pt-200 ptm-0">
                     <div class="toolbar toolbar--start toolbar--center mb-20">
                         <div class="logo logo--title">
                             <img alt="" src="./assets/images/logo-title.svg">
@@ -332,13 +328,13 @@
                             Стань <strong class="purple">гостем</strong> <br>юбилея
                         </h2>
                     </div>
-                    <div class="editor editor--24 mb-45">
+                    <div class="editor editor--24 mb-45 mbm-0">
                         <p>
                             Поможем спланировать путешествие в Екатеринбург — город на пересечении двух частей света,
                             соединивший в себе Европу и Азию.
                         </p>
                     </div>
-                    <a class="button button--purple button--fit-m" href="">
+                    <a class="button button--purple button--fit-m mob-hidden" href="">
                         <span class="button__text">
                             Экскурсии и туры в Екатеринбург
                         </span>
@@ -348,8 +344,11 @@
                     </a>
                 </div>
             </div>
-            <div class="columns decor-1">
-                <div class="columns__col columns__col--4">
+            <div class="columns decor-1 ptm-40 pbm-40">
+                <div class="columns__col columns__col--4 mb-15 desktop-hidden">
+                    <span class="tag">Действуй</span>
+                </div>
+                <div class="columns__col columns__col--4 mbm-30">
                     <a class="article-excursion" href="">
                         <picture class="article-excursion__pucture">
                             <img alt="Экстрим приключения на квадрогигантах по" src="./assets/content/excursion-1.jpg">
@@ -376,7 +375,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="columns__col columns__col--4">
+                <div class="columns__col columns__col--4 mbm-30">
                     <a class="article-excursion" href="">
                         <picture class="article-excursion__pucture">
                             <img alt="Экстрим приключения на квадрогигантах по" src="./assets/content/excursion-2.jpg">
@@ -403,7 +402,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="columns__col columns__col--4">
+                <div class="columns__col columns__col--4 mbm-25">
                     <a class="article-excursion" href="">
                         <picture class="article-excursion__pucture">
                             <img alt="Экскурсия на Свердловскую киностудию" src="./assets/content/excursion-3.jpg">
@@ -430,17 +429,27 @@
                         </div>
                     </a>
                 </div>
+                <div class="columns__col columns__col--12 desktop-hidden">
+                    <a class="button button--purple button--fit-m" href="">
+                        <span class="button__text">
+                            Экскурсии и туры в Екатеринбург
+                        </span>
+                        <svg class="button__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-next-purple"></use>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
-    <section class="section pt-100 pb-100 bg-grey">
+    <section class="section pt-100 pb-100 bg-grey ptm-30 pbm-40">
         <div class="container">
-            <span class="tag mb-20">Читай</span>
-            <div class="toolbar mb-60">
+            <span class="tag mb-20 mbm-10">Читай</span>
+            <div class="toolbar toolbar--mob-block mb-60 mbm-30">
                 <h2 class="title">
                     Новости <strong class="green">города</strong>
                 </h2>
-                <a class="button button--green button--fit-m" href="">
+                <a class="button button--green button--fit-m mob-hidden" href="">
                     <span class="button__text">
                         Все новости
                     </span>
@@ -450,7 +459,7 @@
                 </a>
             </div>
             <div class="columns">
-                <div class="columns__col columns__col--12">
+                <div class="columns__col columns__col--12 mbm-20">
                     <a class="article-post article-post--invert article-post--large" href="">
                         <picture class="article-post__picture">
                             <img alt="" src="./assets/content/post-1.jpg">
@@ -486,7 +495,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="columns__col columns__col--4">
+                <div class="columns__col columns__col--4 mbm-20">
                     <a class="article-post article-post--invert article-post--regular" href="">
                         <div class="article-post__content">
                             <div class="article-post__header">
@@ -521,7 +530,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="columns__col columns__col--4">
+                <div class="columns__col columns__col--4 mbm-20">
                     <a class="article-post article-post--regular" href="">
                         <picture class="article-post__picture">
                             <img alt="" src="./assets/content/post-2.jpg">
@@ -584,25 +593,33 @@
             </div>
         </div>
     </section>
-    <section class="section pt-170 pb-100 bg-light">
+    <section class="section pt-170 pb-100 ptm-160 pbm-40 bg-light">
         <div class="container">
-            <div class="toolbar mb-60">
-                <h2 class="title">
+            <div class="toolbar toolbar--mob-block mb-60 mbm-20">
+                <h2 class="title mbm-20">
                     Горожане
                 </h2>
-                <button class="button button--purple button--fit-m decor-2">
+                <a class="button button--purple button--fit-m decor-2" href="#modal-form" data-fancybox>
                     <span class="button__text">
                         Приcлать фото
                     </span>
                     <svg class="button__icon button__icon--l">
                         <use xlink:href="./assets/sprite/sprite.svg#icon-camera"></use>
                     </svg>
-                </button>
+                </a>
             </div>
             <div class="articles" data-articles>
                 <div class="articles__header">
                     <form action="" class="form">
-                        <fieldset class="fieldset">
+                        <div class="desktop-hidden">
+                            <select class="select select--purple select--icon-drop-purple">
+                                <option value="" selected="">Районы города</option>
+                                <option value="1">Кировский</option>
+                                <option value="2">Ворошиловский</option>
+                                <option value="3">Петровский</option>
+                            </select>
+                        </div>
+                        <fieldset class="fieldset mob-hidden">
                             <label class="radio radio--purple">
                                 <input checked class="radio__field" name="gallery" type="radio">
                                 <span class="radio__wrapper">
@@ -618,6 +635,7 @@
                                         Екатеринбург в 90-е
                                     </span>
                                 </span>
+                            </label>
                             </label>
                             <label class="radio radio--purple">
                                 <input class="radio__field" name="gallery" type="radio">

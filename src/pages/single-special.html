@@ -11,9 +11,9 @@
 <main class="main">
     <section class="section section--bg relative invert"
              style="background-image: url('./assets/images/bg-single-special.jpg')">
-        <div class="section__content section__content--overlay-30 section__content--full-650 pt-100 pb-85">
+        <div class="section__content section__content--overlay-30 section__content--full-650 pt-100 pb-85 ptm-80 pbm-40">
             <div class="container container--flex-between">
-                <div class="mb-50">
+                <div class="mb-50 mbm-30">
                     <nav class="breadcrumbs">
                         <a class="breadcrumbs__link" href="./">
                             Главная
@@ -28,10 +28,10 @@
                 </div>
                 <div class="columns">
                     <div class="columns__col columns__col--8">
-                        <h2 class="title mb-30">
+                        <h2 class="title mb-30 mbm-20">
                             Волонтёры 300-летия
                         </h2>
-                        <div class="editor editor--24 mb-40">
+                        <div class="editor editor--24 mb-40 mbm-30">
                             <p>
                                 К юбилею Екатеринбурга будет подготовлена профессиональная команда волонтёров.
                             </p>
@@ -43,19 +43,19 @@
                         </a>
                     </div>
                 </div>
-                <div></div>
+                <div class="mob-hidden"></div>
             </div>
         </div>
     </section>
-    <section class="section bg-white pt-100 pb-100">
+    <section class="section bg-white pt-100 pb-100 ptm-40 pbm-40">
         <div class="container">
             <span class="tag mb-20">Узнавай</span>
-            <h2 class="title mb-75">
+            <h2 class="title mb-75 mbm-20">
                 Кто такие <br>
                 <strong class="purple">волонтеры 300-летия?</strong>
             </h2>
             <div class="columns columns--align">
-                <div class="columns__col columns__col--5">
+                <div class="columns__col columns__col--5 mbm-180">
                     <div class="editor editor--24">
                         <p>
                             Волонтеры 300-летия — добровольческое движение, которое позволит горожанам стать
@@ -75,15 +75,15 @@
             </div>
         </div>
     </section>
-    <section class="section bg-grey pt-120 pb-145">
+    <section class="section bg-grey pt-120 pb-145 ptm-40 pbm-40">
         <div class="container">
             <span class="tag mb-20">Действуй</span>
-            <div class="columns">
+            <div class="columns mbm-40">
                 <div class="columns__col columns__col--5">
-                    <h2 class="title mb-45">
+                    <h2 class="title mb-45 mbm-30">
                         Как стать <strong class="purple">волонтёром?</strong>
                     </h2>
-                    <a class="button button--orange button--230" href="">
+                    <a class="button button--orange button--230 mob-hidden" href="">
                         <span class="button__text">
                             оставить заявку
                         </span>
@@ -92,7 +92,7 @@
                 <div class="columns__col columns__col--1 mob-hidden"></div>
                 <div class="columns__col columns__col--6">
                     <div class="columns">
-                        <div class="columns__col columns__col--6">
+                        <div class="columns__col columns__col--6 mbm-35">
                             <article class="article-step">
                                 <svg class="article-step__number">
                                     <use xlink:href="./assets/sprite/sprite.svg#icon-1"></use>
@@ -107,7 +107,7 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="columns__col columns__col--6">
+                        <div class="columns__col columns__col--6 mbm-35">
                             <article class="article-step">
                                 <svg class="article-step__number">
                                     <use xlink:href="./assets/sprite/sprite.svg#icon-2"></use>
@@ -122,7 +122,7 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="columns__col columns__col--6">
+                        <div class="columns__col columns__col--6 mbm-35">
                             <article class="article-step">
                                 <svg class="article-step__number">
                                     <use xlink:href="./assets/sprite/sprite.svg#icon-3"></use>
@@ -156,17 +156,24 @@
                     </div>
                 </div>
             </div>
+            <div class="desktop-hidden">
+                <a class="button button--orange button--230" href="">
+                    <span class="button__text">
+                        оставить заявку
+                    </span>
+                </a>
+            </div>
         </div>
     </section>
-    <section class="section bg-light pt-100 pb-100">
+    <section class="section bg-light pt-100 pb-100 ptm-40 pbm-30">
         <div class="container">
             <span class="tag mb-20">Читай</span>
-            <div class="slider" data-slider data-slider-quantity="3">
-                <div class="toolbar mb-50">
-                    <h2 class="title ">
+            <div class="slider mbm-30" data-slider data-slider-quantity="3">
+                <div class="toolbar toolbar--mob-block mb-50">
+                    <h2 class="title">
                         новости <strong class="green">волонтеров</strong>
                     </h2>
-                    <a class="button button--green button--fit-m" href="">
+                    <a class="button button--green button--fit-m mob-hidden" href="">
                         <span class="button__text">
                             Все новости
                         </span>
@@ -174,7 +181,7 @@
                             <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-next-green"></use>
                         </svg>
                     </a>
-                    <div class="toolbar__section">
+                    <div class="toolbar__section mob-hidden">
                         <button class="button-scroll button-scroll--green disabled" data-slider-prev>
                             <svg class="button-scroll__icon">
                                 <use xlink:href="./assets/sprite/sprite.svg#icon-slider-prev"></use>
@@ -189,7 +196,7 @@
                 </div>
                 <div class="swiper-container slider__container slider__container--overflow slider__container--all">
                     <div class="swiper-wrapper slider__wrapper">
-                        <div class="swiper-slide slider__slide">
+                        <div class="swiper-slide slider__slide slider__slide--mob-290">
                             <a class="article-post article-post--slide article-post--regular" href="">
                                 <picture class="article-post__picture">
                                     <img alt="" src="./assets/content/post-1.jpg">
@@ -219,7 +226,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide slider__slide">
+                        <div class="swiper-slide slider__slide slider__slide--mob-290">
                             <a class="article-post article-post--invert article-post--slide article-post--regular"
                                href="">
                                 <div class="article-post__content">
@@ -257,7 +264,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide slider__slide">
+                        <div class="swiper-slide slider__slide slider__slide--mob-290">
                             <a class="article-post article-post--regular article-post--slide" href="">
                                 <picture class="article-post__picture">
                                     <img alt="" src="./assets/content/post-2.jpg">
@@ -287,7 +294,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide slider__slide">
+                        <div class="swiper-slide slider__slide slider__slide--mob-290">
                             <a class="article-post article-post--regular article-post--slide" href="">
                                 <picture class="article-post__picture">
                                     <img alt="" src="./assets/content/post-3.jpg">
@@ -320,22 +327,30 @@
                     </div>
                 </div>
             </div>
+            <div class="dekstop-hidden">
+                <a class="button button--green button--fit-m" href="">
+                    <span class="button__text">
+                        Все новости
+                    </span>
+                    <svg class="button__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-next-green"></use>
+                    </svg>
+                </a>
+            </div>
         </div>
     </section>
-    <section class="section invert bg-grey pt-100 pb-100">
+    <section class="section invert bg-grey pt-100 pb-100 ptm-0 pbm-0">
         <div class="container">
             <div class="block-accent invert">
                 <div class="block-accent__content">
                     <div class="columns columns--align">
-                        <div class="columns__col columns__col--5">
-                            <div class="editor">
-                                <h2 class="title title--small">
-                                    Контакты <br>
-                                    волонтерского центра
-                                </h2>
-                            </div>
+                        <div class="columns__col columns__col--5 mbm-30">
+                            <h2 class="title title--small">
+                                Контакты <br>
+                                волонтерского центра
+                            </h2>
                         </div>
-                        <div class="columns__col columns__col--3">
+                        <div class="columns__col columns__col--3 mbm-25">
                             <a href="tel:+70001234567" class="link-contact">
                                 <svg class="link-contact__icon">
                                     <use xlink:href="./assets/sprite/sprite.svg#icon-call"></use>

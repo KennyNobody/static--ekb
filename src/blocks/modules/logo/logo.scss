@@ -6,6 +6,10 @@
     transition: 0.3s opacity;
     font-family: $font-title;
 
+    @include r(1200) {
+        font-size: rem(16);
+    }
+
     @at-root {
         a#{&} {
             &:hover {
@@ -25,6 +29,10 @@
         svg, img {
             width: auto;
             height: rem(60);
+
+            @include r(1200) {
+                height: rem(43);
+            }
         }
     }
 
@@ -32,12 +40,25 @@
         svg, img {
             width: auto;
             height: rem(125);
+
+            @include r(1200) {
+                height: rem(69);
+            }
         }
     }
 
     &--footer {
         svg, img {
             display: block;
+        }
+    }
+
+    &--title {
+        @include r(1200) {
+            img {
+                width: auto;
+                height: rem(67);
+            }
         }
     }
 

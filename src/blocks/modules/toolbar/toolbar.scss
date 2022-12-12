@@ -4,19 +4,35 @@
     align-items: center;
     justify-content: space-between;
 
+
+    &--mob-block {
+        @include r(1200) {
+            display: block;
+        }
+    }
+
+    &--mob-center {
+        align-items: center;
+        flex-direction: column;
+    }
+
     &__section {
         gap: rem(20);
         display: flex;
         align-items: center;
     }
 
+    &--30 {
+        gap: rem(30);
+    }
+
     &--start {
         gap: rem(30);
         justify-content: flex-start;
-    }
 
-    &--end {
-        align-items: flex-end;
+        @include r(1200) {
+            gap: rem(20);
+        }
     }
 
     &--end {

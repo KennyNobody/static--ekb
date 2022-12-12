@@ -1,11 +1,16 @@
 .article-event {
+    width: 100%;
+    height: 100%;
     display: block;
-    width: rem(370);
     overflow: hidden;
     border-radius: rem(5);
     font-family: $font-title;
     background-color: $light;
     box-shadow: rem(-10) rem(20) rem(50) rgba(143, 154, 181, 0.2);
+
+    @include r(1200) {
+
+    }
 
     &:hover {
         .article-event {
@@ -20,6 +25,10 @@
         display: block;
         height: rem(370);
         transition: 0.3s opacity;
+
+        @include r(1200) {
+            height: rem(240);
+        }
 
         img {
             width: 100%;
@@ -36,6 +45,11 @@
         flex-direction: column;
         justify-content: space-between;
         padding: rem(20) rem(34) rem(34) rem(34);
+
+        @include r(1200) {
+            height: rem(150);
+            padding: rem(15) rem(15) rem(20) rem(15);
+        }
     }
 
     &__date {
@@ -43,6 +57,11 @@
         color: #B3B5C3;
         margin-bottom: rem(15);
         font-family: $font-title;
+
+        @include r(1200) {
+            font-size: rem(14);
+            margin-bottom: rem(10);
+        }
     }
 
     &__main {
@@ -50,7 +69,6 @@
     }
 
     &__title {
-        //flex-grow: 1;
         line-clamp: 2;
         line-height: 1.3;
         font-weight: 400;
@@ -60,15 +78,24 @@
         display: -webkit-box;
         box-orient: vertical;
         -webkit-line-clamp: 2;
+        margin-bottom: rem(20);
         text-overflow: ellipsis;
         -moz-box-orient: vertical;
         -webkit-box-orient: vertical;
+
+        @include r(1200) {
+            font-size: rem(16);
+        }
     }
 
     &__tag {
         color: $orange;
-        font-weight: 500;
+        font-weight: 400;
         font-size: rem(14);
         text-transform: uppercase;
+
+        @include r(1200) {
+
+        }
     }
 }

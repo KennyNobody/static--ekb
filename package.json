@@ -48,7 +48,9 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "@fancyapps/ui": "^4.0.31",
     "axios": "^0.27.2",
+    "filepond": "^4.30.4",
     "masonry-layout": "^4.2.2",
     "modern-css-reset": "^1.4.0",
     "swiper": "^8.4.5",

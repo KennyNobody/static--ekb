@@ -2,23 +2,28 @@
     overflow: hidden;
 
     &--header {
-        top: 0;
-        left: 0;
-        right: 0;
-        position: fixed;
-        background-color: $light;
+        position: relative;
+        transition: 0.3s all;
         border-bottom: 1px solid #EDEDED;
-        transition: 0.3s background-color, 0.3s border-bottom;
-        &.invert {
-            background-color: rgba(237, 237, 237, 0);
-            border-bottom: 1px solid rgba(255,255,255,0);
-        }
     }
 
     &--bg {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+    }
+
+    &--drop {
+        left: 0;
+        right: 0;
+        top: 100%;
+        max-height: 80vh;
+        position: absolute;
+        transition: 0.3s opacity;
+
+        &[hidden] {
+            max-height: 0vh;
+        }
     }
 
     &__overlay {
@@ -43,11 +48,28 @@
             height: 100vh;
             min-height: rem(650);
 
+            @include r(1200) {
+                //height: auto;
+                min-height: 100vh;
+            }
         }
 
         &--full-950 {
             height: 100vh;
             min-height: rem(950);
+
+            @include r(1200) {
+                //height: auto;
+                min-height: 100vh;
+            }
+        }
+    }
+}
+
+.invert {
+    .section {
+        &--header {
+            border-color: rgba(237, 237, 237, 0);
         }
     }
 }

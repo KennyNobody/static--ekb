@@ -8,8 +8,6 @@ class ArticleDrop {
     }
 
     setListeners() {
-        console.log(this.height);
-
         if (this.height <= 150) {
             this.el.classList.add('active');
         }

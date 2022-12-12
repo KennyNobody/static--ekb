@@ -11,7 +11,7 @@
 <main class="main">
     <section class="section section--bg relative invert"
              style="background-image: url('./assets/images/bg-history.jpg')">
-        <div class="section__content section__content--overlay-40 section__content--full-950 pt-100 pb-150">
+        <div class="section__content section__content--overlay-40 section__content--full-950 pt-100 pb-150 ptm-80 pbm-40">
             <div class="container container--flex-between">
                 <nav class="breadcrumbs mb-50">
                     <a class="breadcrumbs__link" href="./">
@@ -34,7 +34,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="timeline" data-timeline>
+                <div class="timeline mob-hidden" data-timeline>
                     <div class="swiper-container timeline__container">
                         <button class="timeline__button timeline__button--prev">
                             <svg class="timeline__icon">
@@ -163,16 +163,24 @@
             </div>
         </div>
     </section>
-    <section class="section bg-white pt-100 pb-100">
+    <section class="section bg-white pt-100 pb-100 ptm-40 pbm-40">
         <div class="container">
+            <div class="desktop-hidden mbm-40">
+                <select class="select select--orange select--icon-drop-orange">
+                    <option value="" selected="">Выберите год</option>
+                    <option value="1660">1660</option>
+                    <option value="1700">1700</option>
+                    <option value="1862">1862</option>
+                </select>
+            </div>
             <div class="head mb-20">
                 <div class="head__content" id="section-1723">
                     <span class="tag tag--large">1723</span>
                 </div>
             </div>
 
-            <div class="columns mb-80">
-                <div class="columns__col columns__col--6 pr-70">
+            <div class="columns mb-80 mbm-40">
+                <div class="columns__col columns__col--6 pr-70 prm-0 mbm-20">
                     <div class="editor">
                         <p>
                             Екатеринбург основан как завод-крепость на реке Исети в 1723 году. Место для завода выбрал
@@ -209,8 +217,8 @@
                     <span class="tag tag--large">1738</span>
                 </div>
             </div>
-            <div class="columns mb-80">
-                <div class="columns__col columns__col--6">
+            <div class="columns mb-80 mbm-40">
+                <div class="columns__col columns__col--6 order-m-2">
                     <figure class="figure figure--radius">
                         <picture class="figure__picture">
                             <img alt="" src="./assets/content/history-2.jpg">
@@ -220,7 +228,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="columns__col columns__col--6 pl-70">
+                <div class="columns__col columns__col--6 pl-70 plm-0 order-m-1 mbm-20">
                     <div class="editor">
                         <p>
                             В 1738 году в городе основана камнерезная мастерская, ставшая в 1765 году Екатеринбургской
@@ -235,14 +243,34 @@
                 </div>
             </div>
             <div class="columns">
-                <div class="columns__col columns__col--6 pr-70">
-                    <div class="editor">
+                <div class="columns__col columns__col--6 pr-70 prm-0 mbm-40">
+                    <div class="editor mb-25">
                         <p>
                             В 1781 году Екатеринбург получил статус уездного города в Пермской губернии. В 1783 году ему
                             был присвоен герб, а в 1787 году состоялись первые выборы в городскую (шестигласную) думу. В
                             городском самоуправлении в XVIII – первой половине XIX века доминировали купцы-старообрядцы.
                         </p>
                     </div>
+                    <div class="player" data-player>
+                        <p class="player__title">
+                            Аудиогид по по выставке
+                        </p>
+                        <audio class="player__audio" src="https://www.zapsplat.com/wp-content/uploads/2015/sound-effects-61905/zapsplat_multimedia_alert_chime_short_musical_notification_cute_child_like_001_64918.mp3?_=1"></audio>
+                        <div class="player__controls">
+                            <button class="player__button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <input class="player__timeline" type="range" max="100" value="0">
+                            <button class="player__sound">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
+                                    <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="columns__col columns__col--6">
                     <figure class="figure figure--radius">

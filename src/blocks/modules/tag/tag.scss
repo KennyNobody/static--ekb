@@ -1,18 +1,29 @@
 .tag {
     display: flex;
-    font-weight: 500;
+    font-weight: 400;
     font-size: rem(30);
     width: fit-content;
     align-items: center;
     min-height: rem(56);
     font-family: $font-title;
-    padding: rem(10) rem(30);
+    padding: rem(10) rem(40);
     text-transform: uppercase;
+    background-size: auto 100%, auto 100%;
     background-repeat: no-repeat, no-repeat;
     background-position: left center, right center;
     background-image: url("../assets/images/bracket-left.svg"), url("../assets/images/bracket-right.svg");
 
+    @include r(1200) {
+        font-size: rem(20);
+        min-height: rem(42);
+        padding: rem(5) rem(25);
+    }
+
     &--large {
         font-size: rem(64);
+
+        @include r(1200) {
+            font-size: rem(24);
+        }
     }
 }

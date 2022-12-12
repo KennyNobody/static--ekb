@@ -5,6 +5,10 @@
     padding: rem(40) rem(50);
     box-shadow: rem(-10) rem(20) rem(100) rgba(143, 154, 181, 0.25);
 
+    @include r(1200) {
+        padding: rem(20) rem(15);
+    }
+
     &.active {
         .article-drop {
             &__main {
@@ -24,6 +28,11 @@
         font-size: rem(24);
         margin-bottom: rem(22);
         font-family: $font-title;
+
+        @include r(1200) {
+            font-size: rem(16);
+            margin-bottom: rem(10);
+        }
     }
 
     &__main {
@@ -31,6 +40,7 @@
         position: relative;
         max-height: rem(185);
         transition: 0.3s max-height;
+
         &:after {
             left: 0;
             right: 0;

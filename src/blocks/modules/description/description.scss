@@ -1,0 +1,14 @@
+.description {
+    color: $orange;
+    font-size: rem(24);
+    padding-top: rem(10);
+    padding-bottom: rem(10);
+    font-family: $font-title;
+    text-transform: uppercase;
+
+    @include r(1200) {
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: rem(16);
+    }
+}

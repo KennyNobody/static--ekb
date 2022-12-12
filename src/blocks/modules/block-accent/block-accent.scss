@@ -11,6 +11,11 @@
         position: absolute;
         border-radius: rem(5);
         background-color: $purple;
+
+        @include r(1200) {
+            left: -30px;
+            width: calc(100vw + 60px);
+        }
     }
 
     &__content {

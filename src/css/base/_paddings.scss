@@ -1,4 +1,10 @@
 .ptm {
+    &-0 {
+        @include r(1200) {
+            padding-top: rem(0);
+        }
+    }
+
     &-1 {
         @include r(1200) {
             padding-top: rem(1);
@@ -169,6 +175,12 @@
 }
 
 .pbm {
+    &-0 {
+        @include r(1200) {
+            padding-bottom: rem(0);
+        }
+    }
+
     &-1 {
         @include r(1200) {
             padding-bottom: rem(1);
@@ -348,8 +360,24 @@
     }
 }
 
+.plm {
+    &-0 {
+        @include r(1200) {
+            padding-left: 0;
+        }
+    }
+}
+
 .pr {
     &-70 {
         padding-right: rem(70);
+    }
+}
+
+.prm {
+    &-0 {
+        @include r(1200) {
+            padding-right: 0;
+        }
     }
 }
