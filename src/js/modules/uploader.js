@@ -18,10 +18,7 @@ class Uploader {
         });
 
         this.filePond.setOptions(ru_ru);
-
         this.el.appendChild(this.filePond.element);
-
-        console.log(this.filePond);
     }
 }
 

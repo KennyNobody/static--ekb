@@ -9,6 +9,7 @@ import burger from "../assets/sprite/icon-burger.svg";
 import calendar from "../assets/sprite/icon-calendar.svg";
 import call from "../assets/sprite/icon-call.svg";
 import camera from "../assets/sprite/icon-camera.svg";
+import close from "../assets/sprite/icon-close.svg";
 import eye from "../assets/sprite/icon-eye.svg";
 import glass from "../assets/sprite/icon-glass.svg";
 import icon1 from "../assets/sprite/icon-1.svg";
@@ -43,6 +44,7 @@ export default {
     calendar,
     call,
     camera,
+    close,
     eye,
     glass,
     icon1,

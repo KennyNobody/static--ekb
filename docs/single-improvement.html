@@ -12,7 +12,7 @@
 <link href="./css/main.css" rel="stylesheet"></head>
 
 <body class="body">
-<header class="header z-index-3">
+    <header class="header z-index-3">
     <section class="section section--header pt-10 pb-10 z-index-3">
         <div class="container">
             <div class="toolbar toolbar--30">
@@ -164,16 +164,19 @@
                             <use xlink:href="./assets/sprite/sprite.svg#icon-glass"></use>
                         </svg>
                     </button>
-                    <button class="nav__button mob-hidden">
+                    <button class="nav__button mob-hidden" data-link-vipanel>
                         <svg>
                             <use xlink:href="./assets/sprite/sprite.svg#icon-eye"></use>
                         </svg>
                     </button>
-                    <button class="nav__button desktop-hidden" data-menu-button>
-                        <svg>
+                    <a href="#menu" class="nav__button desktop-hidden">
+                        <svg class="closed">
                             <use xlink:href="./assets/sprite/sprite.svg#icon-burger"></use>
                         </svg>
-                    </button>
+                        <svg class="opened">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-close"></use>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
@@ -355,80 +358,82 @@
             </div>
         </div>
     </section>
+
 </header>
 
-<main class="main">
-    <section class="section bg-white pt-100 pb-100 ptm-80 pbm-40">
-        <div class="container">
-            <nav class="breadcrumbs mb-40 mbm-15">
-                <a class="breadcrumbs__link" href="./">
-                    Главная
-                </a>
-                <a class="breadcrumbs__link" href="./residents.html">
-                    Жителям
-                </a>
-                <span class="breadcrumbs__link">
-                    Городское благоустройство
-                </span>
-            </nav>
-            <a class="link-back mb-80 mbm-35" href="./residents.html">
-                <svg class="link-back__icon">
-                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-back"></use>
-                </svg>
-                <span class="link-back__text">
-                    Городское благоустройство
-                </span>
-            </a>
-            <time class="date mb-20">
-                21.11.2022
-            </time>
-            <h1 class="title mb-25">
-                Стела «Город трудовой доблести»
-            </h1>
-            <div class="place mb-60 mbm-20">
-                <svg class="place__icon">
-                    <use xlink:href="./assets/sprite/sprite.svg#icon-marker"></use>
-                </svg>
-                <div class="place__content">
-                    <p>
-                        Екатеринбург, ул. Горького, 23
-                    </p>
+    <div class="page">
+        <main class="main">
+            <section class="section bg-white pt-100 pb-100 ptm-80 pbm-40">
+                <div class="container">
+                    <nav class="breadcrumbs mb-40 mbm-15">
+                        <a class="breadcrumbs__link" href="./">
+                            Главная
+                        </a>
+                        <a class="breadcrumbs__link" href="./residents.html">
+                            Жителям
+                        </a>
+                        <span class="breadcrumbs__link">
+                            Городское благоустройство
+                        </span>
+                    </nav>
+                    <a class="link-back mb-80 mbm-35" href="./residents.html">
+                        <svg class="link-back__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-back"></use>
+                        </svg>
+                        <span class="link-back__text">
+                            Городское благоустройство
+                        </span>
+                    </a>
+                    <time class="date mb-20">
+                        21.11.2022
+                    </time>
+                    <h1 class="title mb-25">
+                        Стела «Город трудовой доблести»
+                    </h1>
+                    <div class="place mb-60 mbm-20">
+                        <svg class="place__icon">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-marker"></use>
+                        </svg>
+                        <div class="place__content">
+                            <p>
+                                Екатеринбург, ул. Горького, 23
+                            </p>
+                        </div>
+                    </div>
+                    <div class="editor mb-80 mbm-30">
+                        <p>
+                            Указом Президента Российской Федерации от 2 июля 2020 года № 444 «О присвоении почетного звания
+                            Российской Федерации «Город трудовой доблести» городу Екатеринбургу присвоено почётное звание
+                            Российской Федерации «Город трудовой доблести».
+                            Проведен опрос среди жителей и профессионального сообщества о выборе места размещения стелы, которым
+                            стало пересечение ул. Царской и ул. Николая Никонова.
+                        </p>
+                        <picture>
+                            <img alt="Заголовок поста" src="./assets/content/post-full.jpg">
+                        </picture>
+                        <p>
+                            По инициативе Общероссийской общественно-государственной организации «Российское военно-историческое
+                            общество» и Администрации города Екатеринбурга разработан дизайн-проект стелы «Город трудовой
+                            доблести». Высота стелы составит 42 метра. Во внутреннем пространстве планируется создать
+                            экспозицию, посвященную памяти тружеников тыла.
+                        </p>
+                        <p>
+                            Кроме того, пространство вокруг стелы будут окаймлять подпорные стенки и озелененные откосы. Боковые
+                            грани стелы и подпорные стенки облицованы панелями из кортеновской стали. Панели формируют ломаную
+                            треугольную структуру, отражающую напряженную тектонику поверхностей. На панелях подпорных стенок
+                            будет выполнена перфорация с изображениями стилизованной военной техники. Со стороны улицы Николая
+                            Никонова располагается амфитеатр для проведения торжественных мероприятий, а также на территории
+                            предусмотрено создание зон отдыха. В вечернее время предусмотрена подсветка стелы и прилегающей
+                            территории.
+                        </p>
+                    </div>
+                    <script src="https://yastatic.net/share2/share.js"></script>
+                    <div class="ya-share2 " data-curtain data-services="vkontakte,odnoklassniki,telegram,viber,whatsapp"
+                         data-shape="round"></div>
                 </div>
-            </div>
-            <div class="editor mb-80 mbm-30">
-                <p>
-                    Указом Президента Российской Федерации от 2 июля 2020 года № 444 «О присвоении почетного звания
-                    Российской Федерации «Город трудовой доблести» городу Екатеринбургу присвоено почётное звание
-                    Российской Федерации «Город трудовой доблести».
-                    Проведен опрос среди жителей и профессионального сообщества о выборе места размещения стелы, которым
-                    стало пересечение ул. Царской и ул. Николая Никонова.
-                </p>
-                <picture>
-                    <img alt="Заголовок поста" src="./assets/content/post-full.jpg">
-                </picture>
-                <p>
-                    По инициативе Общероссийской общественно-государственной организации «Российское военно-историческое
-                    общество» и Администрации города Екатеринбурга разработан дизайн-проект стелы «Город трудовой
-                    доблести». Высота стелы составит 42 метра. Во внутреннем пространстве планируется создать
-                    экспозицию, посвященную памяти тружеников тыла.
-                </p>
-                <p>
-                    Кроме того, пространство вокруг стелы будут окаймлять подпорные стенки и озелененные откосы. Боковые
-                    грани стелы и подпорные стенки облицованы панелями из кортеновской стали. Панели формируют ломаную
-                    треугольную структуру, отражающую напряженную тектонику поверхностей. На панелях подпорных стенок
-                    будет выполнена перфорация с изображениями стилизованной военной техники. Со стороны улицы Николая
-                    Никонова располагается амфитеатр для проведения торжественных мероприятий, а также на территории
-                    предусмотрено создание зон отдыха. В вечернее время предусмотрена подсветка стелы и прилегающей
-                    территории.
-                </p>
-            </div>
-            <script src="https://yastatic.net/share2/share.js"></script>
-            <div class="ya-share2 " data-curtain data-services="vkontakte,odnoklassniki,telegram,viber,whatsapp"
-                 data-shape="round"></div>
-        </div>
-    </section>
-</main>
-<section class="section invert bg-dark pt-60 pb-35">
+            </section>
+        </main>
+        <section class="section invert bg-dark pt-60 pb-35">
     <div class="container">
         <div class="columns mb-35 mbm-25">
             <div class="columns__col columns__col--2 columns__col--mob-3 mbm-35">
@@ -586,7 +591,8 @@
         </div>
     </div>
 </section>
-<div hidden>
+    </div>
+    <div hidden>
     <div class="modal modal--570" id="modal-form">
         <h2 class="title title--small mb-30">
             Отправить свое фото<br> в раздел <strong class="purple">“Горожане”</strong>
@@ -613,8 +619,61 @@
             </span>
         </button>
     </div>
+
+    <nav id="menu" data-menu>
+        <ul>
+            <li class="mm-listitem--first">
+                <a href="" class="link-menu" data-link-vipanel>
+                    <svg class="link-menu__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-eye"></use>
+                    </svg>
+                    <span class="link-menu__text">
+                        Версия для слабовидящих
+                    </span>
+                </a>
+            </li>
+            <li><a href="/">Главная</a></li>
+            <li><a href="./about.html">О событии</a></li>
+            <li><a href="./history.html">История</a>
+                <ul>
+                    <li><a href="#">История города</a></li>
+                    <li><a href="#">300 имен Екатеринбурга</a></li>
+                </ul>
+            </li>
+            <li><a href="./bill.html">Афиша</a></li>
+            <li><a href="./residents.html">Жителям</a>
+                <ul>
+                    <li><a href="./improvement.html">Городское благоустройство</a></li>
+                    <li><a href="#">Реставрация</a></li>
+                    <li><a href="#">Инфраструктурные проекты</a></li>
+                    <li><a href="#">Качество жизни</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Туристам</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="./special.html">Спецпроекты</a>
+                <ul>
+                    <li><a href="./improvement.html">Городское благоустройство</a></li>
+                    <li><a href="#">Реставрация</a></li>
+                    <li><a href="#">Инфраструктурные проекты</a></li>
+                    <li><a href="#">Качество жизни</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Друзья города</a></li>
+            <li class="mm-listitem--last">
+                <a class="button button--green button--fit-m button--menu full" href="">
+                    <span class="button__text">
+                        Все новости
+                    </span>
+                    <svg class="button__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-next-green"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </div>
-<!-- Это временная секция, здесь ссылки на все страницы. На продакшене ее не будет -->
+    <!-- Это временная секция, здесь ссылки на все страницы. На продакшене ее не будет -->
 <section class="section">
     <div class="container">
         <style>
@@ -622,6 +681,7 @@
                 gap: 15px;
                 display: flex;
                 flex-wrap: wrap;
+                padding-left: 50%;
             }
 
             .temp__link {

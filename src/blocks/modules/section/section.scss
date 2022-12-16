@@ -26,12 +26,28 @@
         }
     }
 
+    &__background {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+    }
+
     &__overlay {
         top: 100%;
         position: absolute;
     }
 
     &__content {
+        &--overlay-intro {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
         &--overlay-20 {
             background-color: rgba(0, 0, 0, 0.2);
         }

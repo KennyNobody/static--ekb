@@ -65,6 +65,16 @@
             height: rem(20);
             transition: 0.3s all;
         }
+
+        .opened {
+            display: none;
+            visibility: hidden;
+        }
+
+        .closed {
+            display: block;
+            visibility: visible;
+        }
     }
 }
 
@@ -85,5 +95,17 @@
                 fill: $light;
             }
         }
+    }
+}
+
+.mm-wrapper--opened {
+    .closed {
+        display: none;
+        visibility: hidden;
+    }
+
+    .opened {
+        display: block;
+        visibility: visible;
     }
 }

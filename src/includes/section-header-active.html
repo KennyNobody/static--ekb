@@ -107,16 +107,19 @@
                             <use xlink:href="./assets/sprite/sprite.svg#icon-glass"></use>
                         </svg>
                     </button>
-                    <button class="nav__button mob-hidden">
+                    <button class="nav__button mob-hidden" data-link-vipanel>
                         <svg>
                             <use xlink:href="./assets/sprite/sprite.svg#icon-eye"></use>
                         </svg>
                     </button>
-                    <button class="nav__button desktop-hidden" data-menu-button>
-                        <svg>
+                    <a href="#menu" class="nav__button desktop-hidden">
+                        <svg class="closed">
                             <use xlink:href="./assets/sprite/sprite.svg#icon-burger"></use>
                         </svg>
-                    </button>
+                        <svg class="opened">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-close"></use>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>

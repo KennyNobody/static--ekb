@@ -47,6 +47,14 @@
         min-width: rem(230);
     }
 
+    &--menu {
+        color: $green;
+        justify-content: space-between;
+        .button__text {
+            color: $green;
+        }
+    }
+
     &--orange {
         fill: $light;
         color: $light;

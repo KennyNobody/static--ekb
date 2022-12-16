@@ -12,7 +12,7 @@
 <link href="./css/main.css" rel="stylesheet"></head>
 
 <body class="body">
-<header class="header z-index-3" data-header>
+    <header class="header z-index-3" data-header>
     <section class="section section--header pt-10 pb-10 z-index-3">
         <div class="container">
             <div class="toolbar toolbar--30">
@@ -121,16 +121,19 @@
                             <use xlink:href="./assets/sprite/sprite.svg#icon-glass"></use>
                         </svg>
                     </button>
-                    <button class="nav__button mob-hidden">
+                    <button class="nav__button mob-hidden" data-link-vipanel>
                         <svg>
                             <use xlink:href="./assets/sprite/sprite.svg#icon-eye"></use>
                         </svg>
                     </button>
-                    <button class="nav__button desktop-hidden" data-menu-button>
-                        <svg>
+                    <a href="#menu" class="nav__button desktop-hidden">
+                        <svg class="closed">
                             <use xlink:href="./assets/sprite/sprite.svg#icon-burger"></use>
                         </svg>
-                    </button>
+                        <svg class="opened">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-close"></use>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
@@ -314,793 +317,800 @@
     </section>
 </header>
 
-<main class="main">
-    <section class="section section--bg invert relative" style="background-image: url('./assets/content/bg-index.jpg')">
-        <div class="section__content--overlay--20"></div>
-        <div class="section__content section__content--full-950 pt-80 pb-150">
-            <div class="container container--flex-between">
-                <div></div>
-                <div class="columns">
-                    <div class="columns__col columns__col--6">
-                        <h1 class="title mb-40 mbm-50">
-                            <small>Городу</small> Екатеринбургу<br> 300 лет
-                        </h1>
-                        <a class="button button--orange button--fit-l" href="">
-                            <span class="button__text">
-                                Подробнее
-                            </span>
+    <div class="page">
+        <main class="main">
+            <section class="section section--bg invert relative" style="background-image: url('./assets/content/bg-index.jpg')">
+                <div class="section__background">
+                    <video class="intro" poster="./assets/images/bg-index.jpg" autoplay="autoplay" loop="loop" muted="muted">
+                        <source src="./assets/video/intro-mp4.mp4" type="video/mp4">
+                        <source src="./assets/video/intro-webm.webm" type="video/webm">
+                    </video>
+                </div>
+                <div class="section__content--overlay-intro"></div>
+                <div class="section__content section__content--full-950 pt-80 pb-150">
+                    <div class="container container--flex-between">
+                        <div></div>
+                        <div class="columns">
+                            <div class="columns__col columns__col--6">
+                                <h1 class="title mb-40 mbm-50">
+                                    <small>Городу</small> Екатеринбургу<br> 300 лет
+                                </h1>
+                                <a class="button button--orange button--fit-l" href="">
+                                    <span class="button__text">
+                                        Подробнее
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <a class="link-aside z-index-2 mob-hidden" href="">
+                            <p class="link-aside__caption">
+                                Жителям
+                            </p>
+                            <h2 class="link-aside__title">
+                                Лучшие туры по городу
+                            </h2>
+                            <svg class="link-aside__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-circle"></use>
+                            </svg>
                         </a>
+                        <div></div>
                     </div>
                 </div>
-                <a class="link-aside z-index-2 mob-hidden" href="">
-                    <p class="link-aside__caption">
-                        Жителям
-                    </p>
-                    <h2 class="link-aside__title">
-                        Лучшие туры по городу
-                    </h2>
-                    <svg class="link-aside__icon">
-                        <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-circle"></use>
-                    </svg>
-                </a>
-                <div></div>
-            </div>
-        </div>
-    </section>
-    <section class="section bg-gradient-light pt-100 pb-170 ptm-40 pbm-40 bg-1">
-        <div class="container">
-            <div class="columns columns--align">
-                <div class="columns__col columns__col--5">
-                    <span class="tag mb-20">Участвуй</span>
-                    <h2 class="title mb-20 mbm-30">
-                        Программа юбилея
-                    </h2>
-                    <div class="editor mb-40 mbm-30">
-                        <p>
-                            В год 300-летия Екатеринбург с особым размахом проведёт полюбившиеся многим и известные на
-                            весь мир флагманские мероприятия города, а также новые уникальные события.
-                        </p>
-                    </div>
-                    <a class="button button--green button--fit-m mob-hidden" href="">
-                        <span class="button__text">
-                            Все события
-                        </span>
-                        <svg class="button__icon">
-                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-next-green"></use>
-                        </svg>
-                    </a>
-                </div>
-                <div class="columns__col columns__col--7">
-                    <div class="slider mbm-35" data-slider>
-                        <div class="swiper-container slider__container slider__container--overflow slider__container--all">
-                            <button class="button-scroll button-scroll--centered-right button-scroll--large button-scroll--light mob-hidden"
-                                    data-slider-next>
-                                <svg class="button-scroll__icon">
-                                    <use xlink:href="./assets/sprite/sprite.svg#icon-slider-next"></use>
+            </section>
+            <section class="section bg-gradient-light pt-100 pb-170 ptm-40 pbm-40 bg-1">
+                <div class="container">
+                    <div class="columns columns--align">
+                        <div class="columns__col columns__col--5">
+                            <span class="tag mb-20">Участвуй</span>
+                            <h2 class="title mb-20 mbm-30">
+                                Программа юбилея
+                            </h2>
+                            <div class="editor mb-40 mbm-30">
+                                <p>
+                                    В год 300-летия Екатеринбург с особым размахом проведёт полюбившиеся многим и известные на
+                                    весь мир флагманские мероприятия города, а также новые уникальные события.
+                                </p>
+                            </div>
+                            <a class="button button--green button--fit-m mob-hidden" href="">
+                                <span class="button__text">
+                                    Все события
+                                </span>
+                                <svg class="button__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-next-green"></use>
                                 </svg>
-                            </button>
-                            <div class="swiper-wrapper slider__wrapper">
-                                <div class="swiper-slide slider__slide slider__slide--370 slider__slide--mob-240">
-                                    <a class="article-event" href="./single-bill.html">
-                                        <picture class="article-event__picture">
-                                            <img alt="" src="./assets/content/event-1.jpg">
-                                        </picture>
-                                        <div class="article-event__content">
-                                            <time class="article-event__date">
-                                                12-13.08.23
-                                            </time>
-                                            <div class="article-event__main">
-                                                <h3 class="article-event__title">
-                                                    Фестиваль уличных театров «Лица улиц»
-                                                </h3>
-                                            </div>
-                                            <span class="article-event__tag">
-                                                Фестиваль
-                                            </span>
+                            </a>
+                        </div>
+                        <div class="columns__col columns__col--7">
+                            <div class="slider mbm-35" data-slider>
+                                <div class="swiper-container slider__container slider__container--overflow slider__container--all">
+                                    <button class="button-scroll button-scroll--centered-right button-scroll--large button-scroll--light mob-hidden"
+                                            data-slider-next>
+                                        <svg class="button-scroll__icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-slider-next"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="swiper-wrapper slider__wrapper">
+                                        <div class="swiper-slide slider__slide slider__slide--370 slider__slide--mob-240">
+                                            <a class="article-event" href="./single-bill.html">
+                                                <picture class="article-event__picture">
+                                                    <img alt="" src="./assets/content/event-1.jpg">
+                                                </picture>
+                                                <div class="article-event__content">
+                                                    <time class="article-event__date">
+                                                        12-13.08.23
+                                                    </time>
+                                                    <div class="article-event__main">
+                                                        <h3 class="article-event__title">
+                                                            Фестиваль уличных театров «Лица улиц»
+                                                        </h3>
+                                                    </div>
+                                                    <span class="article-event__tag">
+                                                        Фестиваль
+                                                    </span>
+                                                </div>
+                                            </a>
                                         </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide slider__slide slider__slide--370">
-                                    <a class="article-event" href="./single-bill.html">
-                                        <picture class="article-event__picture">
-                                            <img alt="" src="./assets/content/event-2.jpg">
-                                        </picture>
-                                        <div class="article-event__content">
-                                            <time class="article-event__date">
-                                                12-20.08.23
-                                            </time>
-                                            <div class="article-event__main">
-                                                <h3 class="article-event__title">
-                                                    Фестиваль ландшафтного дизайна «АТМОФЕСТ»
-                                                </h3>
-                                            </div>
-                                            <span class="article-event__tag">
-                                                Фестиваль
-                                            </span>
+                                        <div class="swiper-slide slider__slide slider__slide--370 slider__slide--mob-240">
+                                            <a class="article-event" href="./single-bill.html">
+                                                <picture class="article-event__picture">
+                                                    <img alt="" src="./assets/content/event-2.jpg">
+                                                </picture>
+                                                <div class="article-event__content">
+                                                    <time class="article-event__date">
+                                                        12-20.08.23
+                                                    </time>
+                                                    <div class="article-event__main">
+                                                        <h3 class="article-event__title">
+                                                            Фестиваль ландшафтного дизайна «АТМОФЕСТ»
+                                                        </h3>
+                                                    </div>
+                                                    <span class="article-event__tag">
+                                                        Фестиваль
+                                                    </span>
+                                                </div>
+                                            </a>
                                         </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide slider__slide slider__slide--370">
-                                    <a class="article-event" href="./single-bill.html">
-                                        <picture class="article-event__picture">
-                                            <img alt="" src="./assets/content/event-3.jpg">
-                                        </picture>
-                                        <div class="article-event__content">
-                                            <time class="article-event__date">
-                                                19.08.23
-                                            </time>
-                                            <div class="article-event__main">
-                                                <h3 class="article-event__title">
-                                                    Трибьют-концерт Свердловского рок-клуба
-                                                </h3>
-                                            </div>
-                                            <span class="article-event__tag">
-                                                Концерт
-                                            </span>
+                                        <div class="swiper-slide slider__slide slider__slide--370 slider__slide--mob-240">
+                                            <a class="article-event" href="./single-bill.html">
+                                                <picture class="article-event__picture">
+                                                    <img alt="" src="./assets/content/event-3.jpg">
+                                                </picture>
+                                                <div class="article-event__content">
+                                                    <time class="article-event__date">
+                                                        19.08.23
+                                                    </time>
+                                                    <div class="article-event__main">
+                                                        <h3 class="article-event__title">
+                                                            Трибьют-концерт Свердловского рок-клуба
+                                                        </h3>
+                                                    </div>
+                                                    <span class="article-event__tag">
+                                                        Концерт
+                                                    </span>
+                                                </div>
+                                            </a>
                                         </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide slider__slide slider__slide--370">
-                                    <a class="article-event" href="./single-bill.html">
-                                        <picture class="article-event__picture">
-                                            <img alt="" src="./assets/content/event-1.jpg">
-                                        </picture>
-                                        <div class="article-event__content">
-                                            <time class="article-event__date">
-                                                12.02.22
-                                            </time>
-                                            <div class="article-event__main">
-                                                <h3 class="article-event__title">
-                                                    Историческая реконструкция Екатеринбурга XIX века
-                                                </h3>
-                                            </div>
-                                            <span class="article-event__tag">
-                                                Выставка
-                                            </span>
+                                        <div class="swiper-slide slider__slide slider__slide--370 slider__slide--mob-240">
+                                            <a class="article-event" href="./single-bill.html">
+                                                <picture class="article-event__picture">
+                                                    <img alt="" src="./assets/content/event-1.jpg">
+                                                </picture>
+                                                <div class="article-event__content">
+                                                    <time class="article-event__date">
+                                                        12.02.22
+                                                    </time>
+                                                    <div class="article-event__main">
+                                                        <h3 class="article-event__title">
+                                                            Историческая реконструкция Екатеринбурга XIX века
+                                                        </h3>
+                                                    </div>
+                                                    <span class="article-event__tag">
+                                                        Выставка
+                                                    </span>
+                                                </div>
+                                            </a>
                                         </div>
-                                    </a>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="desktop-hidden">
+                                <a class="button button--green button--fit-m" href="">
+                                    <span class="button__text">
+                                        Все события
+                                    </span>
+                                    <svg class="button__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-next-green"></use>
+                                    </svg>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="desktop-hidden">
-                        <a class="button button--green button--fit-m" href="">
+                </div>
+            </section>
+            <section class="section bg-white pt-100 pb-100 ptm-30 pbm-30">
+                <div class="container">
+                    <span class="tag mb-20">Узнавай</span>
+                    <div class="toolbar toolbar--end toolbar--mob-block mb-60 mbm-20">
+                        <h2 class="title mbm-20">
+                            300 историй <br> <strong class="purple">Екатеринбурга</strong>
+                        </h2>
+                        <span class="description">
+                            только факты
+                        </span>
+                    </div>
+                    <div class="editor editor--24 mb-70 mbm-30">
+                        <p>
+                            Истории открытий и изобретений, людей и институций, рожденных в Екатеринбурге за 300 лет его истории
+                            и повлиявших на развитие не только региона и страны, но и мира. Летопись города в 300 историях.
+                        </p>
+                    </div>
+                    <div class="articles">
+                        <div class="articles__content articles__content--column-20">
+                            <article class="article-drop" data-article-drop>
+                                <h3 class="article-drop__title">
+                                    Биатлон
+                                </h3>
+                                <div class="article-drop__main editor" data-article-drop-content>
+                                    <p>
+                                        На Уктусских горах в 1957 году прошел первый в Советском союзе чемпионат по биатлону.
+                                        Так началась российская страница истории одного из самых любимых видов спорта в стране.
+                                    </p>
+                                </div>
+                                <div class="article-drop__toolbar">
+                                    <button class="article-drop__link">
+                                        Показать полностью
+                                    </button>
+                                </div>
+                            </article>
+                            <article class="article-drop" data-article-drop>
+                                <h3 class="article-drop__title">
+                                    Велосипед
+                                </h3>
+                                <div class="article-drop__main editor" data-article-drop-content>
+                                    <p>
+                                        Именно уралец Ефим Артамонов в 1801 году изобрел первый в мире велосипед, за 38 лет до
+                                        изобретения его аналога в Европе. Известно, что «холоп Ефимка сын Артамонов розгами бит
+                                        за то, что в день Ильи пророка года 1800 ездил на диковинном самокате» по улицам
+                                        Екатеринбурга и пугал встречных лошадей, которые на дыбы становились, на заборы кидались
+                                        и «увечья пешеходам чинили немалые».
+                                    </p>
+                                </div>
+                                <div class="article-drop__toolbar">
+                                    <button class="article-drop__link">
+                                        Показать полностью
+                                    </button>
+                                </div>
+                            </article>
+                            <article class="article-drop" data-article-drop>
+                                <h3 class="article-drop__title">
+                                    Горы и пригорки
+                                </h3>
+                                <div class="article-drop__main editor" data-article-drop-content>
+                                    <p>
+                                        Хотя Екатеринбург находится на Урале, собственно гор здесь нет. Есть пригорки, холмы,
+                                        возвышенности. Местами можно встретить скальные выступы, например, Каменные палатки в
+                                        районе ЖБИ. Дело в том, что Уральский хребет очень старый, а значит, он разрушается уже
+                                        много сотен лет. По-настоящему высокие вершины со снежными шапками есть на севере
+                                        Свердловской области, хотя и жители Екатеринбурга гордятся репутацией суровых горцев.
+                                        Кстати, учёные утверждают, что старые Уральские горы всё-таки могут удивить внезапными
+                                        попытками подрасти. Поэтому регион считается зоной с возможной сейсмической активностью
+                                    </p>
+                                </div>
+                                <div class="article-drop__toolbar">
+                                    <button class="article-drop__link">
+                                        Показать полностью
+                                    </button>
+                                </div>
+                            </article>
+                            <article class="article-drop" data-article-drop>
+                                <h3 class="article-drop__title">
+                                    Дед мороз
+                                </h3>
+                                <div class="article-drop__main editor" data-article-drop-content>
+                                    <p>
+                                        Удивительным совпадением является то, что Екатеринбург и Дед Мороз отмечают свой день
+                                        рождения в один день – 18 ноября. 18 ноября – исторический день основания города.
+                                    </p>
+                                </div>
+                                <div class="article-drop__toolbar">
+                                    <button class="article-drop__link">
+                                        Показать полностью
+                                    </button>
+                                </div>
+                            </article>
+                            <article class="article-drop" data-article-drop>
+                                <h3 class="article-drop__title">
+                                    Клавиатура
+                                </h3>
+                                <div class="article-drop__main editor" data-article-drop-content>
+                                    <p>
+                                        Самая необычная из всех локаций – единственный на планете памятник клавиатуре, которая
+                                        является также самой большой из всех существующих. Масштаб каждой клавиши – 1:30, а вес
+                                        одной только кнопки «пробел» – 500 кг!
+                                    </p>
+                                </div>
+                                <div class="article-drop__toolbar">
+                                    <button class="article-drop__link">
+                                        Показать полностью
+                                    </button>
+                                </div>
+                            </article>
+                            <article class="article-drop" data-article-drop>
+                                <h3 class="article-drop__title">
+                                    Свердловская киностудия
+                                </h3>
+                                <div class="article-drop__main editor" data-article-drop-content>
+                                    <p>
+                                        В 1943 году начала свою работу Свердловская киностудия. Всего на киностудии снято более
+                                        200 художественных и 500 документальных картин, сотни научно-популярных фильмов и около
+                                        100 мультипликационных работ. Многие из них вошли в «золотую коллекцию» российского
+                                        кино: «Приваловские миллионы», «Зеркало для героя», «Безымянная звезда», «Продлись,
+                                        продлись очарованье», «Сильные духом» и другие.
+                                    </p>
+                                </div>
+                                <div class="article-drop__toolbar">
+                                    <button class="article-drop__link">
+                                        Показать полностью
+                                    </button>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="articles__toolbar">
+                            <button class="button button--orange button--fit-m">
+                                <span class="button__text">
+                                    Показать еще
+                                </span>
+                                <svg class="button__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-drop-orange"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section pt-100 pb-100 relative ptm-30 pbm-0">
+                <div class="block-decor"></div>
+                <div class="container relative z-index-1">
+                    <div class="columns mb-150">
+                        <div class="columns__col columns__col--4 mob-hidden">
+                            <span class="tag mb-20 invert">Действуй</span>
+                        </div>
+                        <div class="columns__col columns__col--8 pt-200 ptm-0">
+                            <div class="toolbar toolbar--start toolbar--center mb-20">
+                                <div class="logo logo--title">
+                                    <img alt="" src="./assets/images/logo-title.svg">
+                                </div>
+                                <h2 class="title">
+                                    Стань <strong class="purple">гостем</strong> <br>юбилея
+                                </h2>
+                            </div>
+                            <div class="editor editor--24 mb-45 mbm-0">
+                                <p>
+                                    Поможем спланировать путешествие в Екатеринбург — город на пересечении двух частей света,
+                                    соединивший в себе Европу и Азию.
+                                </p>
+                            </div>
+                            <a class="button button--purple button--fit-m mob-hidden" href="">
+                                <span class="button__text">
+                                    Экскурсии и туры в Екатеринбург
+                                </span>
+                                <svg class="button__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-next-purple"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="columns decor-1 ptm-40 pbm-40">
+                        <div class="columns__col columns__col--4 mb-15 desktop-hidden">
+                            <span class="tag">Действуй</span>
+                        </div>
+                        <div class="columns__col columns__col--4 mbm-30">
+                            <a class="article-excursion" href="">
+                                <picture class="article-excursion__pucture">
+                                    <img alt="Экстрим приключения на квадрогигантах по" src="./assets/content/excursion-1.jpg">
+                                </picture>
+                                <div class="article-excursion__content">
+                                    <div class="article-excursion__header">
+                                        <span class="article-excursion__price">
+                                            от 1 750 ₽
+                                        </span>
+                                        <span class="article-excursion__date">
+                                            22.07.23 | 3 дня
+                                        </span>
+                                    </div>
+                                    <div class="article-excursion__main">
+                                        <h3 class="article-excursion__title">
+                                            Где разместиться: от недорогих хостелов до роскошных пятизвёздочных отелей в самом центре города
+                                        </h3>
+                                    </div>
+                                    <div class="article-excursion__footer">
+                                        <span class="article-excursion__caption">
+                                            Обзорные экскурсии
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="columns__col columns__col--4 mbm-30">
+                            <a class="article-excursion" href="">
+                                <picture class="article-excursion__pucture">
+                                    <img alt="Экстрим приключения на квадрогигантах по" src="./assets/content/excursion-2.jpg">
+                                </picture>
+                                <div class="article-excursion__content">
+                                    <div class="article-excursion__header">
+                                        <span class="article-excursion__price">
+                                            от 1 750 ₽
+                                        </span>
+                                        <span class="article-excursion__date">
+                                            22.07.23 | 3 дня
+                                        </span>
+                                    </div>
+                                    <div class="article-excursion__main">
+                                        <h3 class="article-excursion__title">
+                                            Лучшие рестораны города
+                                        </h3>
+                                    </div>
+                                    <div class="article-excursion__footer">
+                                        <span class="article-excursion__caption">
+                                            Обзорные экскурсии
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="columns__col columns__col--4 mbm-25">
+                            <a class="article-excursion" href="">
+                                <picture class="article-excursion__pucture">
+                                    <img alt="Экскурсия на Свердловскую киностудию" src="./assets/content/excursion-3.jpg">
+                                </picture>
+                                <div class="article-excursion__content">
+                                    <div class="article-excursion__header">
+                                        <span class="article-excursion__price">
+                                            от 1 750 ₽
+                                        </span>
+                                        <span class="article-excursion__date">
+                                            22.07.23 | 3 дня
+                                        </span>
+                                    </div>
+                                    <div class="article-excursion__main">
+                                        <h3 class="article-excursion__title">
+                                            ТОП экскурсий по Екатеринбургу
+                                        </h3>
+                                    </div>
+                                    <div class="article-excursion__footer">
+                                        <span class="article-excursion__caption">
+                                            Обзорные экскурсии
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="columns__col columns__col--12 desktop-hidden">
+                            <a class="button button--purple button--fit-m" href="">
+                                <span class="button__text">
+                                    Экскурсии и туры в Екатеринбург
+                                </span>
+                                <svg class="button__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-next-purple"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section pt-100 pb-100 bg-grey ptm-30 pbm-40">
+                <div class="container">
+                    <span class="tag mb-20 mbm-10">Читай</span>
+                    <div class="toolbar toolbar--mob-block mb-60 mbm-30">
+                        <h2 class="title">
+                            Новости <strong class="green">города</strong>
+                        </h2>
+                        <a class="button button--green button--fit-m mob-hidden" href="">
                             <span class="button__text">
-                                Все события
+                                Все новости
                             </span>
                             <svg class="button__icon">
                                 <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-next-green"></use>
                             </svg>
                         </a>
                     </div>
+                    <div class="columns">
+                        <div class="columns__col columns__col--12 mbm-20">
+                            <a class="article-post article-post--invert article-post--large" href="">
+                                <picture class="article-post__picture">
+                                    <img alt="" src="./assets/content/post-1.jpg">
+                                </picture>
+                                <div class="article-post__content">
+                                    <div class="article-post__header">
+                                        <span class="article-post__tag">
+                                            Выставка
+                                        </span>
+                                        <time class="article-post__date">
+                                            12.02.22
+                                        </time>
+                                    </div>
+                                    <div class="article-post__main">
+                                        <h3 class="article-post__title">
+                                            300-летие Екатеринбурга станет темой ледового городка
+                                        </h3>
+                                        <div class="article-post__description">
+                                            <p>
+                                                Начальник Управления культуры Администрации города Екатеринбурга Илья Марков в
+                                                ходе онлайн-брифинга рассказал, как уральская столица готовится к Новому году.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="article-post__footer">
+                                        <span class="article-post__link">
+                                            Подробнее
+                                        </span>
+                                        <svg class="article-post__icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-next"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="columns__col columns__col--4 mbm-20">
+                            <a class="article-post article-post--invert article-post--regular" href="">
+                                <div class="article-post__content">
+                                    <div class="article-post__header">
+                                        <span class="article-post__tag">
+                                            Выставка
+                                        </span>
+                                        <time class="article-post__date">
+                                            12.02.22
+                                        </time>
+                                    </div>
+                                    <div class="article-post__main">
+                                        <h3 class="article-post__title">
+                                            На Макаровском мосту успешно прошел первый этап пусконаладочных работ новой системы
+                                            иллюминации
+                                        </h3>
+                                        <div class="article-post__description">
+                                            <p>
+                                                На опорах уличного освещения установлены 30 световых конструкций.Новая
+                                                иллюминация, расположенная на опорах освещения Макаровского моста, была запущена
+                                                накануне в тестовом режиме.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="article-post__footer">
+                                        <span class="article-post__link">
+                                            Подробнее
+                                        </span>
+                                        <svg class="article-post__icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-next"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="columns__col columns__col--4 mbm-20">
+                            <a class="article-post article-post--regular" href="">
+                                <picture class="article-post__picture">
+                                    <img alt="" src="./assets/content/post-2.jpg">
+                                </picture>
+                                <div class="article-post__content">
+                                    <div class="article-post__header">
+                                        <span class="article-post__tag">
+                                            Выставка
+                                        </span>
+                                        <time class="article-post__date">
+                                            12.02.22
+                                        </time>
+                                    </div>
+                                    <div class="article-post__main">
+                                        <h3 class="article-post__title">
+                                            Проекты Дня города будут не только развлекать, но и просвещать
+                                        </h3>
+                                    </div>
+                                    <div class="article-post__footer">
+                                        <span class="article-post__link">
+                                            Подробнее
+                                        </span>
+                                        <svg class="article-post__icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-next"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="columns__col columns__col--4">
+                            <a class="article-post article-post--regular" href="">
+                                <picture class="article-post__picture">
+                                    <img alt="" src="./assets/content/post-3.jpg">
+                                </picture>
+                                <div class="article-post__content">
+                                    <div class="article-post__header">
+                                        <span class="article-post__tag">
+                                            Выставка
+                                        </span>
+                                        <time class="article-post__date">
+                                            12.02.22
+                                        </time>
+                                    </div>
+                                    <div class="article-post__main">
+                                        <h3 class="article-post__title">
+                                            Запуск ретропоезда «Уральский экспресс»
+                                        </h3>
+                                    </div>
+                                    <div class="article-post__footer">
+                                        <span class="article-post__link">
+                                            Подробнее
+                                        </span>
+                                        <svg class="article-post__icon">
+                                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-next"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="section bg-white pt-100 pb-100 ptm-30 pbm-30">
-        <div class="container">
-            <span class="tag mb-20">Узнавай</span>
-            <div class="toolbar toolbar--end toolbar--mob-block mb-60 mbm-20">
-                <h2 class="title mbm-20">
-                    300 историй <br> <strong class="purple">Екатеринбурга</strong>
-                </h2>
-                <span class="description">
-                    только факты
-                </span>
-            </div>
-            <div class="editor editor--24 mb-70 mbm-30">
-                <p>
-                    Истории открытий и изобретений, людей и институций, рожденных в Екатеринбурге за 300 лет его истории
-                    и повлиявших на развитие не только региона и страны, но и мира. Летопись города в 300 историях.
-                </p>
-            </div>
-            <div class="articles">
-                <div class="articles__content articles__content--column-20">
-                    <article class="article-drop" data-article-drop>
-                        <h3 class="article-drop__title">
-                            Биатлон
-                        </h3>
-                        <div class="article-drop__main editor" data-article-drop-content>
-                            <p>
-                                На Уктусских горах в 1957 году прошел первый в Советском союзе чемпионат по биатлону.
-                                Так началась российская страница истории одного из самых любимых видов спорта в стране.
-                            </p>
-                        </div>
-                        <div class="article-drop__toolbar">
-                            <button class="article-drop__link">
-                                Показать полностью
-                            </button>
-                        </div>
-                    </article>
-                    <article class="article-drop" data-article-drop>
-                        <h3 class="article-drop__title">
-                            Велосипед
-                        </h3>
-                        <div class="article-drop__main editor" data-article-drop-content>
-                            <p>
-                                Именно уралец Ефим Артамонов в 1801 году изобрел первый в мире велосипед, за 38 лет до
-                                изобретения его аналога в Европе. Известно, что «холоп Ефимка сын Артамонов розгами бит
-                                за то, что в день Ильи пророка года 1800 ездил на диковинном самокате» по улицам
-                                Екатеринбурга и пугал встречных лошадей, которые на дыбы становились, на заборы кидались
-                                и «увечья пешеходам чинили немалые».
-                            </p>
-                        </div>
-                        <div class="article-drop__toolbar">
-                            <button class="article-drop__link">
-                                Показать полностью
-                            </button>
-                        </div>
-                    </article>
-                    <article class="article-drop" data-article-drop>
-                        <h3 class="article-drop__title">
-                            Горы и пригорки
-                        </h3>
-                        <div class="article-drop__main editor" data-article-drop-content>
-                            <p>
-                                Хотя Екатеринбург находится на Урале, собственно гор здесь нет. Есть пригорки, холмы,
-                                возвышенности. Местами можно встретить скальные выступы, например, Каменные палатки в
-                                районе ЖБИ. Дело в том, что Уральский хребет очень старый, а значит, он разрушается уже
-                                много сотен лет. По-настоящему высокие вершины со снежными шапками есть на севере
-                                Свердловской области, хотя и жители Екатеринбурга гордятся репутацией суровых горцев.
-                                Кстати, учёные утверждают, что старые Уральские горы всё-таки могут удивить внезапными
-                                попытками подрасти. Поэтому регион считается зоной с возможной сейсмической активностью
-                            </p>
-                        </div>
-                        <div class="article-drop__toolbar">
-                            <button class="article-drop__link">
-                                Показать полностью
-                            </button>
-                        </div>
-                    </article>
-                    <article class="article-drop" data-article-drop>
-                        <h3 class="article-drop__title">
-                            Дед мороз
-                        </h3>
-                        <div class="article-drop__main editor" data-article-drop-content>
-                            <p>
-                                Удивительным совпадением является то, что Екатеринбург и Дед Мороз отмечают свой день
-                                рождения в один день – 18 ноября. 18 ноября – исторический день основания города.
-                            </p>
-                        </div>
-                        <div class="article-drop__toolbar">
-                            <button class="article-drop__link">
-                                Показать полностью
-                            </button>
-                        </div>
-                    </article>
-                    <article class="article-drop" data-article-drop>
-                        <h3 class="article-drop__title">
-                            Клавиатура
-                        </h3>
-                        <div class="article-drop__main editor" data-article-drop-content>
-                            <p>
-                                Самая необычная из всех локаций – единственный на планете памятник клавиатуре, которая
-                                является также самой большой из всех существующих. Масштаб каждой клавиши – 1:30, а вес
-                                одной только кнопки «пробел» – 500 кг!
-                            </p>
-                        </div>
-                        <div class="article-drop__toolbar">
-                            <button class="article-drop__link">
-                                Показать полностью
-                            </button>
-                        </div>
-                    </article>
-                    <article class="article-drop" data-article-drop>
-                        <h3 class="article-drop__title">
-                            Свердловская киностудия
-                        </h3>
-                        <div class="article-drop__main editor" data-article-drop-content>
-                            <p>
-                                В 1943 году начала свою работу Свердловская киностудия. Всего на киностудии снято более
-                                200 художественных и 500 документальных картин, сотни научно-популярных фильмов и около
-                                100 мультипликационных работ. Многие из них вошли в «золотую коллекцию» российского
-                                кино: «Приваловские миллионы», «Зеркало для героя», «Безымянная звезда», «Продлись,
-                                продлись очарованье», «Сильные духом» и другие.
-                            </p>
-                        </div>
-                        <div class="article-drop__toolbar">
-                            <button class="article-drop__link">
-                                Показать полностью
-                            </button>
-                        </div>
-                    </article>
-                </div>
-                <div class="articles__toolbar">
-                    <button class="button button--orange button--fit-m">
-                        <span class="button__text">
-                            Показать еще
-                        </span>
-                        <svg class="button__icon">
-                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-drop-orange"></use>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section pt-100 pb-100 relative ptm-30 pbm-0">
-        <div class="block-decor"></div>
-        <div class="container relative z-index-1">
-            <div class="columns mb-150">
-                <div class="columns__col columns__col--4 mob-hidden">
-                    <span class="tag mb-20 invert">Действуй</span>
-                </div>
-                <div class="columns__col columns__col--8 pt-200 ptm-0">
-                    <div class="toolbar toolbar--start toolbar--center mb-20">
-                        <div class="logo logo--title">
-                            <img alt="" src="./assets/images/logo-title.svg">
-                        </div>
-                        <h2 class="title">
-                            Стань <strong class="purple">гостем</strong> <br>юбилея
+            </section>
+            <section class="section pt-170 pb-100 ptm-160 pbm-40 bg-light">
+                <div class="container">
+                    <div class="toolbar toolbar--mob-block mb-60 mbm-20">
+                        <h2 class="title mbm-20">
+                            Горожане
                         </h2>
+                        <a class="button button--purple button--fit-m decor-2" href="#modal-form" data-fancybox>
+                            <span class="button__text">
+                                Приcлать фото
+                            </span>
+                            <svg class="button__icon button__icon--l">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-camera"></use>
+                            </svg>
+                        </a>
                     </div>
-                    <div class="editor editor--24 mb-45 mbm-0">
-                        <p>
-                            Поможем спланировать путешествие в Екатеринбург — город на пересечении двух частей света,
-                            соединивший в себе Европу и Азию.
-                        </p>
-                    </div>
-                    <a class="button button--purple button--fit-m mob-hidden" href="">
-                        <span class="button__text">
-                            Экскурсии и туры в Екатеринбург
-                        </span>
-                        <svg class="button__icon">
-                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-next-purple"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="columns decor-1 ptm-40 pbm-40">
-                <div class="columns__col columns__col--4 mb-15 desktop-hidden">
-                    <span class="tag">Действуй</span>
-                </div>
-                <div class="columns__col columns__col--4 mbm-30">
-                    <a class="article-excursion" href="">
-                        <picture class="article-excursion__pucture">
-                            <img alt="Экстрим приключения на квадрогигантах по" src="./assets/content/excursion-1.jpg">
-                        </picture>
-                        <div class="article-excursion__content">
-                            <div class="article-excursion__header">
-                                <span class="article-excursion__price">
-                                    от 1 750 ₽
-                                </span>
-                                <span class="article-excursion__date">
-                                    22.07.23 | 3 дня
-                                </span>
-                            </div>
-                            <div class="article-excursion__main">
-                                <h3 class="article-excursion__title">
-                                    Где разместиться: от недорогих хостелов до роскошных пятизвёздочных отелей в самом центре города
-                                </h3>
-                            </div>
-                            <div class="article-excursion__footer">
-                                <span class="article-excursion__caption">
-                                    Обзорные экскурсии
-                                </span>
-                            </div>
+                    <div class="articles" data-articles>
+                        <div class="articles__header">
+                            <form action="" class="form">
+                                <div class="desktop-hidden">
+                                    <select class="select select--purple select--icon-drop-purple">
+                                        <option value="" selected="">Районы города</option>
+                                        <option value="1">Кировский</option>
+                                        <option value="2">Ворошиловский</option>
+                                        <option value="3">Петровский</option>
+                                    </select>
+                                </div>
+                                <fieldset class="fieldset mob-hidden">
+                                    <label class="radio radio--purple">
+                                        <input checked class="radio__field" name="gallery" type="radio">
+                                        <span class="radio__wrapper">
+                                            <span class="radio__title">
+                                                Екатеринбург 60-х
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="radio radio--purple">
+                                        <input class="radio__field" name="gallery" type="radio">
+                                        <span class="radio__wrapper">
+                                            <span class="radio__title">
+                                                Екатеринбург в 90-е
+                                            </span>
+                                        </span>
+                                    </label>
+                                    </label>
+                                    <label class="radio radio--purple">
+                                        <input class="radio__field" name="gallery" type="radio">
+                                        <span class="radio__wrapper">
+                                            <span class="radio__title">
+                                                Я в Историческом сквере
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="radio radio--purple">
+                                        <input class="radio__field" name="gallery" type="radio">
+                                        <span class="radio__wrapper">
+                                            <span class="radio__title">
+                                                Я с любимой достопримечательностью города
+                                            </span>
+                                        </span>
+                                    </label>
+                                </fieldset>
+                            </form>
                         </div>
-                    </a>
-                </div>
-                <div class="columns__col columns__col--4 mbm-30">
-                    <a class="article-excursion" href="">
-                        <picture class="article-excursion__pucture">
-                            <img alt="Экстрим приключения на квадрогигантах по" src="./assets/content/excursion-2.jpg">
-                        </picture>
-                        <div class="article-excursion__content">
-                            <div class="article-excursion__header">
-                                <span class="article-excursion__price">
-                                    от 1 750 ₽
-                                </span>
-                                <span class="article-excursion__date">
-                                    22.07.23 | 3 дня
-                                </span>
-                            </div>
-                            <div class="article-excursion__main">
-                                <h3 class="article-excursion__title">
-                                    Лучшие рестораны города
-                                </h3>
-                            </div>
-                            <div class="article-excursion__footer">
-                                <span class="article-excursion__caption">
-                                    Обзорные экскурсии
-                                </span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="columns__col columns__col--4 mbm-25">
-                    <a class="article-excursion" href="">
-                        <picture class="article-excursion__pucture">
-                            <img alt="Экскурсия на Свердловскую киностудию" src="./assets/content/excursion-3.jpg">
-                        </picture>
-                        <div class="article-excursion__content">
-                            <div class="article-excursion__header">
-                                <span class="article-excursion__price">
-                                    от 1 750 ₽
-                                </span>
-                                <span class="article-excursion__date">
-                                    22.07.23 | 3 дня
-                                </span>
-                            </div>
-                            <div class="article-excursion__main">
-                                <h3 class="article-excursion__title">
-                                    ТОП экскурсий по Екатеринбургу
-                                </h3>
-                            </div>
-                            <div class="article-excursion__footer">
-                                <span class="article-excursion__caption">
-                                    Обзорные экскурсии
-                                </span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="columns__col columns__col--12 desktop-hidden">
-                    <a class="button button--purple button--fit-m" href="">
-                        <span class="button__text">
-                            Экскурсии и туры в Екатеринбург
-                        </span>
-                        <svg class="button__icon">
-                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-next-purple"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section pt-100 pb-100 bg-grey ptm-30 pbm-40">
-        <div class="container">
-            <span class="tag mb-20 mbm-10">Читай</span>
-            <div class="toolbar toolbar--mob-block mb-60 mbm-30">
-                <h2 class="title">
-                    Новости <strong class="green">города</strong>
-                </h2>
-                <a class="button button--green button--fit-m mob-hidden" href="">
-                    <span class="button__text">
-                        Все новости
-                    </span>
-                    <svg class="button__icon">
-                        <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-next-green"></use>
-                    </svg>
-                </a>
-            </div>
-            <div class="columns">
-                <div class="columns__col columns__col--12 mbm-20">
-                    <a class="article-post article-post--invert article-post--large" href="">
-                        <picture class="article-post__picture">
-                            <img alt="" src="./assets/content/post-1.jpg">
-                        </picture>
-                        <div class="article-post__content">
-                            <div class="article-post__header">
-                                <span class="article-post__tag">
-                                    Выставка
-                                </span>
-                                <time class="article-post__date">
-                                    12.02.22
-                                </time>
-                            </div>
-                            <div class="article-post__main">
-                                <h3 class="article-post__title">
-                                    300-летие Екатеринбурга станет темой ледового городка
-                                </h3>
-                                <div class="article-post__description">
-                                    <p>
-                                        Начальник Управления культуры Администрации города Екатеринбурга Илья Марков в
-                                        ходе онлайн-брифинга рассказал, как уральская столица готовится к Новому году.
-                                    </p>
+                        <div class="articles__content">
+                            <div class="masonry" data-masonry>
+                                <div class="masonry__item">
+                                    <article class="article-person">
+                                        <picture class="article-person__picture">
+                                            <img alt="" src="https://placeholder.pics/svg/570x570">
+                                        </picture>
+                                        <span class="article-person__tag">
+                                            Екатеринбург 60-х
+                                        </span>
+                                    </article>
+                                </div>
+                                <div class="masonry__item">
+                                    <article class="article-person">
+                                        <picture class="article-person__picture">
+                                            <img alt="" src="https://placeholder.pics/svg/570x570">
+                                        </picture>
+                                        <span class="article-person__tag">
+                                            Екатеринбург 60-х
+                                        </span>
+                                    </article>
+                                </div>
+                                <div class="masonry__item">
+                                    <article class="article-person">
+                                        <picture class="article-person__picture">
+                                            <img alt="" src="https://placeholder.pics/svg/570x570">
+                                        </picture>
+                                        <span class="article-person__tag">
+                                            Екатеринбург 60-х
+                                        </span>
+                                    </article>
+                                </div>
+                                <div class="masonry__item">
+                                    <article class="article-person">
+                                        <picture class="article-person__picture">
+                                            <img alt="" src="https://placeholder.pics/svg/570x570">
+                                        </picture>
+                                        <span class="article-person__tag">
+                                            Екатеринбург 60-х
+                                        </span>
+                                    </article>
+                                </div>
+                                <div class="masonry__item">
+                                    <article class="article-person">
+                                        <picture class="article-person__picture">
+                                            <img alt="" src="https://placeholder.pics/svg/570x570">
+                                        </picture>
+                                        <span class="article-person__tag">
+                                            Екатеринбург 60-х
+                                        </span>
+                                    </article>
+                                </div>
+                                <div class="masonry__item">
+                                    <article class="article-person">
+                                        <picture class="article-person__picture">
+                                            <img alt="" src="https://placeholder.pics/svg/570x570">
+                                        </picture>
+                                        <span class="article-person__tag">
+                                            Екатеринбург 60-х
+                                        </span>
+                                    </article>
+                                </div>
+                                <div class="masonry__item">
+                                    <article class="article-person">
+                                        <picture class="article-person__picture">
+                                            <img alt="" src="https://placeholder.pics/svg/570x570">
+                                        </picture>
+                                        <span class="article-person__tag">
+                                            Екатеринбург 60-х
+                                        </span>
+                                    </article>
+                                </div>
+                                <div class="masonry__item">
+                                    <article class="article-person">
+                                        <picture class="article-person__picture">
+                                            <img alt="" src="https://placeholder.pics/svg/570x570">
+                                        </picture>
+                                        <span class="article-person__tag">
+                                            Екатеринбург 60-х
+                                        </span>
+                                    </article>
+                                </div>
+                                <div class="masonry__item">
+                                    <article class="article-person">
+                                        <picture class="article-person__picture">
+                                            <img alt="" src="https://placeholder.pics/svg/570x570">
+                                        </picture>
+                                        <span class="article-person__tag">
+                                            Екатеринбург 60-х
+                                        </span>
+                                    </article>
+                                </div>
+                                <div class="masonry__item">
+                                    <article class="article-person">
+                                        <picture class="article-person__picture">
+                                            <img alt="" src="https://placeholder.pics/svg/570x570">
+                                        </picture>
+                                        <span class="article-person__tag">
+                                            Екатеринбург 60-х
+                                        </span>
+                                    </article>
+                                </div>
+                                <div class="masonry__item">
+                                    <article class="article-person">
+                                        <picture class="article-person__picture">
+                                            <img alt="" src="https://placeholder.pics/svg/570x570">
+                                        </picture>
+                                        <span class="article-person__tag">
+                                            Екатеринбург 60-х
+                                        </span>
+                                    </article>
+                                </div>
+                                <div class="masonry__item">
+                                    <article class="article-person">
+                                        <picture class="article-person__picture">
+                                            <img alt="" src="https://placeholder.pics/svg/570x570">
+                                        </picture>
+                                        <span class="article-person__tag">
+                                            Екатеринбург 60-х
+                                        </span>
+                                    </article>
                                 </div>
                             </div>
-                            <div class="article-post__footer">
-                                <span class="article-post__link">
-                                    Подробнее
+                        </div>
+                        <div class="articles__toolbar">
+                            <button class="button button--orange button--fit-m">
+                                <span class="button__text">
+                                    Показать еще
                                 </span>
-                                <svg class="article-post__icon">
-                                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-next"></use>
+                                <svg class="button__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-drop-orange"></use>
                                 </svg>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="columns__col columns__col--4 mbm-20">
-                    <a class="article-post article-post--invert article-post--regular" href="">
-                        <div class="article-post__content">
-                            <div class="article-post__header">
-                                <span class="article-post__tag">
-                                    Выставка
-                                </span>
-                                <time class="article-post__date">
-                                    12.02.22
-                                </time>
-                            </div>
-                            <div class="article-post__main">
-                                <h3 class="article-post__title">
-                                    На Макаровском мосту успешно прошел первый этап пусконаладочных работ новой системы
-                                    иллюминации
-                                </h3>
-                                <div class="article-post__description">
-                                    <p>
-                                        На опорах уличного освещения установлены 30 световых конструкций.Новая
-                                        иллюминация, расположенная на опорах освещения Макаровского моста, была запущена
-                                        накануне в тестовом режиме.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="article-post__footer">
-                                <span class="article-post__link">
-                                    Подробнее
-                                </span>
-                                <svg class="article-post__icon">
-                                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-next"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="columns__col columns__col--4 mbm-20">
-                    <a class="article-post article-post--regular" href="">
-                        <picture class="article-post__picture">
-                            <img alt="" src="./assets/content/post-2.jpg">
-                        </picture>
-                        <div class="article-post__content">
-                            <div class="article-post__header">
-                                <span class="article-post__tag">
-                                    Выставка
-                                </span>
-                                <time class="article-post__date">
-                                    12.02.22
-                                </time>
-                            </div>
-                            <div class="article-post__main">
-                                <h3 class="article-post__title">
-                                    Проекты Дня города будут не только развлекать, но и просвещать
-                                </h3>
-                            </div>
-                            <div class="article-post__footer">
-                                <span class="article-post__link">
-                                    Подробнее
-                                </span>
-                                <svg class="article-post__icon">
-                                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-next"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="columns__col columns__col--4">
-                    <a class="article-post article-post--regular" href="">
-                        <picture class="article-post__picture">
-                            <img alt="" src="./assets/content/post-3.jpg">
-                        </picture>
-                        <div class="article-post__content">
-                            <div class="article-post__header">
-                                <span class="article-post__tag">
-                                    Выставка
-                                </span>
-                                <time class="article-post__date">
-                                    12.02.22
-                                </time>
-                            </div>
-                            <div class="article-post__main">
-                                <h3 class="article-post__title">
-                                    Запуск ретропоезда «Уральский экспресс»
-                                </h3>
-                            </div>
-                            <div class="article-post__footer">
-                                <span class="article-post__link">
-                                    Подробнее
-                                </span>
-                                <svg class="article-post__icon">
-                                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-next"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section pt-170 pb-100 ptm-160 pbm-40 bg-light">
-        <div class="container">
-            <div class="toolbar toolbar--mob-block mb-60 mbm-20">
-                <h2 class="title mbm-20">
-                    Горожане
-                </h2>
-                <a class="button button--purple button--fit-m decor-2" href="#modal-form" data-fancybox>
-                    <span class="button__text">
-                        Приcлать фото
-                    </span>
-                    <svg class="button__icon button__icon--l">
-                        <use xlink:href="./assets/sprite/sprite.svg#icon-camera"></use>
-                    </svg>
-                </a>
-            </div>
-            <div class="articles" data-articles>
-                <div class="articles__header">
-                    <form action="" class="form">
-                        <div class="desktop-hidden">
-                            <select class="select select--purple select--icon-drop-purple">
-                                <option value="" selected="">Районы города</option>
-                                <option value="1">Кировский</option>
-                                <option value="2">Ворошиловский</option>
-                                <option value="3">Петровский</option>
-                            </select>
-                        </div>
-                        <fieldset class="fieldset mob-hidden">
-                            <label class="radio radio--purple">
-                                <input checked class="radio__field" name="gallery" type="radio">
-                                <span class="radio__wrapper">
-                                    <span class="radio__title">
-                                        Екатеринбург 60-х
-                                    </span>
-                                </span>
-                            </label>
-                            <label class="radio radio--purple">
-                                <input class="radio__field" name="gallery" type="radio">
-                                <span class="radio__wrapper">
-                                    <span class="radio__title">
-                                        Екатеринбург в 90-е
-                                    </span>
-                                </span>
-                            </label>
-                            </label>
-                            <label class="radio radio--purple">
-                                <input class="radio__field" name="gallery" type="radio">
-                                <span class="radio__wrapper">
-                                    <span class="radio__title">
-                                        Я в Историческом сквере
-                                    </span>
-                                </span>
-                            </label>
-                            <label class="radio radio--purple">
-                                <input class="radio__field" name="gallery" type="radio">
-                                <span class="radio__wrapper">
-                                    <span class="radio__title">
-                                        Я с любимой достопримечательностью города
-                                    </span>
-                                </span>
-                            </label>
-                        </fieldset>
-                    </form>
-                </div>
-                <div class="articles__content">
-                    <div class="masonry" data-masonry>
-                        <div class="masonry__item">
-                            <article class="article-person">
-                                <picture class="article-person__picture">
-                                    <img alt="" src="https://placeholder.pics/svg/570x570">
-                                </picture>
-                                <span class="article-person__tag">
-                                    Екатеринбург 60-х
-                                </span>
-                            </article>
-                        </div>
-                        <div class="masonry__item">
-                            <article class="article-person">
-                                <picture class="article-person__picture">
-                                    <img alt="" src="https://placeholder.pics/svg/570x570">
-                                </picture>
-                                <span class="article-person__tag">
-                                    Екатеринбург 60-х
-                                </span>
-                            </article>
-                        </div>
-                        <div class="masonry__item">
-                            <article class="article-person">
-                                <picture class="article-person__picture">
-                                    <img alt="" src="https://placeholder.pics/svg/570x570">
-                                </picture>
-                                <span class="article-person__tag">
-                                    Екатеринбург 60-х
-                                </span>
-                            </article>
-                        </div>
-                        <div class="masonry__item">
-                            <article class="article-person">
-                                <picture class="article-person__picture">
-                                    <img alt="" src="https://placeholder.pics/svg/570x570">
-                                </picture>
-                                <span class="article-person__tag">
-                                    Екатеринбург 60-х
-                                </span>
-                            </article>
-                        </div>
-                        <div class="masonry__item">
-                            <article class="article-person">
-                                <picture class="article-person__picture">
-                                    <img alt="" src="https://placeholder.pics/svg/570x570">
-                                </picture>
-                                <span class="article-person__tag">
-                                    Екатеринбург 60-х
-                                </span>
-                            </article>
-                        </div>
-                        <div class="masonry__item">
-                            <article class="article-person">
-                                <picture class="article-person__picture">
-                                    <img alt="" src="https://placeholder.pics/svg/570x570">
-                                </picture>
-                                <span class="article-person__tag">
-                                    Екатеринбург 60-х
-                                </span>
-                            </article>
-                        </div>
-                        <div class="masonry__item">
-                            <article class="article-person">
-                                <picture class="article-person__picture">
-                                    <img alt="" src="https://placeholder.pics/svg/570x570">
-                                </picture>
-                                <span class="article-person__tag">
-                                    Екатеринбург 60-х
-                                </span>
-                            </article>
-                        </div>
-                        <div class="masonry__item">
-                            <article class="article-person">
-                                <picture class="article-person__picture">
-                                    <img alt="" src="https://placeholder.pics/svg/570x570">
-                                </picture>
-                                <span class="article-person__tag">
-                                    Екатеринбург 60-х
-                                </span>
-                            </article>
-                        </div>
-                        <div class="masonry__item">
-                            <article class="article-person">
-                                <picture class="article-person__picture">
-                                    <img alt="" src="https://placeholder.pics/svg/570x570">
-                                </picture>
-                                <span class="article-person__tag">
-                                    Екатеринбург 60-х
-                                </span>
-                            </article>
-                        </div>
-                        <div class="masonry__item">
-                            <article class="article-person">
-                                <picture class="article-person__picture">
-                                    <img alt="" src="https://placeholder.pics/svg/570x570">
-                                </picture>
-                                <span class="article-person__tag">
-                                    Екатеринбург 60-х
-                                </span>
-                            </article>
-                        </div>
-                        <div class="masonry__item">
-                            <article class="article-person">
-                                <picture class="article-person__picture">
-                                    <img alt="" src="https://placeholder.pics/svg/570x570">
-                                </picture>
-                                <span class="article-person__tag">
-                                    Екатеринбург 60-х
-                                </span>
-                            </article>
-                        </div>
-                        <div class="masonry__item">
-                            <article class="article-person">
-                                <picture class="article-person__picture">
-                                    <img alt="" src="https://placeholder.pics/svg/570x570">
-                                </picture>
-                                <span class="article-person__tag">
-                                    Екатеринбург 60-х
-                                </span>
-                            </article>
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="articles__toolbar">
-                    <button class="button button--orange button--fit-m">
-                        <span class="button__text">
-                            Показать еще
-                        </span>
-                        <svg class="button__icon">
-                            <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-drop-orange"></use>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-<section class="section invert bg-dark pt-60 pb-35">
+            </section>
+        </main>
+        <section class="section invert bg-dark pt-60 pb-35">
     <div class="container">
         <div class="columns mb-35 mbm-25">
             <div class="columns__col columns__col--2 columns__col--mob-3 mbm-35">
@@ -1258,6 +1268,7 @@
         </div>
     </div>
 </section>
+    </div>
 <div hidden>
     <div class="modal modal--570" id="modal-form">
         <h2 class="title title--small mb-30">
@@ -1285,6 +1296,59 @@
             </span>
         </button>
     </div>
+
+    <nav id="menu" data-menu>
+        <ul>
+            <li class="mm-listitem--first">
+                <a href="" class="link-menu" data-link-vipanel>
+                    <svg class="link-menu__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-eye"></use>
+                    </svg>
+                    <span class="link-menu__text">
+                        Версия для слабовидящих
+                    </span>
+                </a>
+            </li>
+            <li><a href="/">Главная</a></li>
+            <li><a href="./about.html">О событии</a></li>
+            <li><a href="./history.html">История</a>
+                <ul>
+                    <li><a href="#">История города</a></li>
+                    <li><a href="#">300 имен Екатеринбурга</a></li>
+                </ul>
+            </li>
+            <li><a href="./bill.html">Афиша</a></li>
+            <li><a href="./residents.html">Жителям</a>
+                <ul>
+                    <li><a href="./improvement.html">Городское благоустройство</a></li>
+                    <li><a href="#">Реставрация</a></li>
+                    <li><a href="#">Инфраструктурные проекты</a></li>
+                    <li><a href="#">Качество жизни</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Туристам</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="./special.html">Спецпроекты</a>
+                <ul>
+                    <li><a href="./improvement.html">Городское благоустройство</a></li>
+                    <li><a href="#">Реставрация</a></li>
+                    <li><a href="#">Инфраструктурные проекты</a></li>
+                    <li><a href="#">Качество жизни</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Друзья города</a></li>
+            <li class="mm-listitem--last">
+                <a class="button button--green button--fit-m button--menu full" href="">
+                    <span class="button__text">
+                        Все новости
+                    </span>
+                    <svg class="button__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-next-green"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </div>
 <!-- Это временная секция, здесь ссылки на все страницы. На продакшене ее не будет -->
 <section class="section">
@@ -1294,6 +1358,7 @@
                 gap: 15px;
                 display: flex;
                 flex-wrap: wrap;
+                padding-left: 50%;
             }
 
             .temp__link {

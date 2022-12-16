@@ -1,0 +1,25 @@
+.mm {
+    &-menu {
+        padding-top: rem(66) !important;
+    }
+    &-listitem {
+        &--first {
+            .link-menu {
+                display: flex;
+                min-height: rem(66);
+            }
+        }
+        &--last {
+            border: none;
+            padding: 20px !important;
+
+            .button {
+                display: flex;
+            }
+
+            &:after {
+                display: none !important;
+            }
+        }
+    }
+}

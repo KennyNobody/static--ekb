@@ -1,0 +1,12 @@
+.link-menu {
+    gap: rem(7);
+    display: flex;
+    min-height: 50px;
+    align-items: center;
+
+    &__icon {
+        display: block;
+        height: rem(20);
+        width: rem(20);
+    }
+}

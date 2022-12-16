@@ -1,3 +1,5 @@
+import "./bvi/scss/bvi.scss";
+
 import {ArticleDrop} from "./articleDrop";
 import {Header} from "./header";
 import Masonry from 'masonry-layout';
@@ -6,6 +8,8 @@ import {Player} from "./player";
 import Swiper, {Navigation} from "swiper";
 import {Uploader} from "./uploader";
 import {DropSection} from "./dropSection";
+import {Menu} from "./menu";
+import Bvi from "./bvi/js/bvi";
 
 class App {
     constructor() {
@@ -21,6 +25,8 @@ class App {
         this.initPlayer();
         this.initUploader();
         this.initDropSection();
+        this.initMenu();
+        this.initBvi();
     }
 
     initHeader() {
@@ -97,7 +103,18 @@ class App {
         el.forEach(item => this.dropSection.push(new DropSection(item, this.dropSection, this.header)));
     }
 
+    initMenu() {
+        const el = document.querySelector('[data-menu]');
 
+        if (el) new Menu(el);
+    }
+
+    initBvi() {
+        new Bvi({
+            target: '[data-link-vipanel]',
+            speech: true
+        });
+    }
 }
 
 export {App};

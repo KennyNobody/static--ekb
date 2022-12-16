@@ -12,7 +12,7 @@
 <link href="./css/main.css" rel="stylesheet"></head>
 
 <body class="body">
-<header class="header z-index-3" data-header>
+    <header class="header z-index-3" data-header>
     <section class="section section--header pt-10 pb-10 z-index-3">
         <div class="container">
             <div class="toolbar toolbar--30">
@@ -121,16 +121,19 @@
                             <use xlink:href="./assets/sprite/sprite.svg#icon-glass"></use>
                         </svg>
                     </button>
-                    <button class="nav__button mob-hidden">
+                    <button class="nav__button mob-hidden" data-link-vipanel>
                         <svg>
                             <use xlink:href="./assets/sprite/sprite.svg#icon-eye"></use>
                         </svg>
                     </button>
-                    <button class="nav__button desktop-hidden" data-menu-button>
-                        <svg>
+                    <a href="#menu" class="nav__button desktop-hidden">
+                        <svg class="closed">
                             <use xlink:href="./assets/sprite/sprite.svg#icon-burger"></use>
                         </svg>
-                    </button>
+                        <svg class="opened">
+                            <use xlink:href="./assets/sprite/sprite.svg#icon-close"></use>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
@@ -314,286 +317,287 @@
     </section>
 </header>
 
-<main class="main">
-    <section class="section section--bg relative invert"
-             style="background-image: url('./assets/images/bg-history.jpg')">
-        <div class="section__content section__content--overlay-40 section__content--full-950 pt-100 pb-150 ptm-80 pbm-40">
-            <div class="container container--flex-between">
-                <nav class="breadcrumbs mb-50">
-                    <a class="breadcrumbs__link" href="./">
-                        Главная
-                    </a>
-                    <span class="breadcrumbs__link">
-                        История
-                    </span>
-                </nav>
-                <div class="columns">
-                    <div class="columns__col columns__col--8">
-                        <h1 class="title mb-30">
-                            История <br>
-                            екатеринбурга
-                        </h1>
-                        <div class="editor editor--24">
-                            <p>
-                                Как Екатеринбург стал промышленным, научным, культурным центром России
-                            </p>
+    <div class="page">
+        <main class="main">
+            <section class="section section--bg relative invert"
+                     style="background-image: url('./assets/images/bg-history.jpg')">
+                <div class="section__content section__content--overlay-40 section__content--full-950 pt-100 pb-150 ptm-80 pbm-40">
+                    <div class="container container--flex-between">
+                        <nav class="breadcrumbs mb-50">
+                            <a class="breadcrumbs__link" href="./">
+                                Главная
+                            </a>
+                            <span class="breadcrumbs__link">
+                                История
+                            </span>
+                        </nav>
+                        <div class="columns">
+                            <div class="columns__col columns__col--8">
+                                <h1 class="title mb-30">
+                                    История <br>
+                                    екатеринбурга
+                                </h1>
+                                <div class="editor editor--24">
+                                    <p>
+                                        Как Екатеринбург стал промышленным, научным, культурным центром России
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline mob-hidden" data-timeline>
+                            <div class="swiper-container timeline__container">
+                                <button class="timeline__button timeline__button--prev">
+                                    <svg class="timeline__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-timeline-prev"></use>
+                                    </svg>
+                                </button>
+                                <button class="timeline__button timeline__button--next">
+                                    <svg class="timeline__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-timeline-next"></use>
+                                    </svg>
+                                </button>
+                                <div class="swiper-wrapper timeline__wrapper">
+                                    <div class="swiper-slide timeline__slide">
+                                        <a class="timeline__link" href="#section-1738">
+                                            1660
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide timeline__slide">
+                                        <a class="timeline__link" href="#section-1723">
+                                            1662
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide timeline__slide">
+                                        <a class="timeline__link" href="#section-1781">
+                                            1676
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide timeline__slide">
+                                        <a class="timeline__link" href="#section-1723">
+                                            1685
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide timeline__slide">
+                                        <a class="timeline__link" href="#section-1723">
+                                            1702
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide timeline__slide">
+                                        <a class="timeline__link" href="#section-1738">
+                                            1720
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide timeline__slide">
+                                        <a class="timeline__link" href="#section-1723">
+                                            1721
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide timeline__slide">
+                                        <a class="timeline__link" href="#section-1723">
+                                            1723
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide timeline__slide">
+                                        <a class="timeline__link" href="#section-1781">
+                                            1763
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide timeline__slide">
+                                        <a class="timeline__link" href="#section-1723">
+                                            1781
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide timeline__slide">
+                                        <a class="timeline__link" href="#section-1723">
+                                            1806
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide timeline__slide">
+                                        <a class="timeline__link" href="#section-1738">
+                                            1918
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide timeline__slide">
+                                        <a class="timeline__link" href="#section-1723">
+                                            1918
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide timeline__slide">
+                                        <a class="timeline__link" href="#section-1723">
+                                            1918
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide timeline__slide">
+                                        <a class="timeline__link" href="#section-1781">
+                                            1918
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide timeline__slide">
+                                        <a class="timeline__link" href="#section-1723">
+                                            1918
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide timeline__slide">
+                                        <a class="timeline__link" href="#section-1723">
+                                            1918
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide timeline__slide">
+                                        <a class="timeline__link" href="#section-1738">
+                                            1918
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide timeline__slide">
+                                        <a class="timeline__link" href="#section-1723">
+                                            1918
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide timeline__slide">
+                                        <a class="timeline__link" href="#section-1723">
+                                            1918
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide timeline__slide">
+                                        <a class="timeline__link" href="#section-1781">
+                                            1918
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide timeline__slide">
+                                        <a class="timeline__link" href="#section-1723">
+                                            1918
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="timeline mob-hidden" data-timeline>
-                    <div class="swiper-container timeline__container">
-                        <button class="timeline__button timeline__button--prev">
-                            <svg class="timeline__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-timeline-prev"></use>
-                            </svg>
-                        </button>
-                        <button class="timeline__button timeline__button--next">
-                            <svg class="timeline__icon">
-                                <use xlink:href="./assets/sprite/sprite.svg#icon-timeline-next"></use>
-                            </svg>
-                        </button>
-                        <div class="swiper-wrapper timeline__wrapper">
-                            <div class="swiper-slide timeline__slide">
-                                <a class="timeline__link" href="#section-1738">
-                                    1660
-                                </a>
-                            </div>
-                            <div class="swiper-slide timeline__slide">
-                                <a class="timeline__link" href="#section-1723">
-                                    1662
-                                </a>
-                            </div>
-                            <div class="swiper-slide timeline__slide">
-                                <a class="timeline__link" href="#section-1781">
-                                    1676
-                                </a>
-                            </div>
-                            <div class="swiper-slide timeline__slide">
-                                <a class="timeline__link" href="#section-1723">
-                                    1685
-                                </a>
-                            </div>
-                            <div class="swiper-slide timeline__slide">
-                                <a class="timeline__link" href="#section-1723">
-                                    1702
-                                </a>
-                            </div>
-                            <div class="swiper-slide timeline__slide">
-                                <a class="timeline__link" href="#section-1738">
-                                    1720
-                                </a>
-                            </div>
-                            <div class="swiper-slide timeline__slide">
-                                <a class="timeline__link" href="#section-1723">
-                                    1721
-                                </a>
-                            </div>
-                            <div class="swiper-slide timeline__slide">
-                                <a class="timeline__link" href="#section-1723">
-                                    1723
-                                </a>
-                            </div>
-                            <div class="swiper-slide timeline__slide">
-                                <a class="timeline__link" href="#section-1781">
-                                    1763
-                                </a>
-                            </div>
-                            <div class="swiper-slide timeline__slide">
-                                <a class="timeline__link" href="#section-1723">
-                                    1781
-                                </a>
-                            </div>
-                            <div class="swiper-slide timeline__slide">
-                                <a class="timeline__link" href="#section-1723">
-                                    1806
-                                </a>
-                            </div>
-                            <div class="swiper-slide timeline__slide">
-                                <a class="timeline__link" href="#section-1738">
-                                    1918
-                                </a>
-                            </div>
-                            <div class="swiper-slide timeline__slide">
-                                <a class="timeline__link" href="#section-1723">
-                                    1918
-                                </a>
-                            </div>
-                            <div class="swiper-slide timeline__slide">
-                                <a class="timeline__link" href="#section-1723">
-                                    1918
-                                </a>
-                            </div>
-                            <div class="swiper-slide timeline__slide">
-                                <a class="timeline__link" href="#section-1781">
-                                    1918
-                                </a>
-                            </div>
-                            <div class="swiper-slide timeline__slide">
-                                <a class="timeline__link" href="#section-1723">
-                                    1918
-                                </a>
-                            </div>
-                            <div class="swiper-slide timeline__slide">
-                                <a class="timeline__link" href="#section-1723">
-                                    1918
-                                </a>
-                            </div>
-                            <div class="swiper-slide timeline__slide">
-                                <a class="timeline__link" href="#section-1738">
-                                    1918
-                                </a>
-                            </div>
-                            <div class="swiper-slide timeline__slide">
-                                <a class="timeline__link" href="#section-1723">
-                                    1918
-                                </a>
-                            </div>
-                            <div class="swiper-slide timeline__slide">
-                                <a class="timeline__link" href="#section-1723">
-                                    1918
-                                </a>
-                            </div>
-                            <div class="swiper-slide timeline__slide">
-                                <a class="timeline__link" href="#section-1781">
-                                    1918
-                                </a>
-                            </div>
-                            <div class="swiper-slide timeline__slide">
-                                <a class="timeline__link" href="#section-1723">
-                                    1918
-                                </a>
-                            </div>
-                        </div>
+            </section>
+            <section class="section bg-white pt-100 pb-100 ptm-40 pbm-40">
+                <div class="container">
+                    <div class="desktop-hidden mbm-40">
+                        <select class="select select--orange select--icon-drop-orange">
+                            <option value="" selected="">Выберите год</option>
+                            <option value="1660">1660</option>
+                            <option value="1700">1700</option>
+                            <option value="1862">1862</option>
+                        </select>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section bg-white pt-100 pb-100 ptm-40 pbm-40">
-        <div class="container">
-            <div class="desktop-hidden mbm-40">
-                <select class="select select--orange select--icon-drop-orange">
-                    <option value="" selected="">Выберите год</option>
-                    <option value="1660">1660</option>
-                    <option value="1700">1700</option>
-                    <option value="1862">1862</option>
-                </select>
-            </div>
-            <div class="head mb-20">
-                <div class="head__content" id="section-1723">
-                    <span class="tag tag--large">1723</span>
-                </div>
-            </div>
-
-            <div class="columns mb-80 mbm-40">
-                <div class="columns__col columns__col--6 pr-70 prm-0 mbm-20">
-                    <div class="editor">
-                        <p>
-                            Екатеринбург основан как завод-крепость на реке Исети в 1723 году. Место для завода выбрал
-                            В. Татищев. Построен завод под руководством В. де Геннина. Город назван в честь императрицы
-                            Екатерины I. Производственные мощности Екатеринбургского завода включали в себя: 2 домны, 14
-                            кричных молотов, медеплавильную фабрику, стальную и якорную фабрики, машины для сверления
-                            пушек и другое. Основная продукция – железо, чугун и медь. В полном объеме мощности завода
-                            никогда не использовались. В 1737 году остановлены доменные печи. С конца 1750-х годов
-                            постепенно уменьшался выпуск продукции на молотовых, стальной и проволочной фабриках, а в
-                            1769 году прекращено медеплавильное производство. В 1808 году Екатеринбургский завод закрыт.
-                        </p>
-                        <p>
-                            В XVIII веке Екатеринбург развивается как административный центр горнозаводской
-                            промышленности Урала и Сибири. Система отраслевого управления горными заводами Урала,
-                            Забайкалья и Алтая была независима от местных губернских властей. Ее центральный орган
-                            располагался в Екатеринбурге. После 1781 года управление горной частью было децентрализовано
-                            и подчинено казенным палатам губернских правлений.
-                        </p>
-                    </div>
-                </div>
-                <div class="columns__col columns__col--6">
-                    <figure class="figure figure--radius">
-                        <picture class="figure__picture">
-                            <img alt="" src="./assets/content/history-1.jpg">
-                        </picture>
-                        <figcaption class="figure__figcaption">
-                            подпись под фото
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-            <div class="head mb-20" id="section-1738">
-                <div class="head__content">
-                    <span class="tag tag--large">1738</span>
-                </div>
-            </div>
-            <div class="columns mb-80 mbm-40">
-                <div class="columns__col columns__col--6 order-m-2">
-                    <figure class="figure figure--radius">
-                        <picture class="figure__picture">
-                            <img alt="" src="./assets/content/history-2.jpg">
-                        </picture>
-                        <figcaption class="figure__figcaption">
-                            подпись под фото
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="columns__col columns__col--6 pl-70 plm-0 order-m-1 mbm-20">
-                    <div class="editor">
-                        <p>
-                            В 1738 году в городе основана камнерезная мастерская, ставшая в 1765 году Екатеринбургской
-                            гранильной фабрикой. В 1761 году через Екатеринбург прошел Сибирский почтовый тракт.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="head mb-20" id="section-1781">
-                <div class="head__content">
-                    <span class="tag tag--large">1781</span>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="columns__col columns__col--6 pr-70 prm-0 mbm-40">
-                    <div class="editor mb-25">
-                        <p>
-                            В 1781 году Екатеринбург получил статус уездного города в Пермской губернии. В 1783 году ему
-                            был присвоен герб, а в 1787 году состоялись первые выборы в городскую (шестигласную) думу. В
-                            городском самоуправлении в XVIII – первой половине XIX века доминировали купцы-старообрядцы.
-                        </p>
-                    </div>
-                    <div class="player" data-player>
-                        <p class="player__title">
-                            Аудиогид по по выставке
-                        </p>
-                        <audio class="player__audio" src="https://www.zapsplat.com/wp-content/uploads/2015/sound-effects-61905/zapsplat_multimedia_alert_chime_short_musical_notification_cute_child_like_001_64918.mp3?_=1"></audio>
-                        <div class="player__controls">
-                            <button class="player__button">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
-                                </svg>
-                            </button>
-                            <input class="player__timeline" type="range" max="100" value="0">
-                            <button class="player__sound">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
-                                    <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd" />
-                                </svg>
-                            </button>
+                    <div class="head mb-20">
+                        <div class="head__content" id="section-1723">
+                            <span class="tag tag--large">1723</span>
                         </div>
                     </div>
 
-                </div>
-                <div class="columns__col columns__col--6">
-                    <figure class="figure figure--radius">
-                        <picture class="figure__picture">
-                            <img alt="" src="./assets/content/history-3.jpg">
-                        </picture>
-                        <figcaption class="figure__figcaption">
-                            подпись под фото
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <div class="columns mb-80 mbm-40">
+                        <div class="columns__col columns__col--6 pr-70 prm-0 mbm-20">
+                            <div class="editor">
+                                <p>
+                                    Екатеринбург основан как завод-крепость на реке Исети в 1723 году. Место для завода выбрал
+                                    В. Татищев. Построен завод под руководством В. де Геннина. Город назван в честь императрицы
+                                    Екатерины I. Производственные мощности Екатеринбургского завода включали в себя: 2 домны, 14
+                                    кричных молотов, медеплавильную фабрику, стальную и якорную фабрики, машины для сверления
+                                    пушек и другое. Основная продукция – железо, чугун и медь. В полном объеме мощности завода
+                                    никогда не использовались. В 1737 году остановлены доменные печи. С конца 1750-х годов
+                                    постепенно уменьшался выпуск продукции на молотовых, стальной и проволочной фабриках, а в
+                                    1769 году прекращено медеплавильное производство. В 1808 году Екатеринбургский завод закрыт.
+                                </p>
+                                <p>
+                                    В XVIII веке Екатеринбург развивается как административный центр горнозаводской
+                                    промышленности Урала и Сибири. Система отраслевого управления горными заводами Урала,
+                                    Забайкалья и Алтая была независима от местных губернских властей. Ее центральный орган
+                                    располагался в Екатеринбурге. После 1781 года управление горной частью было децентрализовано
+                                    и подчинено казенным палатам губернских правлений.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="columns__col columns__col--6">
+                            <figure class="figure figure--radius">
+                                <picture class="figure__picture">
+                                    <img alt="" src="./assets/content/history-1.jpg">
+                                </picture>
+                                <figcaption class="figure__figcaption">
+                                    подпись под фото
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="head mb-20" id="section-1738">
+                        <div class="head__content">
+                            <span class="tag tag--large">1738</span>
+                        </div>
+                    </div>
+                    <div class="columns mb-80 mbm-40">
+                        <div class="columns__col columns__col--6 order-m-2">
+                            <figure class="figure figure--radius">
+                                <picture class="figure__picture">
+                                    <img alt="" src="./assets/content/history-2.jpg">
+                                </picture>
+                                <figcaption class="figure__figcaption">
+                                    подпись под фото
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="columns__col columns__col--6 pl-70 plm-0 order-m-1 mbm-20">
+                            <div class="editor">
+                                <p>
+                                    В 1738 году в городе основана камнерезная мастерская, ставшая в 1765 году Екатеринбургской
+                                    гранильной фабрикой. В 1761 году через Екатеринбург прошел Сибирский почтовый тракт.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="head mb-20" id="section-1781">
+                        <div class="head__content">
+                            <span class="tag tag--large">1781</span>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="columns__col columns__col--6 pr-70 prm-0 mbm-40">
+                            <div class="editor mb-25">
+                                <p>
+                                    В 1781 году Екатеринбург получил статус уездного города в Пермской губернии. В 1783 году ему
+                                    был присвоен герб, а в 1787 году состоялись первые выборы в городскую (шестигласную) думу. В
+                                    городском самоуправлении в XVIII – первой половине XIX века доминировали купцы-старообрядцы.
+                                </p>
+                            </div>
+                            <div class="player" data-player>
+                                <p class="player__title">
+                                    Аудиогид по по выставке
+                                </p>
+                                <audio class="player__audio" src="https://www.zapsplat.com/wp-content/uploads/2015/sound-effects-61905/zapsplat_multimedia_alert_chime_short_musical_notification_cute_child_like_001_64918.mp3?_=1"></audio>
+                                <div class="player__controls">
+                                    <button class="player__button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                    <input class="player__timeline" type="range" max="100" value="0">
+                                    <button class="player__sound">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
+                                            <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
 
-</main>
-<section class="section invert bg-dark pt-60 pb-35">
+                        </div>
+                        <div class="columns__col columns__col--6">
+                            <figure class="figure figure--radius">
+                                <picture class="figure__picture">
+                                    <img alt="" src="./assets/content/history-3.jpg">
+                                </picture>
+                                <figcaption class="figure__figcaption">
+                                    подпись под фото
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <section class="section invert bg-dark pt-60 pb-35">
     <div class="container">
         <div class="columns mb-35 mbm-25">
             <div class="columns__col columns__col--2 columns__col--mob-3 mbm-35">
@@ -751,7 +755,8 @@
         </div>
     </div>
 </section>
-<div hidden>
+    </div>
+    <div hidden>
     <div class="modal modal--570" id="modal-form">
         <h2 class="title title--small mb-30">
             Отправить свое фото<br> в раздел <strong class="purple">“Горожане”</strong>
@@ -778,8 +783,61 @@
             </span>
         </button>
     </div>
+
+    <nav id="menu" data-menu>
+        <ul>
+            <li class="mm-listitem--first">
+                <a href="" class="link-menu" data-link-vipanel>
+                    <svg class="link-menu__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-eye"></use>
+                    </svg>
+                    <span class="link-menu__text">
+                        Версия для слабовидящих
+                    </span>
+                </a>
+            </li>
+            <li><a href="/">Главная</a></li>
+            <li><a href="./about.html">О событии</a></li>
+            <li><a href="./history.html">История</a>
+                <ul>
+                    <li><a href="#">История города</a></li>
+                    <li><a href="#">300 имен Екатеринбурга</a></li>
+                </ul>
+            </li>
+            <li><a href="./bill.html">Афиша</a></li>
+            <li><a href="./residents.html">Жителям</a>
+                <ul>
+                    <li><a href="./improvement.html">Городское благоустройство</a></li>
+                    <li><a href="#">Реставрация</a></li>
+                    <li><a href="#">Инфраструктурные проекты</a></li>
+                    <li><a href="#">Качество жизни</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Туристам</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="./special.html">Спецпроекты</a>
+                <ul>
+                    <li><a href="./improvement.html">Городское благоустройство</a></li>
+                    <li><a href="#">Реставрация</a></li>
+                    <li><a href="#">Инфраструктурные проекты</a></li>
+                    <li><a href="#">Качество жизни</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Друзья города</a></li>
+            <li class="mm-listitem--last">
+                <a class="button button--green button--fit-m button--menu full" href="">
+                    <span class="button__text">
+                        Все новости
+                    </span>
+                    <svg class="button__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-next-green"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </div>
-<!-- Это временная секция, здесь ссылки на все страницы. На продакшене ее не будет -->
+    <!-- Это временная секция, здесь ссылки на все страницы. На продакшене ее не будет -->
 <section class="section">
     <div class="container">
         <style>
@@ -787,6 +845,7 @@
                 gap: 15px;
                 display: flex;
                 flex-wrap: wrap;
+                padding-left: 50%;
             }
 
             .temp__link {

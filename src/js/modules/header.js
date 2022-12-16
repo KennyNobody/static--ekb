@@ -18,8 +18,6 @@ class Header {
         } else {
             this.el.classList.remove('invert');
         }
-
-        console.log(this.check());
     }
 
     check() {
@@ -34,12 +32,6 @@ class Header {
         }
 
         return flag;
-
-        // el.forEach(item => {
-        //     if (!item.hasAttribute('hidden')) return false;
-        // })
-
-        return true;
     }
 
     fix() {
