@@ -89,9 +89,15 @@
 
 .bg-1 {
     background-repeat: no-repeat;
-    background-position: top calc(50% - 50px) right calc(50% + 550px), center;
+    background-position: top calc(50% - 50px) left rem(-290), center;
     background-size: rem(580) rem(580), rem(1660) rem(510);
     background-image: url("../assets/images/decor-ring.svg"), url("../assets/images/decor-ornament-2.svg");
+
+    @include r(1200) {
+        background-size: 100% auto;
+        background-position: top center;
+        background-image: url("../assets/images/decor-ornament-2.svg");
+    }
 }
 
 .bg-2 {
@@ -101,8 +107,9 @@
     background-image: url("../assets/images/decor-part-circle.svg"), url("../assets/images/decor-part-ornament.svg"), url("../assets/images/decor-ornament.svg");
 
     @include r(1200) {
-        background-size: rem(320) rem(320), rem(850) rem(600), rem(1660) rem(510);
-        background-position: bottom rem(-115) right calc(100vw - 215px), top rem(130) right calc(50% - 1010px), center;
+        background: none;
+        //background-size: rem(320) rem(320), rem(850) rem(600), rem(1660) rem(510);
+        //background-position: bottom rem(-115) right calc(100vw - 215px), top rem(130) right calc(50% - 1010px), center;
     }
 }
 

@@ -11,8 +11,7 @@
     box-shadow: rem(-10) rem(20) rem(50) rgba(143, 154, 181, 0.2);
 
     @include r(1200) {
-        margin-left: rem(-15);
-        margin-right: rem(-15);
+        padding: rem(40) rem(30);
     }
 
 
