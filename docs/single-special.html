@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
@@ -19,7 +19,7 @@
 <link href="./css/main.css" rel="stylesheet"></head>
 
 <body class="body">
-    <header class="header z-index-3" data-header>
+    <header class="header z-index-5" data-header>
     <section class="section section--header pt-10 pb-10 z-index-3">
         <div class="container">
             <div class="toolbar toolbar--30">
@@ -133,14 +133,14 @@
                             <use xlink:href="./assets/sprite/sprite.svg#icon-eye"></use>
                         </svg>
                     </button>
-                    <a href="#menu" class="nav__button desktop-hidden">
+                    <button class="nav__button desktop-hidden" data-menu-button>
                         <svg class="closed">
                             <use xlink:href="./assets/sprite/sprite.svg#icon-burger"></use>
                         </svg>
                         <svg class="opened">
                             <use xlink:href="./assets/sprite/sprite.svg#icon-close"></use>
                         </svg>
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -940,7 +940,6 @@
                 gap: 15px;
                 display: flex;
                 flex-wrap: wrap;
-                padding-left: 50%;
             }
 
             .temp__link {

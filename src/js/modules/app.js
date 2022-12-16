@@ -10,6 +10,7 @@ import {Uploader} from "./uploader";
 import {DropSection} from "./dropSection";
 import {Menu} from "./menu";
 import Bvi from "./bvi/js/bvi";
+import {Intro} from "./intro";
 
 class App {
     constructor() {
@@ -27,6 +28,7 @@ class App {
         this.initDropSection();
         this.initMenu();
         this.initBvi();
+        this.initIntro();
     }
 
     initHeader() {
@@ -106,7 +108,7 @@ class App {
     initMenu() {
         const el = document.querySelector('[data-menu]');
 
-        if (el) new Menu(el);
+        if (el) new Menu(el, this.header);
     }
 
     initBvi() {
@@ -114,6 +116,12 @@ class App {
             target: '[data-link-vipanel]',
             speech: true
         });
+    }
+
+    initIntro() {
+        const el = document.querySelector('[data-intro]');
+
+        if (el) new Intro(el);
     }
 }
 

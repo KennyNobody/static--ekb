@@ -23,3 +23,19 @@
         }
     }
 }
+
+#menu {
+    display: none;
+}
+
+.bvi-active {
+    .mm-listview {
+        padding-bottom: 170px;
+    }
+}
+
+.body.mm-wrapper--opened {
+    #menu {
+        display: block;
+    }
+}

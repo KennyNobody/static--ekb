@@ -19809,6 +19809,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _dropSection__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./dropSection */ "./src/js/modules/dropSection.js");
 /* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./menu */ "./src/js/modules/menu.js");
 /* harmony import */ var _bvi_js_bvi__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./bvi/js/bvi */ "./src/js/modules/bvi/js/bvi.js");
+/* harmony import */ var _intro__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./intro */ "./src/js/modules/intro.js");
+
 
 
 
@@ -19838,6 +19840,7 @@ class App {
         this.initDropSection();
         this.initMenu();
         this.initBvi();
+        this.initIntro();
     }
 
     initHeader() {
@@ -19917,7 +19920,7 @@ class App {
     initMenu() {
         const el = document.querySelector('[data-menu]');
 
-        if (el) new _menu__WEBPACK_IMPORTED_MODULE_9__.Menu(el);
+        if (el) new _menu__WEBPACK_IMPORTED_MODULE_9__.Menu(el, this.header);
     }
 
     initBvi() {
@@ -19925,6 +19928,12 @@ class App {
             target: '[data-link-vipanel]',
             speech: true
         });
+    }
+
+    initIntro() {
+        const el = document.querySelector('[data-intro]');
+
+        if (el) new _intro__WEBPACK_IMPORTED_MODULE_11__.Intro(el);
     }
 }
 
@@ -21250,6 +21259,7 @@ class DropSection {
         this.el = el;
         this.arr = arr;
         this.header = header;
+        this.headerMarkup = document.querySelector('.header');
         this.name = this.el.getAttribute('data-section-drop');
         this.button = document.querySelector('[data-button-drop="' + this.name + '"]');
 
@@ -21257,28 +21267,35 @@ class DropSection {
     }
 
     setListeners() {
+        document.addEventListener('click', (e) => {
+            if (!this.el.hasAttribute('hidden') && !this.el.contains(e.target) && !this.headerMarkup.contains(e.target)) {
+                this.toggle();
+            }
+        });
+
         this.button.addEventListener('click', (e) => {
             e.preventDefault();
-            this.header.fix();
             this.closeAll();
             this.toggle();
         });
+
+
     }
 
     toggle() {
         if (this.el.hasAttribute('hidden')) {
             this.el.removeAttribute('hidden');
+            this.header.fix();
         } else {
             this.el.setAttribute('hidden', 'hidden');
+            this.header.toggle();
         }
     }
 
     closeAll() {
         this.arr.forEach(item => {
-            console.log(item);
             if (item.name !== this.name) {
                 item.el.setAttribute('hidden', 'hidden');
-            } else {
             }
         });
     }
@@ -21344,6 +21361,58 @@ class Header {
 
 /***/ }),
 
+/***/ "./src/js/modules/intro.js":
+/*!*********************************!*\
+  !*** ./src/js/modules/intro.js ***!
+  \*********************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Intro": function() { return /* binding */ Intro; }
+/* harmony export */ });
+class Intro {
+    constructor(el) {
+        this.parent = el;
+
+        this.init();
+    }
+
+    init() {
+        this.parent.appendChild(this.createMarkup());
+        this.play();
+    }
+
+    play() {
+        const video = this.parent.querySelector('video');
+
+        video.muted = true;
+        video.play();
+    }
+
+    createMarkup() {
+        const el = document.createElement('video');
+        el.classList.add('intro');
+        el.setAttribute('poster', './assets/images/bg-index.jpg');
+        el.setAttribute('autoplay', 'autoplay');
+        el.setAttribute('loop', 'loop');
+        el.setAttribute('muted', 'muted');
+
+        const sources = `
+            <source src="./assets/video/intro-mp4.mp4" type="video/mp4">
+            <source src="./assets/video/intro-webm.webm" type="video/webm">`;
+
+        el.innerHTML = sources;
+
+        return el;
+    }
+}
+
+
+
+/***/ }),
+
 /***/ "./src/js/modules/menu.js":
 /*!********************************!*\
   !*** ./src/js/modules/menu.js ***!
@@ -21358,12 +21427,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var mmenu_js_src_mmenu_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mmenu-js/src/mmenu.scss */ "./node_modules/mmenu-js/src/mmenu.scss");
 /* harmony import */ var mmenu_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! mmenu-js */ "./node_modules/mmenu-js/src/mmenu.js");
 
+// import "../../css/libs/mmenu.scss";
+
 
 
 class Menu {
-    constructor(el) {
+    constructor(el, header) {
         this.el = null;
+        this.api = null;
+        this.header = header;
         this.markup = el;
+        this.button = document.querySelector('[data-menu-button]');
 
         this.init();
     }
@@ -21372,12 +21446,40 @@ class Menu {
 
         this.el = new mmenu_js__WEBPACK_IMPORTED_MODULE_1__["default"]( this.markup, {
             navbar: {
-                add: false
+                title: 'Дивано'
+            },
+            hooks: {
+                "open:after": () => {
+                    this.header.fix();
+                },
+                "close:after": () => {
+                    this.header.toggle();
+                }
+            },
+            offCanvas: {
+                page: {
+                    selector: ".page"
+                }
             }
-        }, {
-            // configuration
-
         });
+
+        this.api = this.el.API;
+
+        console.log(this.api);
+
+        if (this.button) {
+            this.button.addEventListener('click', () => {
+                if (document.body.classList.contains('mm-wrapper--opened')) {
+                    console.log('Пык');
+                    this.api.close();
+                    // this.api.closePanel();
+                } else {
+                    this.api.open();
+                }
+            });
+        }
+
+
     }
 }
 

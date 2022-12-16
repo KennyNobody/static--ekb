@@ -5,8 +5,9 @@
     align-items: center;
 
     &__icon {
+        flex-shrink: 0;
         display: block;
-        height: rem(20);
         width: rem(20);
+        height: rem(20);
     }
 }
