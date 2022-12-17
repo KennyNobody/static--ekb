@@ -21446,7 +21446,7 @@ class Menu {
 
         this.el = new mmenu_js__WEBPACK_IMPORTED_MODULE_1__["default"]( this.markup, {
             navbar: {
-                title: 'Дивано'
+                title: 'Меню'
             },
             hooks: {
                 "open:after": () => {
@@ -21465,21 +21465,15 @@ class Menu {
 
         this.api = this.el.API;
 
-        console.log(this.api);
-
         if (this.button) {
             this.button.addEventListener('click', () => {
                 if (document.body.classList.contains('mm-wrapper--opened')) {
-                    console.log('Пык');
                     this.api.close();
-                    // this.api.closePanel();
                 } else {
                     this.api.open();
                 }
             });
         }
-
-
     }
 }
 
