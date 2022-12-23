@@ -121,4 +121,26 @@ module.exports = [
         hidden,
         temp
     }),
+    new HtmlWebpackPlugin({
+        template: "./src/pages/news.html",
+        filename: "news.html",
+        inject: "body",
+        title: "Новости | Екатеринбургу 300 лет",
+        head,
+        sectionHeaderActive,
+        sectionFooter,
+        hidden,
+        temp
+    }),
+    new HtmlWebpackPlugin({
+        template: "./src/pages/single-news.html",
+        filename: "single-news.html",
+        inject: "body",
+        title: "Новость одиночная | Екатеринбургу 300 лет",
+        head,
+        sectionHeader,
+        sectionFooter,
+        hidden,
+        temp
+    }),
 ];
