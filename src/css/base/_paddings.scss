@@ -172,6 +172,12 @@
             padding-top: rem(100);
         }
     }
+
+    &-260 {
+        @include r(1200) {
+            padding-top: rem(260);
+        }
+    }
 }
 
 .pbm {

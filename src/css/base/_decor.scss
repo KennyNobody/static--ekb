@@ -87,6 +87,34 @@
     }
 }
 
+.decor-4 {
+    position: relative;
+
+    &:after {
+        bottom: 0;
+        left: -75%;
+        content: "";
+        display: block;
+        width: rem(498);
+        height: rem(178);
+        position: absolute;
+        pointer-events: none;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("../assets/images/decor-4.svg");
+
+        @include r(1200) {
+            left: 0;
+            top: -60%;
+            bottom: auto;
+            width: rem(291);
+            height: rem(207);
+            background-image: url("../assets/images/decor-4-mob.svg");
+        }
+    }
+}
+
 .bg-1 {
     background-repeat: no-repeat;
     background-position: top calc(50% - 50px) left rem(-290), center;

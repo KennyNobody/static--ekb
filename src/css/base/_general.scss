@@ -139,10 +139,20 @@ button {
             max-width: rem(134);
         }
     }
+
+    &-655 {
+        max-width: rem(655);
+    }
 }
 
 .full {
     width: 100%;
+}
+
+.mob-full {
+    @include r(1200) {
+        max-width: 100%;
+    }
 }
 
 .upper {

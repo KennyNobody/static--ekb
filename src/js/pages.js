@@ -143,4 +143,15 @@ module.exports = [
         hidden,
         temp
     }),
+    new HtmlWebpackPlugin({
+        template: "./src/pages/tourists.html",
+        filename: "tourists.html",
+        inject: "body",
+        title: "Туристам | Екатеринбургу 300 лет",
+        head,
+        sectionHeaderActive,
+        sectionFooter,
+        hidden,
+        temp
+    }),
 ];

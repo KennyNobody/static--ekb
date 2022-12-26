@@ -1,7 +1,6 @@
 class Intro {
     constructor(el) {
         this.parent = el;
-
         this.init();
     }
 

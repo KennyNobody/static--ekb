@@ -149,9 +149,19 @@
             margin-bottom: rem(100);
         }
     }
+    &-125 {
+        @include r(1200) {
+            margin-bottom: rem(125);
+        }
+    }
     &-180 {
         @include r(1200) {
             margin-bottom: rem(180);
+        }
+    }
+    &-195 {
+        @include r(1200) {
+            margin-bottom: rem(195);
         }
     }
 }

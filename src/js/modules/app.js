@@ -11,6 +11,7 @@ import {DropSection} from "./dropSection";
 import {Menu} from "./menu";
 import Bvi from "./bvi/js/bvi";
 import {Intro} from "./intro";
+import {Dropdown} from "./dropdown";
 
 class App {
     constructor() {
@@ -29,6 +30,7 @@ class App {
         this.initMenu();
         this.initBvi();
         this.initIntro();
+        this.initDropdown();
     }
 
     initHeader() {
@@ -122,6 +124,14 @@ class App {
         const el = document.querySelector('[data-intro]');
 
         if (el) new Intro(el);
+    }
+
+    initDropdown() {
+        const els = document.querySelectorAll('[data-dropdown]');
+
+        els.forEach(item => {
+           new Dropdown(item);
+        });
     }
 }
 

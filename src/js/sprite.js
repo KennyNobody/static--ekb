@@ -18,7 +18,9 @@ import icon3 from "../assets/sprite/icon-3.svg";
 import icon4 from "../assets/sprite/icon-4.svg";
 import instagram from "../assets/sprite/icon-instagram.svg";
 import mail from "../assets/sprite/icon-mail.svg";
+import marker from "../assets/sprite/icon-place.svg";
 import place from "../assets/sprite/icon-marker.svg";
+import phone from "../assets/sprite/icon-phone.svg";
 import youtube from "../assets/sprite/icon-youtube.svg";
 import search from "../assets/sprite/icon-search.svg";
 import sliderNext from "../assets/sprite/icon-slider-next.svg";
@@ -28,6 +30,7 @@ import step2 from "../assets/sprite/icon-step-2.svg";
 import step3 from "../assets/sprite/icon-step-3.svg";
 import step4 from "../assets/sprite/icon-step-4.svg";
 import telegram from "../assets/sprite/icon-telegram.svg";
+import time from "../assets/sprite/icon-time.svg";
 import timelinePrev from "../assets/sprite/icon-timeline-prev.svg";
 import timelineNext from "../assets/sprite/icon-timeline-next.svg";
 import vk from "../assets/sprite/icon-vk.svg";
@@ -53,7 +56,9 @@ export default {
     icon4,
     instagram,
     mail,
+    marker,
     place,
+    phone,
     youtube,
     search,
     sliderNext,
@@ -63,6 +68,7 @@ export default {
     step3,
     step4,
     telegram,
+    time,
     timelinePrev,
     timelineNext,
     vk

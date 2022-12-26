@@ -1,0 +1,19 @@
+.block {
+    &--radius {
+        border-radius: rem(15);
+    }
+
+    &--shadow {
+        box-shadow: rem(-10) rem(20) rem(100) rgba(143, 154, 181, 0.25);
+    }
+
+    &--40-40 {
+        padding: rem(40);
+    }
+
+    &--mob-40-15 {
+        @include r(1200) {
+            padding: rem(40) rem(15);
+        }
+    }
+}

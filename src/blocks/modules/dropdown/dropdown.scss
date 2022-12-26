@@ -1,0 +1,83 @@
+.dropdown {
+    border-radius: rem(5);
+    padding: rem(40) rem(50) rem(40) rem(35);
+
+    @include r(1200) {
+        padding: rem(20) rem(18);
+        box-shadow: rem(-10) rem(20) rem(100) rgba(143, 154, 181, 0.25);
+    }
+
+    &.active {
+        .dropdown {
+            &__icon {
+                transform: rotate(180deg);
+            }
+            &__main {
+                max-height: 5000px;
+            }
+        }
+    }
+
+    &__header {
+        width: 100%;
+        gap: rem(15);
+        display: flex;
+        cursor: pointer;
+        font-weight: 300;
+        font-size: rem(24);
+        align-items: center;
+        transition: 0.3s opacity;
+        font-family: $font-title;
+
+        @include r(1200) {
+            display: block;
+            line-height: 1.4;
+            font-size: rem(20);
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &:active {
+            opacity: 0.9;
+        }
+    }
+
+    &__number {
+        flex-shrink: 0;
+        font-weight: 300;
+    }
+
+    &__title {
+        flex-grow: 1;
+        font-weight: 500;
+    }
+
+    &__icon {
+        fill: $green;
+        flex-shrink: 0;
+        width: rem(22);
+        height: rem(13);
+    }
+
+    &__main {
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    &__content {
+        padding-top: rem(25);
+        transition: 0.3s max-height;
+    }
+
+    &__footer {
+        display: none;
+
+        @include r(1200) {
+            display: flex;
+            padding-top: rem(18);
+            justify-content: center;
+        }
+    }
+}
