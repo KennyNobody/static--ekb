@@ -21394,14 +21394,14 @@ class Intro {
     createMarkup() {
         const el = document.createElement('video');
         el.classList.add('intro');
-        el.setAttribute('poster', './assets/images/bg-index.jpg');
+        el.setAttribute('poster', './local/templates/diez-ekb/assets/images/bg-index.jpg');
         el.setAttribute('autoplay', 'autoplay');
         el.setAttribute('loop', 'loop');
         el.setAttribute('muted', 'muted');
 
         const sources = `
-            <source src="./assets/video/intro-mp4.mp4" type="video/mp4">
-            <source src="./assets/video/intro-webm.webm" type="video/webm">`;
+            <source src="./local/templates/diez-ekb/assets/video/intro-mp4.mp4" type="video/mp4">
+            <source src="./local/templates/diez-ekb/assets/video/intro-webm.webm" type="video/webm">`;
 
         el.innerHTML = sources;
 
