@@ -723,20 +723,20 @@
         </section>
         <section class="section relative">
             <div class="section__background" id="map"></div>
-            <script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU>"
+            <script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU&amp;apikey=692ad445-735f-4038-b40b-e9725027029b>"
                     type="text/javascript"></script>
             <script>
                 ymaps.ready(init);
 
                 function init() {
                     const windowWidth = window.innerWidth;
+                    const center = [56.83501756788222,60.59497699999996];
                     const map = new ymaps.Map("map", {
-                            center: [56.83501756788222,60.59497699999996],
+                            center,
                             zoom: 15
                         }),
 
-                        // Создаем метку с помощью вспомогательного класса.
-                        myPlacemark1 = new ymaps.Placemark([56.83501756788222,60.59497699999996], {}, {
+                        myPlacemark1 = new ymaps.Placemark(center, {}, {
                             preset: 'twirl#redDotIcon'
                         });
 
@@ -1071,7 +1071,7 @@
             <a href="./single-special.html" class="temp__link">Одиночный спецпроект</a>
             <a href="./single-bill.html" class="temp__link">Одиночный афиша</a>
             <a href="./single-news.html" class="temp__link">Новость одиночная</a>
-
+            <a href="./none.html" class="temp__link">404</a>
         </div>
     </div>
 </section>

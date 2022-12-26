@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body">
+<%= htmlWebpackPlugin.options.sectionHeader %>
+<div class="page">
+    <main class="main">
+        <section class="section bg-grey bg-4">
+            <div class="section__content section__content--full-640 pt-100 pb-100 ptm-80 pbm-40">
+                <div class="container container--flex-between">
+                    <div class="mb-40 mbm-15">
+                        <nav class="breadcrumbs">
+                            <a class="breadcrumbs__link" href="./">
+                                Главная
+                            </a>
+                            <span class="breadcrumbs__link">
+                            404
+                        </span>
+                        </nav>
+                    </div>
+                    <div class="columns columns--align">
+                        <div class="columns__col columns__col--6 mbm-30">
+                            <figure class="figure max-430 centered">
+                                <picture class="figure__picture">
+                                    <img alt="Декоративная картинка" src="./assets/images/404.svg">
+                                </picture>
+                            </figure>
+                        </div>
+                        <div class="columns__col columns__col--6">
+                            <div class="editor mb-30 mob-center">
+                                <h3>
+                                    К сожалению,<br> страница не существует.
+                                </h3>
+                            </div>
+                            <a class="button button--green button--fit-m mob-centered" href="">
+                                <span class="button__text">
+                                    На главную
+                                </span>
+                                <svg class="button__icon">
+                                    <use xlink:href="./assets/sprite/sprite.svg#icon-arrow-next-green"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <%= htmlWebpackPlugin.options.sectionFooter %>
+</div>
+<%= htmlWebpackPlugin.options.hidden %>
+<%= htmlWebpackPlugin.options.temp %>
+</body>
+
+</html>

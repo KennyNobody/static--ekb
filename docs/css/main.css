@@ -1271,6 +1271,14 @@ button {
     max-width: 8.375rem;
   }
 }
+.max-430 {
+  max-width: 26.875rem;
+}
+@media only screen and (max-width: 1200px) {
+  .max-430 {
+    max-width: 11.875rem;
+  }
+}
 .max-655 {
   max-width: 40.9375rem;
 }
@@ -1287,6 +1295,19 @@ button {
 
 .upper {
   text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1200px) {
+  .mob-center {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .mob-centered {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .filepond--credits {
@@ -1966,6 +1987,17 @@ button {
   .bg-3 {
     background-position: top right, bottom left;
     background-image: url("../assets/images/decor-mob-tree-right.png"), url("../assets/images/decor-mob-tree-left.png");
+  }
+}
+
+.bg-4 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../assets/images/decor-ornament-3.svg");
+}
+@media only screen and (max-width: 1200px) {
+  .bg-4 {
+    background-size: auto 80%;
   }
 }
 
@@ -4705,8 +4737,18 @@ a.logo:hover {
 }
 
 .page {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 100%;
   overflow: hidden;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #FFFFFF;
 }
 
@@ -5008,6 +5050,15 @@ a.logo:hover {
 }
 .section__content--790 {
   min-height: 49.375rem;
+}
+.section__content--full-640 {
+  height: 100vh;
+  min-height: 40.625rem;
+}
+@media only screen and (max-width: 1200px) {
+  .section__content--full-640 {
+    min-height: 100vh;
+  }
 }
 .section__content--full-650 {
   height: 100%;

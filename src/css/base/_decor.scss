@@ -150,3 +150,12 @@
         background-image: url("../assets/images/decor-mob-tree-right.png"), url("../assets/images/decor-mob-tree-left.png");
     }
 }
+
+.bg-4 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../assets/images/decor-ornament-3.svg");
+    @include r(1200) {
+        background-size: auto 80%;
+    }
+}

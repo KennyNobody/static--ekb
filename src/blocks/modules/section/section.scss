@@ -69,6 +69,15 @@
             }
         }
 
+        &--full-640 {
+            height: 100vh;
+            min-height: rem(650);
+
+            @include r(1200) {
+                min-height: 100vh;
+            }
+        }
+
         &--full-650 {
             height: 100%;
             min-height: rem(650);
